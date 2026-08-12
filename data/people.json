@@ -1,0 +1,402 @@
+[
+  {
+    "id": "jo-hg",
+    "name_en": "Jo, H. G.",
+    "name_ko": "조형곤",
+    "is_self": true,
+    "notes_en": [],
+    "notes_ko": []
+  },
+  {
+    "id": "cho-sk",
+    "name_en": "Cho, S. K.",
+    "name_ko": "조성권",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "Kyung Hee University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "경희대학교 주거환경학과"
+    ]
+  },
+  {
+    "id": "choi-sh",
+    "name_en": "Choi, S. H.",
+    "name_ko": "최서희",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "LG Electronics"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "LG전자"
+    ]
+  },
+  {
+    "id": "gwak-jh",
+    "name_en": "Gwak, J. H.",
+    "name_ko": "곽정훈",
+    "is_self": false,
+    "notes_en": [
+      "Samsung C\u0026T"
+    ],
+    "notes_ko": [
+      "삼성물산"
+    ]
+  },
+  {
+    "id": "heo-sy",
+    "name_en": "Heo, S. Y.",
+    "name_ko": "허선영",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "heo-tw",
+    "name_en": "Heo, T. W.",
+    "name_ko": "허태욱",
+    "is_self": false,
+    "notes_en": [
+      "Electronics and Telecommunications Research Institute (ETRI)"
+    ],
+    "notes_ko": [
+      "한국전자통신연구원(ETRI)"
+    ]
+  },
+  {
+    "id": "jeong-h",
+    "name_en": "Jeong, H.",
+    "name_ko": "정훈",
+    "is_self": false,
+    "notes_en": [
+      "Electronics and Telecommunications Research Institute (ETRI)"
+    ],
+    "notes_ko": [
+      "한국전자통신연구원(ETRI)"
+    ]
+  },
+  {
+    "id": "jeong-yj",
+    "name_en": "Jeong, Y. J.",
+    "name_ko": "정윤지",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "kim-dw",
+    "name_en": "Kim, D. W.",
+    "name_ko": "김덕우",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "Korea Institute of Civil Engineering and Building Technology (KICT)"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "한국건설기술연구원(KICT)"
+    ]
+  },
+  {
+    "id": "kim-jh",
+    "name_en": "Kim, J. H.",
+    "name_ko": "김진홍",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "kim-sh",
+    "name_en": "Kim, S. H.",
+    "name_ko": "김승현",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "kim-sh-phiko",
+    "name_en": "Kim, S. H.",
+    "name_ko": "김석환",
+    "is_self": false,
+    "notes_en": [
+      "Passive House Institute Korea (PHIKO)"
+    ],
+    "notes_ko": [
+      "한국패시브건축협회(PHIKO)"
+    ]
+  },
+  {
+    "id": "kim-uh",
+    "name_en": "Kim, U. H.",
+    "name_ko": "김의현",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "kim-ys",
+    "name_en": "Kim, Y. S.",
+    "name_ko": "김영섭",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "Samsung Electronics"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "삼성전자"
+    ]
+  },
+  {
+    "id": "ko-yd",
+    "name_en": "Ko, Y. D.",
+    "name_ko": "고윤담",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "Urban Informatics Lab, Stanford University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "Stanford Urban Informatics Lab"
+    ]
+  },
+  {
+    "id": "kwon-so",
+    "name_en": "Kwon, S. O.",
+    "name_ko": "권상오",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "LG Electronics"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "LG전자"
+    ]
+  },
+  {
+    "id": "lee-dh",
+    "name_en": "Lee, D. H.",
+    "name_ko": "이동혁",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "Korea Institute of Civil Engineering and Building Technology (KICT)"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "한국건설기술연구원(KICT)"
+    ]
+  },
+  {
+    "id": "lee-sj",
+    "name_en": "Lee, S. J.",
+    "name_ko": "이승주",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "mun-hj",
+    "name_en": "Mun, H. J.",
+    "name_ko": "문형진",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "mun-jh",
+    "name_en": "Mun, J. H.",
+    "name_ko": "문정현",
+    "is_self": false,
+    "notes_en": [
+      "Samsung C\u0026T"
+    ],
+    "notes_ko": [
+      "삼성물산"
+    ]
+  },
+  {
+    "id": "mun-jy",
+    "name_en": "Mun, J. Y.",
+    "name_ko": "문지예",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "park-ch",
+    "name_en": "Park, C. H.",
+    "name_ko": "박철홍",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "park-cs",
+    "name_en": "Park, C. S.",
+    "name_ko": "박철수",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  },
+  {
+    "id": "park-ji",
+    "name_en": "Park, J. I.",
+    "name_ko": "박종일",
+    "is_self": false,
+    "notes_en": [
+      "Passive House Institute Korea (PHIKO)"
+    ],
+    "notes_ko": [
+      "한국패시브건축협회(PHIKO)"
+    ]
+  },
+  {
+    "id": "park-sh",
+    "name_en": "Park, S. H.",
+    "name_ko": "박성현",
+    "is_self": false,
+    "notes_en": [
+      "Energy X"
+    ],
+    "notes_ko": [
+      "에너지엑스"
+    ]
+  },
+  {
+    "id": "park-ys",
+    "name_en": "Park, Y. S.",
+    "name_ko": "박용성",
+    "is_self": false,
+    "notes_en": [
+      "Samsung C\u0026T"
+    ],
+    "notes_ko": [
+      "삼성물산"
+    ]
+  },
+  {
+    "id": "ra-sj",
+    "name_en": "Ra, S. J.",
+    "name_ko": "라선중",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "Korea Authority of Land \u0026 Infrastructure Safety (KALIS)"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "국토안전관리원(KALIS)"
+    ]
+  },
+  {
+    "id": "shin-hs",
+    "name_en": "Shin, H. S.",
+    "name_ko": "신한솔",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "Electronics and Telecommunications Research Institute (ETRI)"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "한국전자통신연구원(ETRI)"
+    ]
+  },
+  {
+    "id": "shin-yk",
+    "name_en": "Shin, Y. K.",
+    "name_ko": "신유경",
+    "is_self": false,
+    "notes_en": [
+      "Samsung C\u0026T"
+    ],
+    "notes_ko": [
+      "삼성물산"
+    ]
+  },
+  {
+    "id": "urabe-e",
+    "name_en": "Urabe, E.",
+    "name_ko": "Urabe, E.",
+    "is_self": false,
+    "notes_en": [
+      "Samsung C\u0026T"
+    ],
+    "notes_ko": [
+      "삼성물산"
+    ]
+  },
+  {
+    "id": "yoo-ys",
+    "name_en": "Yoo, Y. S.",
+    "name_ko": "유영서",
+    "is_self": false,
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University",
+      "Korea Institute of Civil Engineering and Building Technology (KICT)"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실",
+      "한국건설기술연구원(KICT)"
+    ]
+  },
+  {
+    "id": "kim-h-y",
+    "is_self": false,
+    "name_en": "Kim, H. Y.",
+    "name_ko": "김희윤",
+    "notes_en": [
+      "Building Simulation Lab, Seoul National University"
+    ],
+    "notes_ko": [
+      "서울대학교 건축에너지연구실"
+    ]
+  }
+]

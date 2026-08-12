@@ -1,0 +1,191 @@
+[
+  {
+    "content_en": "Based on a study of 362 sample buildings, using a small set of buildings (three or more) represents the retrofit effect of a building stock better than a single archetype building",
+    "content_ko": "1개의 대표건물 (archetype)보다, 소수 건물(3개 이상)이 해당 건물군의 리트로핏 효과를 잘 표현할 수 있음을, 실제 362개 샘플 건물을 통해 연구.",
+    "end_date": "",
+    "media": [
+      {
+        "caption_en": "LinkedIn Post",
+        "caption_ko": "LinkedIn 게시물",
+        "src": "board-20261003-jbps-paper-featured-on-official-linkedin-01.png"
+      }
+    ],
+    "start_date": "2026-10-03",
+    "title_en": "JBPS Paper Featured on Official LinkedIn",
+    "title_ko": "JBPS 논문이 공식 LinkedIn에서 소개"
+  },
+  {
+    "content_en": "I introduced the philosophy, principles, and usage of EnergyStudio to members of the KIBEA, followed by an in-depth discussion on necessary improvements for the tool's future adoption.",
+    "content_ko": "에너지평가사협회 소속 평가사분들에게 EnergyStudio의 철학과 원리, 사용방법을 소개하고, 향후 도구의 확산을 위해 필요한 개선사항들에 대하여 심도있는 토론을 나누었습니다.",
+    "end_date": "",
+    "media": [
+      {
+        "src": "board-20260911-introducing-energystudio-to-the-korea-institute-01.jpg",
+        "caption_ko": "기념사진"
+      }
+    ],
+    "start_date": "2026-09-11",
+    "title_en": "Introducing EnergyStudio to the Korea Institute of Building Energy Assessors (KIBEA)",
+    "title_ko": "에너지평가사 협회에 EnergyStudio 소개"
+  },
+  {
+    "start_date": "2026-07-21",
+    "end_date": "2026-07-30",
+    "title_en": "Workshop: EnergyStudio Training",
+    "title_ko": "EnergyStudio 교육",
+    "content_en": "I conducted a two-day training session on the use of EnergyStudio for approximately 80 employees of private consulting firms at the Samjeong Education Center located in Seoul Station.",
+    "content_ko": "강원권(춘천 강원대학교, 21일), 수도권(서울 대한건축학회 건축센터, 22일), 충청권(대전 예람인재교육센터, 28일), 호남권(광주 조선대학교, 29일), 영남권(부산 부산대학교, 30일) 등 5일간 전국 5개 권역에서 민간 컨설팅업체 종사자분들, 건축사분들 등을 대상으로 EnergyStudio 사용법 교육을 진행하였습니다",
+    "media": [
+      {
+        "src": "board-시뮬레이터 교육 2607-photo260722.jpeg",
+        "caption_en": "Photo from the training on July 22, 2026",
+        "caption_ko": "교육 현장 (7월 22일, 서울)"
+      }
+    ]
+  },
+  {
+    "start_date": "2026-02-23",
+    "end_date": "2026-02-24",
+    "title_en": "Workshop: EnergyStudio Training",
+    "title_ko": "EnergyStudio 교육",
+    "content_en": "I conducted a two-day training session on the use of EnergyStudio for approximately 80 employees of private consulting firms at the Samjeong Education Center located in Seoul Station.",
+    "content_ko": "서울역에 위치한 삼정교육센터에서 양일간 민간 컨설팅업체 종사자 80여명을 대상으로 EnergyStudio 사용법 교육을 진행하였습니다",
+    "media": [
+      {
+        "src": "board-시뮬레이터 교육 2602-photo260223.jpeg",
+        "caption_en": "Photo from the training on February 23, 2026",
+        "caption_ko": "교육 현장 (2월 23일, 서울)"
+      }
+    ]
+  },
+  {
+    "start_date": "2025-09-15",
+    "end_date": "2025-09-17",
+    "title_en": "Visiting Lund University",
+    "title_ko": "Lund 대학 방문",
+    "content_en": "I visited the research laboratory of Professor Pieter de Wilde at Lund University in Sweden and had the opportunity to share recent research projects with the team.",
+    "content_ko": "스웨덴 Lund 대학의 Pieter de Wilde 교수님 연구실을 방문, 각 연구실에서 최근 진행하고 있는 연구들을 공유하는 시간을 가졌습니다.",
+    "media": [
+      {
+        "src": "board-2025lund방문-단체사진.jpeg",
+        "caption_en": "Commemorative group photo",
+        "caption_ko": "기념사진"
+      },
+      {
+        "src": "board-2025lund방문-발표1.jpeg",
+        "caption_en": "Presentation on the development of a new simulation tool for retrofitting",
+        "caption_ko": "그린리모델링을 위한 신규 시뮬레이션 도구 개발에 대한 발표"
+      },
+      {
+        "src": "board-2025lund방문-발표2.jpeg",
+        "caption_en": "Explanation of a simplified approach to modeling HVAC systems in EnergyPlus",
+        "caption_ko": "EnergyPlus의 설비시스템을 단순하게 입력하는 방안에 대한 설명"
+      },
+      {
+        "src": "board-2025lund방문-토의.jpeg",
+        "caption_en": "Research sharing and discussion with Prof. Pieter de Wilde’s research group",
+        "caption_ko": "Pieter de Wilde 교수님 연구실의 연구 내용 공유 및 토의"
+      }
+    ]
+  },
+  {
+    "start_date": "2023-03-17",
+    "end_date": "2023-04-14",
+    "title_en": "Teaching ClimateStudio-Based Simulation Methods in Basic Studio 3 (2023)",
+    "title_ko": "기초스튜디오3 수업 중 ClimateStudio 활용한 시뮬레이션 방법 교육 (2023)",
+    "content_en": "As part of Basic Studio 3, a second-year undergraduate design course in the Department of Architecture and Architectural Engineering at Seoul National University taught by Prof. John Hong, I taught daylighting and lighting simulation methods using ClimateStudio.",
+    "content_ko": "서울대학교 건축학과 학부 2학년 설계수업 [기초스튜디오3 (담당교수님: 존 홍 교수님)] 수업의 일환으로, ClimateStudio를 활용한 자연채광 및 조명 시뮬레이션 방법을 교육하였습니다.",
+    "media": [
+      {
+        "src": "board-기초스튜디오3 2023-contents.png",
+        "caption_en": "From the course: annual solar irradiation simulation on an exterior wall using ClimateStudio",
+        "caption_ko": "수업 내용 중: ClimateStudio를 활용한 외벽 연간 일사량 시뮬레이션"
+      },
+      {
+        "src": "board-기초스튜디오3 2023-photo230317.png",
+        "caption_en": "Zoom class on March 17, 2023",
+        "caption_ko": "23년 3월 17일 zoom 수업"
+      },
+      {
+        "src": "board-기초스튜디오3 2023-photo230414.jpg",
+        "caption_en": "Class on April 14, 2023 (Room 409, Building 39, Seoul National University)",
+        "caption_ko": "23년 4월 14일 수업 (서울대학교 39동 409호)"
+      }
+    ]
+  },
+  {
+    "start_date": "2022-03-30",
+    "end_date": "2022-04-06",
+    "title_en": "Teaching ClimateStudio-Based Simulation Methods in Architectural Environment Design (2022)",
+    "title_ko": "건축환경설계 수업 중 ClimateStudio 활용한 시뮬레이션 방법 교육 (2022)",
+    "content_en": "As part of Architectural Environment Design, a fourth-year undergraduate graduation-design course in the Department of Architecture and Architectural Engineering at Seoul National University taught by Prof. Cheol-Soo Park, I taught daylighting and lighting simulation methods using ClimateStudio.",
+    "content_ko": "서울대학교 건축학과 학부 4학년 졸업설계 수업 [건축환경설계 (담당교수님: 박철수 교수님)] 수업의 일환으로, ClimateStudio를 활용한 자연채광 및 조명 시뮬레이션 방법을 교육하였습니다.",
+    "media": [
+      {
+        "src": "board-건축환경설계 2022-contents.png",
+        "caption_en": "From the course: Grasshopper code using ClimateStudio",
+        "caption_ko": "수업 내용 중: ClimateStudio를 활용하는 grasshopper 코드"
+      },
+      {
+        "src": "board-건축환경설계 2022-photo220330.jpg",
+        "caption_en": "Class on March 30, 2022 (Room 415, Building 39, Seoul National University)",
+        "caption_ko": "22년 3월 30일 수업 (서울대학교 39동 415호)"
+      },
+      {
+        "src": "board-건축환경설계 2022-photo220406.jpg",
+        "caption_en": "Class on April 6, 2022 (Room 415, Building 39, Seoul National University)",
+        "caption_ko": "22년 4월 6일 수업 (서울대학교 39동 415호)"
+      }
+    ]
+  },
+  {
+    "start_date": "2022-03-19",
+    "end_date": "2022-04-15",
+    "title_en": "Teaching ClimateStudio-Based Simulation Methods in Basic Studio 3 (2022)",
+    "title_ko": "기초스튜디오3 수업 중 ClimateStudio 활용한 시뮬레이션 방법 교육 (2022)",
+    "content_en": "As part of Basic Studio 3, a second-year undergraduate design course in the Department of Architecture and Architectural Engineering at Seoul National University taught by Prof. John Hong, I taught daylighting and lighting simulation methods using ClimateStudio.",
+    "content_ko": "서울대학교 건축학과 학부 2학년 설계수업 [기초스튜디오3 (담당교수님: 존 홍 교수님)] 수업의 일환으로, ClimateStudio를 활용한 자연채광 및 조명 시뮬레이션 방법을 교육하였습니다.",
+    "media": [
+      {
+        "src": "board-기초스튜디오3 2022-photo220319.png",
+        "caption_en": "Zoom class on March 19, 2022",
+        "caption_ko": "22년 3월 19일 zoom 수업"
+      },
+      {
+        "src": "board-기초스튜디오3 2022-photo220415.png",
+        "caption_en": "Zoom class on April 15, 2022",
+        "caption_ko": "22년 4월 15일 zoom 수업"
+      }
+    ]
+  },
+  {
+    "start_date": "2021-03-24",
+    "end_date": "2021-03-31",
+    "title_en": "Teaching ClimateStudio-Based Simulation Methods in Architectural Environment Design (2021)",
+    "title_ko": "건축환경설계 수업 중 ClimateStudio 활용한 시뮬레이션 방법 교육 (2021)",
+    "content_en": "As part of Architectural Environment Design, a fourth-year undergraduate graduation-design course in the Department of Architecture and Architectural Engineering at Seoul National University taught by Prof. Cheol-Soo Park, I taught daylighting and lighting simulation methods using ClimateStudio.",
+    "content_ko": "서울대학교 건축학과 학부 4학년 졸업설계 수업 [건축환경설계 (담당교수님: 박철수 교수님)] 수업의 일환으로, ClimateStudio를 활용한 자연채광 및 조명 시뮬레이션 방법을 교육하였습니다.",
+    "media": [
+      {
+        "src": "board-건축환경설계 2021-contents.png",
+        "caption_en": "From the course: ClimateStudio model structure",
+        "caption_ko": "수업 내용 중: ClimateStudio의 모델 구조"
+      },
+      {
+        "src": "board-건축환경설계 2021-photo210324.jpg",
+        "caption_en": "Zoom class on March 24, 2021",
+        "caption_ko": "21년 3월 24일 zoom 수업"
+      },
+      {
+        "src": "board-건축환경설계 2021-photo210331.jpg",
+        "caption_en": "Zoom class on March 31, 2021",
+        "caption_ko": "21년 3월 31일 zoom 수업"
+      },
+      {
+        "src": "board-건축환경설계 2021-photo210407.jpg",
+        "caption_en": "Zoom class on April 7, 2021",
+        "caption_ko": "21년 4월 7일 zoom 수업"
+      }
+    ]
+  }
+]

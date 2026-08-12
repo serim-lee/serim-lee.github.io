@@ -1,0 +1,566 @@
+{
+  "color_theme": "sand",
+  "conferences": [
+    {
+      "end_date": "2026-02-04",
+      "id": "ASHRAE 2026W",
+      "indexing": [
+        "SCOPUS"
+      ],
+      "location_en": "Caesars Palace, Las Vegas, Nevada, United States",
+      "name_en": "2026 ASHRAE Winter Conference",
+      "name_ko": "",
+      "proceedings_date": "2026",
+      "proceedings_issn": "0001-2505",
+      "proceedings_publisher_en": "ASHRAE (American Society of Heating, Refrigerating and Air-Conditioning Engineers)",
+      "proceedings_series_en": "ASHRAE Transactions",
+      "proceedings_title_en": "ASHRAE Transactions, Vol. 132, Part 1",
+      "start_date": "2026-01-31",
+      "url": "https://www.ashrae.org/conferences/2026-winter-conference"
+    },
+    {
+      "end_date": "2025-12-02",
+      "id": "ISHVAC 2025",
+      "indexing": [],
+      "location_en": "Institute of Industrial Science, The University of Tokyo (4-6-1 Komaba, Meguro-ku), Tokyo, Japan",
+      "name_en": "14th International Symposium on Heating, Ventilation, and Air Conditioning",
+      "name_ko": "",
+      "proceedings_date": "2026-01-21",
+      "proceedings_issn": "2267-1242",
+      "proceedings_publisher_en": "EDP Sciences",
+      "proceedings_series_en": "E3S Web of Conferences",
+      "proceedings_title_en": "E3S Web of Conferences, Volume 689 (2026): 14th International Symposium on Heating, Ventilation and Air Conditioning (ISHVAC 2025)",
+      "start_date": "2025-11-29",
+      "url": "https://ishvac2025.com/"
+    },
+    {
+      "end_date": "2024-12-10",
+      "id": "ASIM 2024",
+      "indexing": [],
+      "location_en": "Osaka University Nakanoshima Center (4-3-53 Nakanoshima, Kita-ku), Osaka, Japan",
+      "name_en": "5th Asia Conference of the International Building Performance Simulation Association",
+      "name_ko": "",
+      "proceedings_date": "2024",
+      "proceedings_publisher_en": "International Building Performance Simulation Association (IBPSA)",
+      "proceedings_series_en": "ASim Conference Proceedings",
+      "proceedings_title_en": "Proceedings of ASim Conference 2024: 5th Asia Conference of IBPSA",
+      "start_date": "2024-12-08",
+      "url": "https://www.asim2024.org/"
+    },
+    {
+      "end_date": "2024-11-09",
+      "id": "SASBE 2024",
+      "indexing": [
+        "SCOPUS"
+      ],
+      "location_en": "Auckland University of Technology (AUT), City Campus, Auckland, New Zealand",
+      "name_en": "International Conference on Smart and Sustainable Built Environment",
+      "name_ko": "",
+      "proceedings_date": "2025-04-19",
+      "proceedings_issn": "2366-2557",
+      "proceedings_publisher_en": "Springer Singapore",
+      "proceedings_series_en": "Lecture Notes in Civil Engineering",
+      "proceedings_title_en": "Proceedings of the International Conference on Smart and Sustainable Built Environment (SASBE2024), Lecture Notes in Civil Engineering, Vol. 591",
+      "start_date": "2024-11-07",
+      "url": "https://gdiacademy.org/sasbe2024/"
+    },
+    {
+      "end_date": "2024-08-09",
+      "id": "ACEEE 2024",
+      "indexing": [],
+      "location_en": "Asilomar Conference Grounds, Pacific Grove, California, United States",
+      "name_en": "2024 ACEEE Summer Study on Energy Efficiency in Buildings",
+      "name_ko": "",
+      "proceedings_date": "2024",
+      "proceedings_publisher_en": "American Council for an Energy-Efficient Economy (ACEEE)",
+      "proceedings_series_en": "ACEEE Summer Study on Energy Efficiency in Buildings Proceedings",
+      "proceedings_title_en": "Proceedings of the 2024 ACEEE Summer Study on Energy Efficiency in Buildings",
+      "start_date": "2024-08-04",
+      "url": "https://www.aceee.org/events/2024-summer-study-energy-efficiency-buildings/"
+    },
+    {
+      "end_date": "2023-09-06",
+      "id": "BS 2023",
+      "indexing": [],
+      "location_en": "Shanghai, China",
+      "name_en": "Building Simulation 2023: 18th International IBPSA Conference and Exhibition",
+      "name_ko": "",
+      "proceedings_issn": "2522-2708",
+      "proceedings_publisher_en": "International Building Performance Simulation Association (IBPSA)",
+      "proceedings_series_en": "Building Simulation Conference Proceedings",
+      "proceedings_title_en": "Proceedings of Building Simulation 2023: 18th Conference of IBPSA",
+      "start_date": "2023-09-04",
+      "url": "https://publications.ibpsa.org/conference/?id=bs2023"
+    },
+    {
+      "end_date": "2023-06-28",
+      "id": "ASHRAE 2023A",
+      "indexing": [
+        "SCOPUS"
+      ],
+      "location_en": "JW Marriott Tampa Water Street (technical program); Tampa Marriott Water Street (conference headquarters), Tampa, Florida, United States",
+      "name_en": "2023 ASHRAE Annual Conference",
+      "name_ko": "",
+      "proceedings_date": "2023",
+      "proceedings_issn": "0001-2505",
+      "proceedings_publisher_en": "ASHRAE (American Society of Heating, Refrigerating and Air-Conditioning Engineers)",
+      "proceedings_series_en": "ASHRAE Transactions",
+      "proceedings_title_en": "ASHRAE Transactions, Vol. 129, Part 2",
+      "start_date": "2023-06-24",
+      "url": "https://www.ashrae.org/conferences/2023-annual-conference-tampa"
+    },
+    {
+      "end_date": "2022-12-14",
+      "id": "WSC 2022",
+      "indexing": [],
+      "location_en": "Marina Bay Sands Hotel, Singapore, Singapore",
+      "name_en": "2022 Winter Simulation Conference",
+      "name_ko": "",
+      "proceedings_date": "2022",
+      "proceedings_title_en": "Proceedings of the 2022 Winter Simulation Conference",
+      "start_date": "2022-12-11",
+      "url": "https://meetings.informs.org/wordpress/wsc2022/"
+    },
+    {
+      "end_date": "2022-06-29",
+      "id": "ASHRAE 2022A",
+      "indexing": [
+        "SCOPUS"
+      ],
+      "location_en": "Sheraton Centre Toronto Hotel and Hilton Toronto, Toronto, Ontario, Canada",
+      "name_en": "2022 ASHRAE Annual Conference",
+      "name_ko": "",
+      "proceedings_date": "2022",
+      "proceedings_issn": "0001-2505",
+      "proceedings_publisher_en": "ASHRAE (American Society of Heating, Refrigerating and Air-Conditioning Engineers)",
+      "proceedings_series_en": "ASHRAE Transactions",
+      "proceedings_title_en": "ASHRAE Transactions, Vol. 128, Part 2",
+      "start_date": "2022-06-25",
+      "url": "https://www.ashrae.org/conferences/2022-annual-conference-toronto"
+    },
+    {
+      "end_date": "2021-12-17",
+      "id": "WSC 2021",
+      "indexing": [],
+      "location_en": "JW Marriott Phoenix Desert Ridge Resort \u0026 Spa; online sessions, Phoenix, Arizona, United States",
+      "name_en": "2021 Winter Simulation Conference",
+      "name_ko": "",
+      "proceedings_date": "2021",
+      "proceedings_title_en": "Proceedings of the 2021 Winter Simulation Conference",
+      "start_date": "2021-12-13",
+      "url": "https://meetings.informs.org/wordpress/wsc2021/"
+    },
+    {
+      "end_date": "2020-12-18",
+      "id": "WSC 2020",
+      "indexing": [],
+      "location_en": "Virtual conference",
+      "name_en": "2020 Winter Simulation Conference",
+      "name_ko": "",
+      "proceedings_date": "2020",
+      "proceedings_title_en": "Proceedings of the 2020 Winter Simulation Conference",
+      "start_date": "2020-12-14",
+      "url": "https://meetings.informs.org/wordpress/wsc2020/"
+    },
+    {
+      "end_date": "2026-10-02",
+      "id": "KIAEBS 2026",
+      "indexing": [],
+      "location_en": "Songdo Convensia, Incheon, Republic of Korea",
+      "location_ko": "송도 컨벤시아, 인천",
+      "name_en": "Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2026",
+      "name_ko": "2026년 한국건축친환경설비학회 추계학술발표대회",
+      "start_date": "2026-10-02",
+      "url": "https://www.kiaebs.org/html/this_event.vm"
+    },
+    {
+      "end_date": "2026-04-30",
+      "id": "AIK Conf. 2026S",
+      "indexing": [],
+      "location_en": "aT Center, Seoul, Republic of Korea",
+      "location_ko": "aT센터, 서울",
+      "name_en": "Autumn Annual Conference of AIK, 2026",
+      "name_ko": "2026년 대한건축학회 정기총회 및 춘계학술발표대회",
+      "proceedings_date": "2026-04",
+      "proceedings_issn": "2287-5786",
+      "proceedings_publisher_en": "Architectural Institute of Korea",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_en": "Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 46, No. 1",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집, 제46권 제1호",
+      "start_date": "2026-04-28",
+      "url": "https://www.aik.or.kr/pages_activity/academic_event.vm"
+    },
+    {
+      "end_date": "2025-11-15",
+      "id": "KIAEBS 2025",
+      "indexing": [],
+      "location_en": "Chungbuk National University, Cheongju, Republic of Korea",
+      "location_ko": "충북대학교 공과대학 합동강의동(E8-2·E8-3), 학연산 공동기술연구원, 청주",
+      "name_en": "Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2025",
+      "name_ko": "2025년 한국건축친환경설비학회 추계학술발표대회",
+      "proceedings_date": "2025-11",
+      "proceedings_publisher_en": "Korean Institute of Architectural Sustainable Environment and Building Systems",
+      "proceedings_publisher_ko": "한국건축친환경설비학회",
+      "proceedings_title_en": "Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems",
+      "proceedings_title_ko": "한국건축친환경설비학회 추계학술발표대회 논문집",
+      "start_date": "2025-11-13",
+      "url": "https://www.kiaebs.org/download/program/25_f_20251204.pdf"
+    },
+    {
+      "end_date": "2025-10-31",
+      "id": "AIK Conf. 2025F",
+      "indexing": [],
+      "location_en": "Science and Technology Convention Center, Seoul, Republic of Korea",
+      "location_ko": "과학기술컨벤션센터(한국과학기술회관), 서울",
+      "name_en": "Fall Annual Conference of the Architectural Institute of Korea, 2025",
+      "name_ko": "대한건축학회 창립80주년기념 학술발표대회(2025년 추계학술발표대회)",
+      "proceedings_date": "2025-10",
+      "proceedings_issn": "2287-5786",
+      "proceedings_publisher_en": "Architectural Institute of Korea",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_en": "Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 45, No. 2",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집, 제45권 제2호",
+      "start_date": "2025-10-29",
+      "url": "https://www.aik.or.kr/pages_activity/academic_event.vm"
+    },
+    {
+      "end_date": "2025-04-25",
+      "id": "AIK Conf. 2025S",
+      "indexing": [],
+      "location_en": "Global Engineering Education Center Convention, Seoul National University, Seoul, Republic of Korea",
+      "location_ko": "서울대학교 글로벌공학교육센터 컨벤션, 서울",
+      "name_en": "General Assembly \u0026 Spring Annual Conference of AIK, 2025",
+      "name_ko": "2025년 대한건축학회 정기총회 및 춘계학술발표대회",
+      "proceedings_date": "2025-04",
+      "proceedings_issn": "2287-5786",
+      "proceedings_publisher_en": "Architectural Institute of Korea",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_en": "Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 45, No. 1",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집, 제45권 제1호",
+      "start_date": "2025-04-23",
+      "url": "https://conf.aik.or.kr/2025s/"
+    },
+    {
+      "end_date": "2024-11-16",
+      "id": "KIAEBS 2024",
+      "indexing": [],
+      "location_en": "Engineering Building 1, Jeju National University, Jeju, Republic of Korea",
+      "location_ko": "제주대학교 공대1호관, 제주",
+      "name_en": "Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2024",
+      "name_ko": "2024년 한국건축친환경설비학회 추계학술발표대회",
+      "proceedings_date": "2024-11",
+      "proceedings_publisher_en": "Korean Institute of Architectural Sustainable Environment and Building Systems",
+      "proceedings_publisher_ko": "한국건축친환경설비학회",
+      "proceedings_title_en": "Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems",
+      "proceedings_title_ko": "한국건축친환경설비학회 추계학술발표대회 논문집",
+      "start_date": "2024-11-14",
+      "url": "https://www.kiaebs.org/sms_new/?_0000_method=event_view\u0026inum=27"
+    },
+    {
+      "end_date": "2024-10-25",
+      "id": "AIK Conf. 2024F",
+      "indexing": [],
+      "location_en": "The-K Hotel Gyeongju, Gyeongju, Republic of Korea",
+      "location_ko": "더케이호텔 경주, 경주",
+      "name_en": "Fall Annual Conference of the Architectural Institute of Korea, 2024",
+      "name_ko": "2024년 대한건축학회 추계학술발표대회",
+      "proceedings_date": "2024-10",
+      "proceedings_issn": "2287-5786",
+      "proceedings_publisher_en": "Architectural Institute of Korea",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_en": "Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 44, No. 2",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집, 제44권 제2호",
+      "start_date": "2024-10-23",
+      "url": "https://www.aik.or.kr/pages_activity/academic_event.vm"
+    },
+    {
+      "end_date": "2024-05-04",
+      "id": "KORMS-KIIE-KSS 2024",
+      "indexing": [],
+      "location_en": "Yeosu Expo Convention Center, Yeosu, Republic of Korea",
+      "location_ko": "여수엑스포컨벤션센터, 여수",
+      "name_en": "2024 Spring Joint Conference of KORMS and KIIE",
+      "name_ko": "2024 한국경영과학회·대한산업공학회·한국시뮬레이션학회 춘계공동학술대회",
+      "proceedings_date": "2024-05",
+      "proceedings_publisher_en": "Korean Institute of Industrial Engineers",
+      "proceedings_publisher_ko": "대한산업공학회",
+      "proceedings_title_en": "Proceedings of the Spring Joint Conference of the Korean Operations Research and Management Science Society, Korean Institute of Industrial Engineers, and Korea Society for Simulation",
+      "proceedings_title_ko": "대한산업공학회 춘계공동학술대회 논문집",
+      "start_date": "2024-05-02",
+      "url": "https://kiie.org/Conference/ConferenceView.asp?AC=0\u0026CODE=CC20240101\u0026CpPage=245"
+    },
+    {
+      "end_date": "2022-11-25",
+      "id": "KIAEBS 2022",
+      "indexing": [],
+      "location_en": "Sangnam Institute of Management, Yonsei University, Seoul, Republic of Korea",
+      "location_ko": "연세대학교 상남경영관, 서울",
+      "name_en": "Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2022",
+      "name_ko": "2022년 한국건축친환경설비학회 추계학술발표대회",
+      "proceedings_date": "2022-11",
+      "proceedings_publisher_en": "Korean Institute of Architectural Sustainable Environment and Building Systems",
+      "proceedings_publisher_ko": "한국건축친환경설비학회",
+      "proceedings_title_en": "Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems",
+      "proceedings_title_ko": "한국건축친환경설비학회 추계학술발표대회 논문집",
+      "start_date": "2022-11-25",
+      "url": "https://www.kiaebs.org/html/last_event.vm"
+    },
+    {
+      "end_date": "2022-10-28",
+      "id": "AIK Conf. 2022F",
+      "indexing": [],
+      "location_en": "Phoenix Jeju Seopjikoji, Seogwipo, Republic of Korea",
+      "location_ko": "휘닉스 제주 섭지코지, 서귀포",
+      "name_en": "Fall Annual Conference of the Architectural Institute of Korea, 2022",
+      "name_ko": "2022년 대한건축학회 추계학술발표대회",
+      "proceedings_date": "2022-10",
+      "proceedings_issn": "2287-5786",
+      "proceedings_publisher_en": "Architectural Institute of Korea",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_en": "Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 42, No. 2",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집, 제42권 제2호",
+      "start_date": "2022-10-26",
+      "url": "https://conf.aik.or.kr/download/aikconf2022f_schedule_20221024.pdf"
+    },
+    {
+      "end_date": "2022-04-29",
+      "id": "AIK Conf. 2022S",
+      "indexing": [],
+      "location_en": "The-K Hotel Seoul, Seoul, Republic of Korea",
+      "location_ko": "더케이호텔 서울, 서울",
+      "name_en": "Spring Annual Conference of AIK, 2022",
+      "name_ko": "2022년 대한건축학회 춘계학술발표대회",
+      "proceedings_date": "2022-04",
+      "proceedings_issn": "2287-5786",
+      "proceedings_publisher_en": "Architectural Institute of Korea",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_en": "Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 42, No. 1",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집, 제42권 제1호",
+      "start_date": "2022-04-28",
+      "url": "https://www.gnu.ac.kr/arch/na/ntt/selectNttInfo.do?bbsId=2084\u0026mi=5710\u0026nttSn=2136385"
+    },
+    {
+      "end_date": "2021-10-30",
+      "id": "AIK Conf. 2021F",
+      "indexing": [],
+      "location_en": "Yeosu Expo Convention Center and Venezia Hotel, Yeosu, Republic of Korea; hybrid",
+      "location_ko": "여수엑스포컨벤션센터·베네치아호텔, 여수 / 온라인 병행",
+      "name_en": "Fall Annual Conference of the Architectural Institute of Korea, 2021",
+      "name_ko": "2021년 대한건축학회 추계학술발표대회",
+      "proceedings_date": "2021-10",
+      "proceedings_issn": "2287-5786",
+      "proceedings_publisher_en": "Architectural Institute of Korea",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_en": "Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 41, No. 2",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집, 제41권 제2호",
+      "start_date": "2021-10-27",
+      "url": "https://conf.aik.or.kr/download/aik_conference_2021f.pdf"
+    },
+    {
+      "end_date": "2021-04-23",
+      "id": "AIK Conf. 2021S",
+      "indexing": [],
+      "location_en": "International Convention Center Jeju and Jeju Booyoung Hotel \u0026 Resort, Seogwipo, Republic of Korea",
+      "location_ko": "제주국제컨벤션센터·제주부영호텔\u0026리조트, 서귀포",
+      "name_en": "General Assembly \u0026 Spring Annual Conference of AIK, 2021",
+      "name_ko": "2021년 대한건축학회 정기총회 및 춘계학술발표대회",
+      "proceedings_date": "2021-04",
+      "proceedings_issn": "2287-5786",
+      "proceedings_publisher_en": "Architectural Institute of Korea",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_en": "Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 41, No. 1",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집, 제41권 제1호",
+      "start_date": "2021-04-21",
+      "url": "https://www.aik.or.kr/board/board_view.jsp?ncode=a001\u0026num=2107\u0026page=96"
+    },
+    {
+      "end_date": "2020-11-21",
+      "id": "KIAEBS 2020",
+      "indexing": [],
+      "location_en": "Architecture Building, Korea National University of Transportation, Chungju, Republic of Korea; hybrid",
+      "location_ko": "한국교통대학교 건축관, 충주 / 온라인 병행",
+      "name_en": "Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2020",
+      "name_ko": "2020년 한국건축친환경설비학회 추계학술발표대회",
+      "proceedings_date": "2020-11",
+      "proceedings_publisher_en": "Korean Institute of Architectural Sustainable Environment and Building Systems",
+      "proceedings_publisher_ko": "한국건축친환경설비학회",
+      "proceedings_title_en": "Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems",
+      "proceedings_title_ko": "한국건축친환경설비학회 추계학술발표대회 논문집",
+      "start_date": "2020-11-19",
+      "url": "https://www.kiaebs.org/download/program/20_f.pdf"
+    },
+    {
+      "end_date": "2020-10-30",
+      "id": "AIK Conf. 2020F",
+      "indexing": [],
+      "location_en": "Yeosu Expo Convention Center, Yeosu, Republic of Korea; online presentation",
+      "location_ko": "여수엑스포컨벤션센터, 여수 / 온라인 발표",
+      "name_en": "Fall Annual Conference of the Architectural Institute of Korea, 2020",
+      "name_ko": "2020년 대한건축학회 추계학술발표대회",
+      "proceedings_date": "2020-10",
+      "proceedings_issn": "2287-5786",
+      "proceedings_publisher_en": "Architectural Institute of Korea",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_en": "Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 40, No. 2",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집, 제40권 제2호",
+      "start_date": "2020-10-26",
+      "url": "https://www.aik.or.kr/board/board_view.jsp?ncode=a003\u0026num=130\u0026page=1"
+    },
+    {
+      "end_date": "2026-10-23",
+      "id": "conference-bcdd77f0-d004-47a3-87e2-59f76cb9ad7c",
+      "indexing": [],
+      "location_ko": "대전컨벤션센터, 대전",
+      "name_en": "Autumn Annual Conference of AIK, 2026",
+      "name_ko": "2026년 대한건축학회 추계학술발표대회",
+      "proceedings_date": "2026-10-21",
+      "proceedings_issue": "2",
+      "proceedings_publisher_ko": "대한건축학회",
+      "proceedings_title_ko": "대한건축학회 학술발표대회 논문집",
+      "proceedings_volume": "46",
+      "start_date": "2026-10-21",
+      "url": "https://conf.aik.or.kr/2026f/"
+    }
+  ],
+  "custom_themes": {
+    "custom-1": {
+      "base_theme": "sage",
+      "name": "사용자 지정 1"
+    },
+    "custom-2": {
+      "base_theme": "sage",
+      "name": "사용자 지정 2"
+    },
+    "custom-3": {
+      "base_theme": "sage",
+      "name": "사용자 지정 3"
+    }
+  },
+  "cv_sections": [
+    "education",
+    "projects",
+    "publications",
+    "software",
+    "awards",
+    "academic_activities",
+    "patents",
+    "scholarships"
+  ],
+  "editor_shortcuts": {
+    "citation_update": "Ctrl+U",
+    "push": "Ctrl+P",
+    "revert": "Ctrl+Shift+R",
+    "save": "Ctrl+S",
+    "settings": "Ctrl+Comma"
+  },
+  "hidden_cv_sections": [
+    "teaching",
+    "experience",
+    "certifications",
+    "skills"
+  ],
+  "hidden_main_page_sections": [
+    "teaching",
+    "experience",
+    "certifications",
+    "skills"
+  ],
+  "hidden_web_pages": [
+    "software"
+  ],
+  "journals": [
+    {
+      "id": "energy-and-buildings",
+      "indexing": [
+        "SCIE"
+      ],
+      "issn": "0378-7788",
+      "name_en": "Energy and Buildings",
+      "name_ko": "",
+      "publisher_en": "Elsevier",
+      "url": "https://www.sciencedirect.com/journal/energy-and-buildings"
+    },
+    {
+      "id": "journal-of-building-performance-simulation",
+      "indexing": [
+        "SCIE"
+      ],
+      "issn": "1940-1493",
+      "name_en": "Journal of Building Performance Simulation",
+      "name_ko": "",
+      "publisher_en": "Taylor \u0026 Francis",
+      "url": "https://www.tandfonline.com/journals/tbps20"
+    },
+    {
+      "id": "science-and-technology-for-the-built-environment",
+      "indexing": [
+        "SCIE"
+      ],
+      "issn": "2374-4731",
+      "name_en": "Science and Technology for the Built Environment",
+      "name_ko": "",
+      "publisher_en": "Taylor \u0026 Francis",
+      "url": "https://www.tandfonline.com/journals/uhvc21"
+    },
+    {
+      "id": "building-and-environment",
+      "indexing": [
+        "SCIE"
+      ],
+      "issn": "0360-1323",
+      "name_en": "Building and Environment",
+      "name_ko": "",
+      "publisher_en": "Elsevier",
+      "url": "https://www.sciencedirect.com/journal/building-and-environment"
+    },
+    {
+      "id": "journal-of-the-architectural-institute-of-korea",
+      "indexing": [
+        "SCOPUS"
+      ],
+      "issn": "2733-6247",
+      "name_en": "Journal of the Architectural Institute of Korea",
+      "name_ko": "대한건축학회논문집",
+      "publisher_en": "Architectural Institute of Korea",
+      "publisher_ko": "대한건축학회",
+      "url": "https://www.aik.or.kr/pages_archive/aik_journal_list.vm?ncode=p002d"
+    }
+  ],
+  "main_page_sections": [
+    "education",
+    "awards",
+    "academic_activities",
+    "patents",
+    "scholarships"
+  ],
+  "topic_fallback": {
+    "label_en": "Other",
+    "label_ko": "기타"
+  },
+  "topics": [
+    {
+      "color": "#287d7b",
+      "id": "retrofit",
+      "label_en": "Retrofit",
+      "label_ko": "그린리모델링"
+    },
+    {
+      "color": "#6d4f45",
+      "id": "building-energy-simulation",
+      "label_en": "Building Energy Simulation",
+      "label_ko": "건물에너지 시뮬레이션"
+    },
+    {
+      "color": "#c74b41",
+      "id": "hvac-modeling-control",
+      "label_en": "HVAC Modeling and Control",
+      "label_ko": "HVAC 모델링 및 제어"
+    },
+    {
+      "color": "#d78943",
+      "id": "daylighting-lighting-control",
+      "label_en": "Daylighting and Lighting Control",
+      "label_ko": "자연채광 및 조명제어"
+    }
+  ]
+}

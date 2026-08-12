@@ -1,0 +1,42 @@
+{
+  "conference_service": [],
+  "editorial_service": [],
+  "invited_talks": [
+    {
+      "date": "2025-01-14",
+      "event_en": "2025 Green Building Center Work Sharing Workshop (Green Building Project \u0026 Research Exchange Meeting)",
+      "event_ko": "2025년 녹색건축센터 업무 공유 워크샵 (녹색건축관련 사업•연구 교류회)",
+      "topic_en": "Building energy 'Why?' analysis for GR business 'How' decision-making",
+      "topic_ko": "건물 에너지 why? 분석을 통한 GR사업 How 의사결정",
+      "visible_in_CV": true
+    }
+  ],
+  "professional_service": [],
+  "reviews": [
+    {
+      "completed_dates": [
+        "2023-05-30",
+        "2024-07-03"
+      ],
+      "journal_en": "Journal of Building Performance Simulation",
+      "journal_ko": "",
+      "visible_in_CV": true
+    },
+    {
+      "completed_dates": [
+        "2026-02-18"
+      ],
+      "journal_en": "Energy and Buildings",
+      "journal_ko": "",
+      "visible_in_CV": true
+    },
+    {
+      "completed_dates": [
+        "2026-01-12"
+      ],
+      "journal_en": "Energy Efficiency",
+      "journal_ko": "",
+      "visible_in_CV": true
+    }
+  ]
+}

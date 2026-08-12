@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ko" class="fork-guide-document">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GitHub 저장소 Fork, GitHub Desktop Clone, Profile-Editor 편집과 Push, GitHub Pages 배포 및 업데이트 절차.">
+  <meta name="theme-color" content="#f7f8f5">
+  <title>개인 홈페이지 설정</title>
+  <link rel="stylesheet" href="app/assets/css/styles.css">
+  <link rel="stylesheet" href="app/assets/css/fork-guide.css">
+  <script defer src="app/assets/js/color-themes.js"></script>
+  <script defer src="app/assets/js/data-version.js"></script>
+  <script defer src="app/assets/js/data.js"></script>
+  <script defer src="app/assets/js/fork-guide.js"></script>
+</head>
+<body class="fork-guide-page">
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="digit-1" viewBox="0 0 20 20"><path d="M8 7 10 5v10m-3 0h6" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="digit-2" viewBox="0 0 20 20"><path d="M6.5 7.75C6.5 4.083333 13.5 4.083333 13.5 7.75C13.5 10 6.5 11.5 6.5 15H13.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="digit-3" viewBox="0 0 20 20"><path d="M6.5 5H10.5C14.5 5 14.5 10 10.5 10H8.5M10.5 10C14.5 10 14.5 15 10.5 15H6.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-fork" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="6" cy="4" r="2"/><circle cx="18" cy="4" r="2"/><circle cx="12" cy="20" r="2"/><path d="M6 6v3c0 3 6 2 6 6v3m6-12v3c0 3-6 2-6 6"/></g></symbol>
+    <symbol id="icon-undo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></g></symbol>
+    <symbol id="icon-citation" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 8A9 9 0 0 0 5 5L3 7m0-4v4h4M3.5 16A9 9 0 0 0 19 19l2-2m0 4v-4h-4M8 10h3v3H8zm5 0h3v3h-3zM11 13l-2 2m7-2-2 2"/></g></symbol>
+    <symbol id="icon-save" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h12l4 4v14H3V3zM7 3v6h10V3M7 21v-8h10v8M14 4v3"/></g></symbol>
+    <symbol id="icon-push" viewBox="0 0 28 28"><path fill="currentColor" d="M7 1 0 9h4v13h6V9h4z"/><g transform="translate(12 11)"><path fill="currentColor" d="m8 0 8 8-8 8-8-8z"/><path fill="none" stroke="var(--color-accent,#305744)" stroke-width="1.7" d="m4 4 4 4v5m0-5 4 4"/><g fill="var(--color-accent,#305744)"><circle cx="4" cy="4" r="1.4"/><circle cx="8" cy="13" r="1.4"/><circle cx="12" cy="12" r="1.4"/></g></g></symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7M5 9v11h5v-6h4v6h5V9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="win-folder" viewBox="0 0 24 24"><path d="M2 5a2 2 0 0 1 2-2h6l2 3h8a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z" fill="#dca72c"/><path d="M2 9h20v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z" fill="#f4c85b"/><path d="M3 9h18" stroke="#ffe7a2"/></symbol>
+    <symbol id="win-document" viewBox="0 0 24 24"><path d="M5 2h9l5 5v15H5z" fill="#fff" stroke="#a8a8a8"/><path d="M14 2v6h5M8 12h8m-8 4h8" fill="none" stroke="#7896ac"/></symbol>
+    <symbol id="win-app" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2" fill="#fff" stroke="#5a8aad"/><path d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4H2z" fill="#1686d9"/><path d="M6 12h4v5H6zm6 0h6v2h-6zm0 4h6v1h-6z" fill="#79b9e8"/></symbol>
+    <symbol id="win-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m15 15 6 6" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="win-cut" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/><path d="m4 3 12 12M20 3 8 15"/></g></symbol>
+    <symbol id="win-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="3" width="11" height="14" rx="1.5"/><path d="M15 20H6a1 1 0 0 1-1-1V8"/></g></symbol>
+    <symbol id="win-paste" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="14" height="17" rx="1.5"/><rect x="8" y="2" width="8" height="5" rx="1" fill="#fff"/></g></symbol>
+    <symbol id="win-rename" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M10 3h4m-2 0v18m-2 0h4M8 7H3v10h5m8-10h5v10h-5"/></g></symbol>
+    <symbol id="win-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H5v13h14v-8M11 13 21 3m-6 0h6v6"/></g></symbol>
+    <symbol id="win-delete" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7"/></g></symbol>
+    <symbol id="win-pc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="1"/><path d="M9 17v4m6-4v4M6 21h12"/></g></symbol>
+    <symbol id="win-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13m-5-5 5 5 5-5M4 16v5h16v-5"/></g></symbol>
+    <symbol id="win-picture" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="8" r="2" fill="currentColor"/><path d="m4 18 5-5 4 3 3-5 4 7" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  </svg>
+  <a class="skip-link" href="#guide" data-i18n="skip">안내 본문으로 건너뛰기</a>
+  <header class="container guide-home">
+    <a class="brand" href="index.html?lang=ko" aria-label="메인으로 돌아가기" title="메인으로 돌아가기" data-i18n-aria="home" data-i18n-title="home">
+      <svg class="brand-home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="m3 10 9-7 9 7M5 9v11h5v-6h4v6h5V9"/>
+      </svg>
+      <span class="brand-copy"><strong data-profile="name"></strong></span>
+    </a>
+    <div class="language-switch" role="group" aria-label="언어" data-i18n-aria="language">
+      <button type="button" data-lang-switch="en" aria-pressed="false">EN</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" data-lang-switch="ko" aria-pressed="true">KR</button>
+    </div>
+  </header>
+  <main class="container guide-main">
+    <aside class="setup" aria-label="설치 준비" data-i18n-aria="setupLabel">
+      <div>
+        <p class="small-title" data-i18n="setupTitle">설치 준비 · Windows</p>
+        <ol class="actions setup-steps">
+          <li data-i18n-html="setupAccount"><a href="https://github.com/signup">GitHub</a>에서 계정을 만들고 로그인합니다.</li>
+          <li data-i18n-html="setupDesktop"><a href="https://desktop.github.com/download/">GitHub Desktop</a>의 Windows 설치 파일을 다운로드해 설치합니다. 앱을 실행하고 GitHub 계정으로 로그인합니다.</li>
+          <li data-i18n-html="setupGit"><a href="https://git-scm.com/downloads/win">Git for Windows</a> 설치 파일을 다운로드해 설치합니다.</li>
+        </ol>
+      </div>
+      <div class="personalizer"><label class="small-title" for="github-username" data-i18n="usernameLabel">GitHub 사용자명</label><div class="name-input" id="username-shell"><input id="github-username" type="text" placeholder="your-name" maxlength="39" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="username-help"><span>.github.io</span></div><span id="username-help" aria-live="polite" data-i18n="usernameHelp">GitHub 로그인에 사용하는 계정명</span></div>
+    </aside>
+    <div class="guide-layout" id="guide">
+      <nav class="toc" aria-label="설치·업데이트 안내 목차" data-i18n-aria="tocLabel"><ol><li><a href="#fork" aria-current="step" data-i18n-html="tocFork"><span>01</span> Fork</a></li><li><a href="#clone" data-i18n-html="tocClone"><span>02</span> Clone</a></li><li><a href="#edit" data-i18n-html="tocEdit"><span>03</span> 프로필 편집</a></li><li><a href="#push" data-i18n-html="tocPush"><span>04</span> 저장·Push</a></li><li><a href="#publish" data-i18n-html="tocPublish"><span>05</span> Pages 설정</a></li><li><a href="#update" data-i18n-html="tocUpdate"><span>06</span> 업데이트</a></li></ol></nav>
+      <div id="steps">
+        <section class="step" id="fork" aria-labelledby="fork-title">
+          <div class="step-heading"><span class="step-number">01</span><h2 id="fork-title" data-i18n="forkTitle">저장소 Fork</h2></div>
+          <div class="step-grid">
+            <div class="instructions" data-i18n-html="forkInstructions">
+              <p><strong>Fork</strong>로 원본 저장소를 내 계정에 복사합니다. Fork한 저장소는 Public이며, push한 파일은 공개됩니다.</p>
+              <ol class="actions">
+                <li><a href="https://github.com/Gonie-Gonie/Gonie-Gonie.github.io">원본 저장소</a>를 열고, 오른쪽 위의 <span class="ui">Fork</span>를 누릅니다.</li>
+                <li><span class="ui">Owner</span>에 내 계정을 선택하고, <span class="ui">Repository name</span>을 <code data-example="repo">your-name.github.io</code>로 바꿉니다.</li>
+                <li><span class="ui">Copy the main branch only</span>를 체크한 상태로 <span class="ui">Create fork</span>를 누릅니다.</li>
+              </ol>
+              <div class="note"><code>your-name.github.io</code>의 <code>your-name</code>은 GitHub 사용자명입니다. 같은 이름의 저장소가 이미 있으면 기존 개인 사이트의 사용 여부를 확인합니다.</div>
+            </div>
+            <div class="visuals">
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="원본 저장소의 Fork 버튼 다이어그램, 좌우 스크롤 가능" data-i18n-aria="forkDiagram"><div class="mock">
+                  <div class="browser-bar"><span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="address">github.com/Gonie-Gonie/Gonie-Gonie.github.io</span></div>
+                  <div class="repo-top"><span class="repo-name">Gonie-Gonie / <strong>Gonie-Gonie.github.io</strong></span><span class="mock-btn target"><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 1" data-i18n-aria="step1"><use href="#digit-1"/></svg><svg aria-hidden="true"><use href="#icon-fork"/></svg> Fork</span></div>
+                  <div class="repo-tabs"><span class="selected">&lt; &gt; Code</span><span>Issues</span><span>Pull requests</span><span>Actions</span><span>Insights</span></div>
+                </div></div>
+                <figcaption data-i18n-html="forkCaption"><span class="figure-id">01-A</span>원본 저장소 → <strong>Fork</strong></figcaption>
+              </figure>
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="Create a new fork 화면의 Owner, Repository name, Create fork 버튼 다이어그램" data-i18n-aria="forkFormDiagram"><div class="mock fork-form">
+                  <h3>Create a new fork</h3><p class="mock-subtitle">Gonie-Gonie / Gonie-Gonie.github.io</p>
+                  <div class="form-pair"><div><span class="mock-label">Owner *</span><span class="mock-field"><span data-example="user">your-name</span> ▾</span></div><span class="form-slash">/</span><div><span class="mock-label"><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 2" data-i18n-aria="step2"><use href="#digit-2"/></svg>Repository name *</span><span class="mock-field white target" data-example="repo">your-name.github.io</span></div></div>
+                  <span class="mock-label">Description</span><span class="mock-field white">My research portfolio</span><div class="mock-check"><span class="tick" aria-hidden="true">✓</span>Copy the main branch only</div><div class="mock-footer"><span class="mock-btn green target"><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 3" data-i18n-aria="step3"><use href="#digit-3"/></svg>Create fork</span></div>
+                </div></div>
+                <figcaption data-i18n-html="forkFormCaption"><span class="figure-id">01-B</span><strong>Owner</strong>와 <strong>Repository name</strong>을 확인하고 <strong>Create fork</strong>를 누릅니다.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="step" id="clone" aria-labelledby="clone-title">
+          <div class="step-heading"><span class="step-number">02</span><h2 id="clone-title" data-i18n="cloneTitle">GitHub Desktop으로 Clone</h2></div>
+          <div class="step-grid">
+            <div class="instructions" data-i18n-html="cloneInstructions">
+              <p><strong>Clone</strong>으로 원격 저장소와 연결된 작업 폴더를 PC에 생성합니다.</p>
+              <ol class="actions">
+                <li><strong>내 계정의 fork</strong>에서 초록색 <span class="ui">Code</span> → <span class="ui">Open with GitHub Desktop</span>을 선택합니다. 브라우저가 앱 실행을 물으면 GitHub Desktop으로 엽니다.</li>
+                <li><span class="ui">Clone a repository</span> 창에서 저장소 주소가 내 계정인지 확인합니다. <span class="ui">Local path</span>는 파일을 보관할 폴더입니다.</li>
+                <li><span class="ui">Clone</span>을 누릅니다. 용도를 묻는 창이 나타나면 <span class="ui">For my own purposes</span> → <span class="ui">Continue</span>를 선택합니다.</li>
+              </ol>
+              
+            </div>
+            <div class="visuals">
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="내 fork의 Code 메뉴에서 Open with GitHub Desktop을 고르는 다이어그램" data-i18n-aria="cloneDiagram"><div class="mock">
+                  <div class="browser-bar"><span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="address">github.com/<span data-example="user">your-name</span>/<span data-example="repo">your-name.github.io</span></span></div>
+                  <div class="repo-top"><span class="repo-name"><span data-example="user">your-name</span> / <strong data-example="repo">your-name.github.io</strong></span><span>Public</span></div>
+                  <div class="code-stage"><div class="code-toolbar"><span class="mock-btn">⑂ main ▾</span><span class="mock-btn green target"><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 1" data-i18n-aria="step1"><use href="#digit-1"/></svg>&lt; &gt; Code ▾</span></div><div class="file-list"><div><span class="file-icon">▱</span>app</div><div><span class="file-icon">▱</span>data</div><div><span class="file-icon">▱</span>editor</div><div><span class="file-icon">▧</span>Profile-Editor.exe</div></div><div class="code-menu"><div class="menu-heading">&lt; &gt; Local</div><div class="menu-tabs"><strong>HTTPS</strong><span>SSH</span><span>GitHub CLI</span></div><div class="menu-url">https://github.com/<span data-example="user">your-name</span>/<span data-example="repo">your-name.github.io</span>.git</div><div class="menu-option active target">Open with GitHub Desktop</div><div class="menu-option">Download ZIP</div></div></div>
+                </div></div>
+                <figcaption data-i18n-html="cloneCaption"><span class="figure-id">02-A</span>내 fork → <strong>Code → Open with GitHub Desktop</strong></figcaption>
+              </figure>
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="GitHub Desktop의 Clone a repository 창과 Clone 버튼 다이어그램" data-i18n-aria="cloneDialogDiagram"><div class="mock">
+                  <div class="app-titlebar"><span>GitHub Desktop</span><span class="window-controls" aria-hidden="true">− □ ×</span></div>
+                  <div class="desktop-dialog"><h3>Clone a repository</h3><div class="dialog-tabs"><span>GitHub.com</span><span>GitHub Enterprise</span><span class="selected">URL</span></div><span class="mock-label">Repository URL or GitHub username and repository</span><span class="mock-field white">https://github.com/<span data-example="user">your-name</span>/<span data-example="repo">your-name.github.io</span>.git</span><span class="mock-label" style="margin-top:14px">Local path</span><div class="path-row"><span class="mock-field">C:\GitHub\<span data-example="repo">your-name.github.io</span></span><span class="mock-btn">Choose…</span></div><div class="mock-footer"><span class="mock-btn">Cancel</span><span class="mock-btn blue target"><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 3" data-i18n-aria="step3"><use href="#digit-3"/></svg>Clone</span></div></div>
+                </div></div>
+                <figcaption data-i18n-html="cloneDialogCaption"><span class="figure-id">02-B</span><strong>Local path</strong>: Clone할 작업 폴더 경로</figcaption>
+              </figure>
+              <details><summary data-i18n="cloneFallbackTitle">Fork 용도 선택</summary><div class="details-body"><p data-i18n-html="cloneFallbackBody">제목이 <strong>How are you planning to use this fork?</strong>인 창에서 <strong>For my own purposes</strong>를 선택한 뒤 <strong>Continue</strong>를 누릅니다.</p></div></details>
+            </div>
+          </div>
+        </section>
+
+        <section class="step" id="edit" aria-labelledby="edit-title">
+          <div class="step-heading"><span class="step-number">03</span><h2 id="edit-title" data-i18n="editTitle">Profile-Editor로 편집</h2></div>
+          <div class="step-grid">
+            <div class="instructions" data-i18n-html="editInstructions">
+              <ol class="actions">
+                <li>Clone한 폴더를 탐색기에서 열고 <span class="ui">Profile-Editor.exe</span>를 실행합니다. <code>data</code> 폴더 옆에 있는 파일입니다.</li>
+                <li>왼쪽 <span class="ui">프로필</span> 탭의 <span class="ui">기본 정보</span>에서 이름·약력·소속·직함·위치를 바꿉니다. 영문·국문을 각각 입력하고, 아래의 연락처와 사진도 교체합니다.</li>
+                <li><span class="ui">논문</span>, <span class="ui">프로젝트</span>, <span class="ui">소프트웨어</span> 등 다른 탭의 내용도 내 정보로 수정하거나 불필요한 항목을 삭제합니다.</li>
+              </ol>
+              <div class="note">원본의 프로필·논문·경력·연락처·사진·첨부파일을 본인의 내용으로 교체합니다. <span class="ui">사람</span> 탭의 본인 저자 정보도 수정합니다.</div>
+            </div>
+            <div class="visuals">
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="Windows 11 파일 탐색기에서 Profile-Editor.exe 실행" data-i18n-aria="editExplorerDiagram"><div class="mock windows-explorer">
+                  <div class="win-tabs"><div class="win-tab"><svg class="win-file-icon" aria-hidden="true"><use href="#win-folder"/></svg><span class="tab-name" data-example="repo">your-name.github.io</span><span class="tab-close" aria-hidden="true">×</span></div><span class="win-plus" aria-hidden="true">＋</span><div class="win-controls" aria-hidden="true"><span>−</span><span><svg viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9" fill="none" stroke="currentColor"/></svg></span><span>×</span></div></div>
+                  <div class="win-location"><div class="win-history" aria-hidden="true"><span>←</span><span class="disabled">→</span><span>↑</span><span>⟳</span></div><div class="win-address"><svg class="win-file-icon" aria-hidden="true"><use href="#win-folder"/></svg><span class="folder-path" data-i18n-html="explorerFolderPath">로컬 디스크 (C:) <span aria-hidden="true">›</span> GitHub <span aria-hidden="true">›</span> <span data-example="repo">your-name.github.io</span></span><span aria-hidden="true">⌄</span></div><div class="win-search"><span data-i18n-html="explorerSearch"><span data-example="repo">your-name.github.io</span> 검색</span><svg aria-hidden="true"><use href="#win-search"/></svg></div></div>
+                  <div class="win-commands"><span class="win-command" data-i18n-html="explorerNew"><span aria-hidden="true">⊕</span>새로 만들기⌄</span><span class="win-separator" aria-hidden="true"></span><span class="win-command" title="잘라내기" data-i18n-title="explorerCutTitle"><svg aria-label="잘라내기" data-i18n-aria="explorerCutLabel"><use href="#win-cut"/></svg></span><span class="win-command" title="복사" data-i18n-title="explorerCopyTitle"><svg aria-label="복사" data-i18n-aria="explorerCopyLabel"><use href="#win-copy"/></svg></span><span class="win-command" title="붙여넣기" data-i18n-title="explorerPasteTitle"><svg aria-label="붙여넣기" data-i18n-aria="explorerPasteLabel"><use href="#win-paste"/></svg></span><span class="win-command" title="이름 바꾸기" data-i18n-title="explorerRenameTitle"><svg aria-label="이름 바꾸기" data-i18n-aria="explorerRenameLabel"><use href="#win-rename"/></svg></span><span class="win-command" title="공유" data-i18n-title="explorerShareTitle"><svg aria-label="공유" data-i18n-aria="explorerShareLabel"><use href="#win-share"/></svg></span><span class="win-command" title="삭제" data-i18n-title="explorerDeleteTitle"><svg aria-label="삭제" data-i18n-aria="explorerDeleteLabel"><use href="#win-delete"/></svg></span><span class="win-separator" aria-hidden="true"></span><span class="win-command" data-i18n="explorerSort">정렬⌄</span><span class="win-command" data-i18n="explorerView">보기⌄</span><span aria-hidden="true">···</span></div>
+                  <div class="win-pane"><div class="win-nav"><span data-i18n-html="explorerHome"><svg aria-hidden="true"><use href="#icon-home"/></svg>홈</span><span data-i18n-html="explorerGallery"><svg aria-hidden="true"><use href="#win-picture"/></svg>갤러리</span><span class="nav-group" data-i18n-html="explorerDesktop"><svg aria-hidden="true"><use href="#win-pc"/></svg>바탕 화면</span><span data-i18n-html="explorerDownloads"><svg aria-hidden="true"><use href="#win-download"/></svg>다운로드</span><span data-i18n-html="explorerDocuments"><svg aria-hidden="true"><use href="#win-document"/></svg>문서</span><span data-i18n-html="explorerPictures"><svg aria-hidden="true"><use href="#win-picture"/></svg>사진</span><span class="nav-group" data-i18n-html="explorerThisPC"><svg aria-hidden="true"><use href="#win-pc"/></svg>내 PC</span></div><div class="win-list">
+                    <div class="win-row win-list-head"><span data-i18n-html="explorerName">이름 <span aria-hidden="true">⌃</span></span><span data-i18n="explorerDate">수정한 날짜</span><span data-i18n="explorerType">유형</span></div>
+                    <div class="win-row"><span><svg class="win-file-icon" aria-hidden="true"><use href="#win-folder"/></svg>app</span><span>…</span><span data-i18n="explorerFolderType">파일 폴더</span></div>
+                    <div class="win-row"><span><svg class="win-file-icon" aria-hidden="true"><use href="#win-folder"/></svg>data</span><span>…</span><span data-i18n="explorerFolderType">파일 폴더</span></div>
+                    <div class="win-row"><span><svg class="win-file-icon" aria-hidden="true"><use href="#win-folder"/></svg>editor</span><span>…</span><span data-i18n="explorerFolderType">파일 폴더</span></div>
+                    <div class="win-row"><span><svg class="win-file-icon" aria-hidden="true"><use href="#win-document"/></svg>cv.html</span><span>…</span><span data-i18n="explorerHTMLType">HTML 문서</span></div>
+                    <div class="win-row"><span><svg class="win-file-icon" aria-hidden="true"><use href="#win-document"/></svg>index.html</span><span>…</span><span data-i18n="explorerHTMLType">HTML 문서</span></div>
+                    <div class="win-row selected"><span><svg class="win-file-icon" aria-hidden="true"><use href="#win-app"/></svg><strong>Profile-Editor.exe</strong><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 1" data-i18n-aria="step1"><use href="#digit-1"/></svg></span><span>…</span><span data-i18n="explorerAppType">응용 프로그램</span></div>
+                    <div class="win-row"><span><svg class="win-file-icon" aria-hidden="true"><use href="#win-document"/></svg>README.md</span><span>…</span><span data-i18n="explorerMarkdownType">MD 파일</span></div>
+                  </div></div>
+                  <div class="win-status" data-i18n="explorerSelection">1개 항목 선택함</div>
+                </div></div>
+                <figcaption data-i18n-html="editExplorerCaption"><span class="figure-id">03-A</span>Clone한 폴더의 <strong>Profile-Editor.exe</strong>를 더블클릭합니다.</figcaption>
+              </figure>
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="Profile-Editor의 프로필 탭, 영문 국문 입력란과 상단 도구 모음 다이어그램" data-i18n-aria="editProfileDiagram"><div class="mock editor">
+                  <div class="editor-header"><span class="editor-title">Profile-Editor</span><div class="editor-tools"><span class="editor-status" data-i18n="editorUnsavedChanges">저장되지 않은 변경</span><span class="tool" title="변경 되돌리기" data-i18n-title="undoChanges"><svg aria-label="변경 되돌리기" data-i18n-aria="undoChanges"><use href="#icon-undo"/></svg></span><span class="tool" title="인용수 갱신 (Citation update)" data-i18n-title="citationUpdate"><svg aria-label="인용수 갱신 (Citation update)" data-i18n-aria="citationUpdate"><use href="#icon-citation"/></svg></span><span class="tool primary" title="모두 저장" data-i18n-title="saveAll"><svg aria-label="모두 저장" data-i18n-aria="saveAll"><use href="#icon-save"/></svg></span><span class="tool primary" title="저장 후 Git push" data-i18n-title="saveAndPush"><svg aria-label="저장 후 Git push" data-i18n-aria="saveAndPush"><use href="#icon-push"/></svg></span></div></div>
+                  <div class="editor-body"><div class="editor-sidebar"><span class="selected" data-i18n="editorTabProfile">프로필</span><span data-i18n="editorTabPublications">논문</span><span data-i18n="editorTabProjects">프로젝트</span><span data-i18n="editorTabSoftware">소프트웨어</span><span data-i18n="editorTabAwards">수상</span><span data-i18n="editorTabAcademicActivities">학술활동</span><span data-i18n="editorTabBoard">게시판</span><div class="group"><span data-i18n="editorTabPeople">사람</span><span data-i18n="editorTabTopics">주제</span><span data-i18n="editorTabConferences">학회</span><span data-i18n="editorTabJournals">저널</span></div><div class="group"><span data-i18n="editorTabCVLayout">Web/CV 구성</span><span data-i18n="editorTabSettings">설정</span></div></div><div class="editor-workspace"><div class="editor-card"><h3 data-i18n="editorProfileHeading">프로필 정보</h3><div class="editor-outline"><strong data-i18n="editorBasicInformation">기본 정보</strong><span data-i18n="editorContacts">연락처</span><span data-i18n="editorExperience">경력</span><span data-i18n="editorEducation">학력</span><span data-i18n="editorScholarships">장학</span><span>…</span></div><h4 data-i18n-html="editorBasicInformationHeading"><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 2"><use href="#digit-2"/></svg>기본 정보</h4><div class="editor-field-grid"><span class="field-name" data-i18n="editorName">이름</span><div><span class="language" data-i18n="editorEnglish">영문</span><span class="mock-field">Gildong Hong</span></div><div><span class="language" data-i18n="editorKorean">국문</span><span class="mock-field" lang="ko">홍길동</span></div><span class="field-name" data-i18n="editorBiography">약력</span><div><span class="language" data-i18n="editorEnglish">영문</span><span class="mock-field">I study buildings and energy.</span></div><div><span class="language" data-i18n="editorKorean">국문</span><span class="mock-field" lang="ko">건축과 에너지를 연구합니다.</span></div><span class="field-name" data-i18n="editorAffiliation">소속</span><div><span class="language" data-i18n="editorEnglish">영문</span><span class="mock-field">My University</span></div><div><span class="language" data-i18n="editorKorean">국문</span><span class="mock-field" lang="ko">나의 대학교</span></div><span class="field-name" data-i18n="editorPosition">직함</span><div><span class="language" data-i18n="editorEnglish">영문</span><span class="mock-field">Researcher</span></div><div><span class="language" data-i18n="editorKorean">국문</span><span class="mock-field" lang="ko">연구원</span></div></div></div></div></div>
+                </div></div>
+                <figcaption data-i18n-html="editProfileCaption"><span class="figure-id">03-B</span><strong>프로필 → 기본 정보</strong>: 이름·약력·소속·직함 입력</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="editor-guide">
+            <section class="editor-guide-section" id="editor-data" aria-labelledby="editor-data-title">
+              <h3 id="editor-data-title" data-i18n="editorDataTitle">데이터 구성</h3>
+              <p data-i18n-html="editorDataIntro">편집기에서 입력한 내용은 <span class="ui">모두 저장</span>을 누르면 <code>data/</code>의 JSON 파일에 저장됩니다. 홈페이지와 CV는 이 데이터를 함께 사용합니다. 영문·국문 입력란은 각 언어의 홈페이지와 CV에 사용됩니다.</p>
+              <div class="data-flow" aria-label="편집기에서 저장한 데이터를 홈페이지와 CV가 읽는 구조" data-i18n-aria="editorDataFlowLabel">
+                <div data-i18n-html="editorDataFlowInput"><strong>Profile-Editor</strong><small>내용·표시 항목·색상 편집</small></div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div data-i18n-html="editorDataFlowSave"><strong><code>data/*.json</code></strong><small>모두 저장</small></div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div data-i18n-html="editorDataFlowOutput"><strong>홈페이지 · CV</strong><small>같은 콘텐츠와 설정 사용</small></div>
+              </div>
+              <div class="data-table-wrap" tabindex="0" aria-label="편집 탭별 데이터 표, 좌우 스크롤 가능" data-i18n-aria="editorDataTableLabel">
+                <table class="data-table" data-i18n-html="editorDataTable">
+                  <caption>편집 탭과 저장 파일 · <code>data/</code></caption>
+                  <thead><tr><th scope="col">탭</th><th scope="col">관리 내용</th><th scope="col">저장 파일</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">프로필</th><td>이름·약력·소속·직함·위치, 연락처·사진, 경력·학력·특허·장학·자격·교육·기술</td><td><code>profile.json</code></td></tr>
+                    <tr><th scope="row">논문</th><td>제목·상태·유형, 저자 순서, 주제·저널·학회, 권·호·쪽수·발행일, DOI·URL, 초록·주제어, 연결 수상</td><td><code>publications.json</code></td></tr>
+                    <tr><th scope="row">프로젝트</th><td>제목·기간·지원기관·주제, 영문·국문 설명, 미디어</td><td><code>projects.json</code></td></tr>
+                    <tr><th scope="row">소프트웨어</th><td>이름·출시 단계·설명, 기술 목록, 저장소·배포 링크, 미디어</td><td><code>software.json</code></td></tr>
+                    <tr><th scope="row">수상</th><td>수상명·날짜·수여기관, PDF 첨부</td><td><code>awards.json</code></td></tr>
+                    <tr><th scope="row">학술활동</th><td>편집 서비스·전문 서비스·학술대회 서비스·초청 발표·리뷰 완료일</td><td><code>academic_activities.json</code></td></tr>
+                    <tr><th scope="row">게시판</th><td>제목·본문·시작일·종료일, 미디어·캡션</td><td><code>board.json</code></td></tr>
+                    <tr><th scope="row">사람</th><td>논문 저자·특허 발명자의 이름·소속·메모, 본인 표시</td><td><code>people.json</code></td></tr>
+                    <tr><th scope="row">주제</th><td>논문·프로젝트가 함께 쓰는 주제의 이름·순서·색상</td><td><code>settings.json</code></td></tr>
+                    <tr><th scope="row">학회</th><td>행사명·기간·장소·URL, Proceedings 정보</td><td><code>settings.json</code></td></tr>
+                    <tr><th scope="row">저널</th><td>저널명·출판사·ISSN·URL·등재 구분</td><td><code>settings.json</code></td></tr>
+                    <tr><th scope="row">Web/CV 구성</th><td>웹 탭의 노출 여부, CV 섹션의 순서·노출 여부, 개별 항목의 CV 포함 여부</td><td><code>settings.json</code> 및 각 콘텐츠 파일</td></tr>
+                    <tr><th scope="row">설정</th><td>공통 색상 테마·사용자 지정 색상, 키보드 단축키</td><td><code>settings.json</code></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p data-i18n-html="editorDataFiles">원본·설정·사진·첨부파일은 <code>data/</code>, 인용수 조회와 서지 내보내기 결과는 <code>exports/</code>에 저장합니다. 데이터 형식은 <code>data/version.json</code>의 버전 하나를 공유합니다.</p>
+              <h4 data-i18n="editorDataItemsTitle">항목 추가·삭제·순서 변경</h4>
+              <p data-i18n-html="editorDataItems">프로필의 경력·학력 등 반복 항목은 <span class="ui">+</span>로 추가하고, <span class="ui">위로</span>·<span class="ui">아래로</span>·<span class="ui">삭제</span>로 관리합니다. 프로젝트·소프트웨어는 목록의 드래그 핸들로 순서를 바꿉니다. 학술활동은 같은 분류 안에서 위·아래로 이동합니다.</p>
+              <p data-i18n="editorDataNotes">프로젝트·소프트웨어의 설명은 언어별로 항목을 추가·삭제하고 순서를 정합니다. 각 언어에 최소 한 항목을 입력하며, 영문 설명은 국문보다 적은 항목으로 요약할 수 있습니다.</p>
+              <p data-i18n-html="editorDataPatents">특허는 <span class="ui">프로필 → 특허</span>에서 추가합니다. 발명자는 <span class="ui">사람</span>에서 선택하고, 출원·공개·등록번호에 따라 상태가 자동으로 표시됩니다.</p>
+            </section>
+
+            <section class="editor-guide-section" id="editor-relations" aria-labelledby="editor-relations-title">
+              <h3 id="editor-relations-title" data-i18n="editorRelationsTitle">논문·분류 입력 순서</h3>
+              <ol class="actions">
+                <li data-i18n-html="editorRelationsPeople"><span class="ui">사람</span>에서 기존 본인 항목의 이름·소속을 수정하고, <span class="ui">새 사람</span>으로 공저자를 등록합니다.</li>
+                <li data-i18n-html="editorRelationsTopics"><span class="ui">주제</span>에서 필요한 분류명과 색상을 등록합니다. 이 목록은 논문과 프로젝트에서 함께 사용합니다.</li>
+                <li data-i18n-html="editorRelationsVenues"><span class="ui">학회</span>·<span class="ui">저널</span>에서 필요한 게재처를 등록합니다. 수상 논문이면 <span class="ui">수상</span>에서 수상 정보도 입력합니다.</li>
+                <li data-i18n-html="editorRelationsPublications"><span class="ui">논문</span>에서 제목과 유형을 입력하고 저자를 선택합니다. 해당하는 주제·학회 또는 저널·수상을 연결합니다. 저자는 논문에 기재된 순서로 배치하고, 유형에 따라 표시되는 서지 정보를 입력합니다.</li>
+              </ol>
+              <p data-i18n="editorRelationsNotes">참고문헌은 등록한 학회·저널 정보와 논문별 서지 정보로 구성됩니다. 수상에 표시되는 논문 정보도 연결한 논문에서 가져옵니다. 사용 중인 주제를 삭제할 때는 연결된 논문·프로젝트의 주제를 먼저 변경합니다.</p>
+            </section>
+
+            <section class="editor-guide-section" id="editor-cv" aria-labelledby="editor-cv-title">
+              <h3 id="editor-cv-title" data-i18n="editorCVTitle">홈페이지·CV 표시 항목</h3>
+              <div class="step-grid">
+                <div class="instructions">
+                  <h4 data-i18n="editorWebTabsTitle">웹 탭 표시</h4>
+                  <p data-i18n-html="editorWebTabs"><span class="ui">Web/CV 구성 → Web</span>에서 논문·프로젝트·소프트웨어·게시판의 <span class="ui">노출</span>을 눌러 <span class="ui">숨김</span>으로 바꾸고 <span class="ui">모두 저장</span>을 누릅니다. 숨긴 탭은 웹 메뉴와 화면에서 제외되며, 데이터와 CV 설정은 보존됩니다.</p>
+                  <h4 data-i18n="editorCVItemsTitle">CV에서 개별 항목 제외</h4>
+                  <ol class="actions">
+                    <li data-i18n-html="editorCVOpen"><span class="ui">Web/CV 구성</span>을 열고, <span class="ui">CV</span>에서 경력·학력·논문 등의 섹션 이름 왼쪽 펼침 화살표를 누릅니다.</li>
+                    <li data-i18n="editorCVToggle">제외할 항목 행을 누릅니다. 앞의 체크 표시가 사라지면 CV에서 제외됩니다. 다시 누르면 포함됩니다.</li>
+                    <li data-i18n-html="editorCVSave"><span class="ui">모두 저장</span>을 누릅니다.</li>
+                  </ol>
+                  <p data-i18n="editorCVItemsNote">항목 데이터와 홈페이지의 표시 상태는 유지됩니다. CV에 포함한 항목이 모두 해제되면 해당 CV 섹션이 자동으로 숨겨집니다.</p>
+                  <h4 data-i18n="editorCVSectionsTitle">CV 섹션 전체 숨김·순서 변경</h4>
+                  <p data-i18n-html="editorCVSections">섹션 행의 <span class="ui">노출</span>을 누르면 <span class="ui">숨김</span>으로 전환됩니다. <span class="ui">↑</span>·<span class="ui">↓</span> 또는 드래그 핸들로 순서를 바꾸고 <span class="ui">모두 저장</span>을 누릅니다.</p>
+                </div>
+                <div class="visuals">
+                  <figure>
+                    <div class="figure-scroll" tabindex="0" aria-label="Web/CV 구성의 웹 탭 노출 스위치, CV 섹션 노출 스위치와 개별 항목 포함 체크 표시" data-i18n-aria="editorCVDiagram"><div class="mock editor">
+                      <div class="editor-header"><span class="editor-title">Profile-Editor</span><div class="editor-tools"><span class="tool" title="변경 되돌리기" data-i18n-title="undoChanges"><svg aria-label="변경 되돌리기" data-i18n-aria="undoChanges"><use href="#icon-undo"/></svg></span><span class="tool" title="인용수 갱신 (Citation update)" data-i18n-title="citationUpdate"><svg aria-label="인용수 갱신 (Citation update)" data-i18n-aria="citationUpdate"><use href="#icon-citation"/></svg></span><span class="tool primary" title="모두 저장" data-i18n-title="saveAll"><svg aria-label="모두 저장" data-i18n-aria="saveAll"><use href="#icon-save"/></svg></span><span class="tool primary" title="저장 후 Git push" data-i18n-title="saveAndPush"><svg aria-label="저장 후 Git push" data-i18n-aria="saveAndPush"><use href="#icon-push"/></svg></span></div></div>
+                      <div class="editor-panel-sample"><div class="editor-card"><h3>Web</h3>
+                        <div class="sample-section"><div class="sample-section-head"><strong data-i18n="editorTabPublications">논문</strong><div class="sample-section-actions"><span class="sample-switch" data-i18n="editorVisible">노출</span></div></div></div>
+                        <div class="sample-section"><div class="sample-section-head"><strong data-i18n="editorTabProjects">프로젝트</strong><div class="sample-section-actions"><span class="sample-switch" data-i18n="editorVisible">노출</span></div></div></div>
+                        <div class="sample-section"><div class="sample-section-head"><strong data-i18n="editorTabSoftware">소프트웨어</strong><div class="sample-section-actions"><span class="sample-switch" data-i18n="editorVisible">노출</span></div></div></div>
+                        <div class="sample-section"><div class="sample-section-head"><strong data-i18n="editorTabBoard">게시판</strong><div class="sample-section-actions"><span class="sample-switch off" data-i18n="editorHidden">숨김</span></div></div></div>
+                      </div><div class="editor-card"><h3>CV</h3>
+                        <div class="sample-section"><div class="sample-section-head"><span class="sample-handle" aria-label="드래그 핸들" data-i18n-aria="editorCVHandle">⠿</span><span aria-hidden="true">▾</span><strong data-i18n="editorExperience">경력</strong><span class="sample-section-count"><svg class="sample-count-digit" aria-label="2개 항목" data-i18n-aria="editorCVCount2"><use href="#digit-2"/></svg></span><div class="sample-section-actions"><span class="sample-arrow">↑</span><span class="sample-arrow">↓</span><span class="sample-switch" data-i18n="editorVisible">노출</span></div></div><div class="sample-cv-items"><div class="sample-cv-item"><span class="tick" aria-label="CV 포함" data-i18n-aria="editorCVIncluded">✓</span><span class="sample-category" data-i18n="editorExampleCurrentPeriod">2024–현재</span><span data-i18n="editorExampleExperienceCurrent">연구원 · 나의 연구기관</span></div><div class="sample-cv-item excluded target"><span class="tick" aria-label="CV 제외" data-i18n-aria="editorCVExcluded"></span><span class="sample-category">2020–2023</span><span data-i18n="editorExampleExperiencePrevious">연구보조원 · 이전 소속기관</span></div></div></div>
+                        <div class="sample-section"><div class="sample-section-head"><span class="sample-handle" aria-label="드래그 핸들" data-i18n-aria="editorCVHandle">⠿</span><span aria-hidden="true">▸</span><strong data-i18n="editorEducation">학력</strong><span class="sample-section-count"><svg class="sample-count-digit" aria-label="1개 항목" data-i18n-aria="editorCVCount1"><use href="#digit-1"/></svg></span><div class="sample-section-actions"><span class="sample-arrow">↑</span><span class="sample-arrow">↓</span><span class="sample-switch" data-i18n="editorVisible">노출</span></div></div></div>
+                        <div class="sample-section"><div class="sample-section-head"><span class="sample-handle" aria-label="드래그 핸들" data-i18n-aria="editorCVHandle">⠿</span><span aria-hidden="true">▾</span><strong data-i18n="editorTabPublications">논문</strong><span class="sample-section-count"><svg class="sample-count-digit" aria-label="2개 항목" data-i18n-aria="editorCVCount2"><use href="#digit-2"/></svg></span><div class="sample-section-actions"><span class="sample-arrow">↑</span><span class="sample-arrow">↓</span><span class="sample-switch" data-i18n="editorVisible">노출</span></div></div><div class="sample-cv-items"><div class="sample-search" data-i18n="editorPublicationSearch">제목, 저자 또는 게재지 검색</div><div class="sample-bulk"><span class="mock-btn" data-i18n="editorSelectAll">전체 선택</span><span class="mock-btn" data-i18n="editorDeselectAll">전체 해제</span></div><div class="sample-cv-item"><span class="tick" aria-label="CV 포함" data-i18n-aria="editorCVIncluded">✓</span><span class="sample-category" data-i18n="editorInternationalJournal">국제학술지</span><span>Building energy research</span></div><div class="sample-cv-item"><span class="tick" aria-label="CV 포함" data-i18n-aria="editorCVIncluded">✓</span><span class="sample-category" data-i18n="editorDomesticJournal">국내학술지</span><span data-i18n="editorExamplePublicationTitle">건축 환경 연구</span></div></div></div>
+                        <div class="sample-section"><div class="sample-section-head"><span class="sample-handle" aria-label="드래그 핸들" data-i18n-aria="editorCVHandle">⠿</span><span aria-hidden="true">▸</span><strong data-i18n="editorSkills">기술</strong><span class="sample-section-count"><svg class="sample-count-digit" aria-label="1개 항목" data-i18n-aria="editorCVCount1"><use href="#digit-1"/></svg></span><div class="sample-section-actions"><span class="sample-arrow">↑</span><span class="sample-arrow">↓</span><span class="sample-switch off" data-i18n="editorHidden">숨김</span></div></div></div>
+                      </div></div>
+                    </div></div>
+                    <figcaption data-i18n-html="editorCVCaption"><span class="figure-id">03-C</span><strong>Web/CV 구성</strong>의 <strong>Web</strong>에서 웹 탭을, <strong>CV</strong>에서 CV 섹션과 항목을 표시하거나 숨깁니다.</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <h4 data-i18n="editorCVPublicationsTitle">CV의 논문 선택</h4>
+              <p data-i18n-html="editorCVPublications">논문 섹션을 펼치면 <span class="ui">제목, 저자 또는 게재지 검색</span>으로 항목을 찾을 수 있습니다. <span class="ui">전체 선택</span>·<span class="ui">전체 해제</span>는 검색 결과에 관계없이 모든 논문의 포함 여부를 바꿉니다.</p>
+              <h4 data-i18n="editorHomeSectionsTitle">홈페이지 섹션 구성</h4>
+              <p data-i18n-html="editorHomeSections"><span class="ui">프로필 → 페이지 구성</span>에서 <span class="ui">노출 섹션</span>과 <span class="ui">숨긴 섹션</span>을 관리합니다. 각 행의 <span class="ui">노출 / 숨김</span>으로 표시를 전환하고, <span class="ui">↑</span>·<span class="ui">↓</span> 또는 드래그로 순서를 바꿉니다. 내용이 없는 섹션은 자동으로 숨겨집니다. 홈페이지와 CV의 표시 설정은 각각 저장됩니다.</p>
+            </section>
+
+            <section class="editor-guide-section" id="editor-themes" aria-labelledby="editor-themes-title">
+              <h3 id="editor-themes-title" data-i18n="editorThemesTitle">색상 테마</h3>
+              <div class="step-grid">
+                <div class="instructions">
+                  <ol class="actions">
+                    <li data-i18n-html="editorThemesOpen"><span class="ui">설정 → 색상 테마</span>를 엽니다.</li>
+                    <li data-i18n="editorThemesSelect">테마 카드를 선택합니다. 기본 테마 12개와 사용자 지정 테마 3개가 있으며, 선택한 색상은 편집기에 즉시 적용됩니다.</li>
+                    <li data-i18n-html="editorThemesSave"><span class="ui">모두 저장</span>을 누릅니다. 같은 테마가 홈페이지와 CV에 적용됩니다.</li>
+                  </ol>
+                  <h4 data-i18n="editorThemesCustomTitle">사용자 지정 색상</h4>
+                  <p data-i18n-html="editorThemesCustom"><span class="ui">사용자 지정 1</span>~<span class="ui">사용자 지정 3</span> 중 하나를 선택하고 <span class="ui">테마 이름</span>을 입력합니다. <span class="ui">시작할 기본 색상</span>을 선택한 뒤 <span class="ui">이 색상에서 시작</span>을 누릅니다.</p>
+                  <p data-i18n-html="editorThemesColors">오른쪽의 페이지 배경·본문 글자·강조색 등 색상 코드를 <code>#RRGGBB</code> 형식으로 수정하고 <span class="ui">모두 저장</span>을 누릅니다. 기본 테마의 색상 코드는 읽기 전용입니다.</p>
+                </div>
+                <div class="visuals">
+                  <figure>
+                    <div class="figure-scroll" tabindex="0" aria-label="설정의 색상 테마 목록과 사용자 지정 테마 편집 항목" data-i18n-aria="editorThemesDiagram"><div class="mock editor">
+                      <div class="editor-header"><span class="editor-title">Profile-Editor</span><div class="editor-tools"><span class="tool" title="변경 되돌리기" data-i18n-title="undoChanges"><svg aria-label="변경 되돌리기" data-i18n-aria="undoChanges"><use href="#icon-undo"/></svg></span><span class="tool" title="인용수 갱신 (Citation update)" data-i18n-title="citationUpdate"><svg aria-label="인용수 갱신 (Citation update)" data-i18n-aria="citationUpdate"><use href="#icon-citation"/></svg></span><span class="tool primary" title="모두 저장" data-i18n-title="saveAll"><svg aria-label="모두 저장" data-i18n-aria="saveAll"><use href="#icon-save"/></svg></span><span class="tool primary" title="저장 후 Git push" data-i18n-title="saveAndPush"><svg aria-label="저장 후 Git push" data-i18n-aria="saveAndPush"><use href="#icon-push"/></svg></span></div></div>
+                      <div class="editor-panel-sample"><div class="editor-card"><h3 data-i18n="editorColorThemes">색상 테마</h3><div class="sample-themes">
+                        <div class="sample-theme-options"><div class="sample-theme" style="--swatch:#305744;--swatch-bg:#f7f8f5" data-i18n-html="editorThemeSage"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>세이지</div><div class="sample-theme" style="--swatch:#245d87;--swatch-bg:#f4f8fc" data-i18n-html="editorThemeOcean"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>오션</div><div class="sample-theme" style="--swatch:#6c478e;--swatch-bg:#f8f6fc" data-i18n-html="editorThemeViolet"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>바이올렛</div><div class="sample-theme" style="--swatch:#93445e;--swatch-bg:#fcf6f7" data-i18n-html="editorThemeRose"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>로즈</div><div class="sample-theme" style="--swatch:#82612c;--swatch-bg:#faf8f3" data-i18n-html="editorThemeSand"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>샌드</div><div class="sample-theme" style="--swatch:#9bb9f0;--swatch-bg:#111827" data-i18n-html="editorThemeSlate"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>슬레이트</div><div class="sample-theme" style="--swatch:#276747;--swatch-bg:#f3faf6" data-i18n-html="editorThemeMint"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>민트</div><div class="sample-theme" style="--swatch:#176c62;--swatch-bg:#f2faf9" data-i18n-html="editorThemeTeal"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>틸</div><div class="sample-theme" style="--swatch:#176b9b;--swatch-bg:#f2faff" data-i18n-html="editorThemeSky"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>스카이</div><div class="sample-theme" style="--swatch:#4d55a8;--swatch-bg:#f6f7ff" data-i18n-html="editorThemeIndigo"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>인디고</div><div class="sample-theme" style="--swatch:#925d13;--swatch-bg:#fffbf1" data-i18n-html="editorThemeAmber"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>앰버</div><div class="sample-theme" style="--swatch:#d2d2d2;--swatch-bg:#171717" data-i18n-html="editorThemeGraphite"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>그래파이트</div><div class="sample-theme selected" style="--swatch:#305744;--swatch-bg:#f7f8f5" data-i18n-html="editorThemeCustomOne"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>사용자 지정 1</div><div class="sample-theme" style="--swatch:#305744;--swatch-bg:#f7f8f5" data-i18n-html="editorThemeCustomTwo"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>사용자 지정 2</div><div class="sample-theme" style="--swatch:#305744;--swatch-bg:#f7f8f5" data-i18n-html="editorThemeCustomThree"><div class="sample-theme-preview" aria-hidden="true"><span class="sample-theme-lines"><i></i><i></i><i></i></span></div><span class="sample-theme-radio" aria-hidden="true"></span>사용자 지정 3</div></div>
+                        <div class="sample-theme-details"><h4 data-i18n="editorCustomThemeLabel">사용자 지정 1</h4><span class="mock-label" data-i18n="editorThemeName">테마 이름</span><span class="mock-field" data-i18n="editorCustomThemeLabel">사용자 지정 1</span><span class="mock-label" data-i18n="editorStartingPreset">시작할 기본 색상</span><span class="mock-field" data-i18n="editorSelectedPresetSage">세이지 ▾</span><span class="mock-btn" data-i18n="editorUseStartingColors">이 색상에서 시작</span><span class="mock-label" data-i18n="editorBackgrounds">배경과 표면</span><div class="sample-color"><span data-i18n="editorPageBackground">페이지 배경</span><span class="sample-color-code"><i style="--swatch:#f7f8f5"></i>#F7F8F5</span></div><div class="sample-color"><span data-i18n="editorCardBackground">카드·입력 배경</span><span class="sample-color-code"><i style="--swatch:#ffffff"></i>#FFFFFF</span></div><span class="mock-label" data-i18n="editorTextColors">텍스트</span><div class="sample-color"><span data-i18n="editorBodyText">본문 글자</span><span class="sample-color-code"><i style="--swatch:#16231d"></i>#16231D</span></div><span class="mock-label" data-i18n="editorAccents">강조와 버튼</span><div class="sample-color"><span data-i18n="editorAccentColor">강조색</span><span class="sample-color-code"><i style="--swatch:#305744"></i>#305744</span></div></div>
+                      </div></div></div>
+                    </div></div>
+                    <figcaption data-i18n-html="editorThemesCaption"><span class="figure-id">03-D</span><strong>설정 → 색상 테마</strong>: 테마 선택, 사용자 지정 이름·기본 색상·색상 코드 편집</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <section class="editor-guide-section" id="editor-files" aria-labelledby="editor-files-title">
+              <h3 id="editor-files-title" data-i18n="editorFilesTitle">이미지·첨부파일·저장</h3>
+              <h4 data-i18n="editorFilesMediaTitle">이미지와 PDF</h4>
+              <p data-i18n-html="editorFilesMedia">프로필 사진과 프로젝트·소프트웨어·게시판의 이미지는 파일 탐색기에서 편집기의 이미지 영역 또는 <span class="ui">미디어</span> 영역으로 드래그합니다. <span class="ui">모두 저장</span>을 누르면 <code>data/media/</code>에 복사됩니다. 썸네일을 누르면 확대되고, <span class="ui">Esc</span> 또는 <span class="ui">×</span>로 닫습니다.</p>
+              <p data-i18n-html="editorFilesPDF">자격 항목과 수상의 PDF 영역에 파일을 드래그하면 저장 시 <code>data/document/</code>에 복사됩니다. <span class="ui">PDF 연결 제거</span>는 항목과 파일의 연결을 해제합니다. 항목·미디어를 삭제해도 기존 파일은 폴더에 남으므로, 사용하지 않는 파일은 별도로 삭제합니다.</p>
+              <h4 data-i18n="editorFilesCitationsTitle">인용수와 단축키</h4>
+              <p data-i18n-html="editorFilesCitations">상단의 <span class="ui">인용수 갱신 (Citation update)</span>은 수정 중인 내용을 저장한 뒤 OpenAlex 인용수를 조회해 <code>exports/publication-citations.json</code>에 반영합니다.</p>
+              <p data-i18n-html="editorFilesShortcuts"><span class="ui">설정 → 키보드 단축키</span>에서 저장·인용수 갱신·Push·되돌리기·설정 열기의 키 조합을 변경합니다. <span class="ui">기본값 복원</span>으로 기본 단축키를 복원합니다.</p>
+              <div class="editor-saving" data-i18n-html="editorFilesSave"><strong>저장 적용</strong><br>입력·순서 변경·CV 포함 여부·테마 설정은 <span class="ui">모두 저장</span>으로 로컬 파일에 반영합니다. <span class="ui">변경 되돌리기</span>는 마지막으로 저장한 상태로 복원합니다. 수정한 내용을 웹에 반영하려면 다음 단계에서 <span class="ui">저장 후 Git push</span>를 실행합니다.</div>
+            </section>
+          </div>
+        </section>
+
+        <section class="step" id="push" aria-labelledby="push-title">
+          <div class="step-heading"><span class="step-number">04</span><h2 id="push-title" data-i18n="pushTitle">저장·Push</h2></div>
+          <div class="step-grid">
+            <div class="instructions">
+              <ol class="actions">
+                <li data-i18n-html="pushStepSave">편집기 오른쪽 위의 디스켓 아이콘 <span class="ui">모두 저장</span>을 누릅니다. 수정한 내용이 <strong>내 PC의 파일</strong>에 저장됩니다.</li>
+                <li data-i18n-html="pushStepReview">맨 오른쪽 위쪽 화살표 아이콘 <span class="ui">저장 후 Git push</span>를 누릅니다. 데이터 검사와 내보내기 파일 갱신 후 <strong>내 GitHub 저장소</strong>로 전송합니다.</li>
+                <li data-i18n-html="pushStepRun">처음 전송할 때 Git 인증 창이 나타나면 fork를 만든 계정으로 로그인합니다. 작업 진행 표시에서 <span class="ui">Git push 완료</span>를 확인합니다.</li>
+              </ol>
+              <div class="note" data-i18n-html="pushNote"><strong>모두 저장</strong>: 로컬 파일 저장<br><strong>저장 후 Git push</strong>: 저장·검증·내보내기 갱신·원격 전송</div>
+              
+            </div>
+            <div class="visuals">
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="에디터 상단의 모두 저장 및 저장 후 Git push 아이콘과 완료 표시 다이어그램" data-i18n-aria="pushDiagram"><div class="mock editor">
+                  <div class="app-titlebar"><span data-i18n="editorToolbarHeading">Profile-Editor · 상단 오른쪽 도구 모음</span><span class="window-controls" aria-hidden="true">− □ ×</span></div>
+                  <div class="toolbar-explainer"><div class="large-toolbar"><span class="editor-status" data-i18n="editorUnsavedChanges">저장되지 않은 변경</span><span class="tool" title="변경 되돌리기" data-i18n-title="undoChanges"><svg aria-label="변경 되돌리기" data-i18n-aria="undoChanges"><use href="#icon-undo"/></svg></span><span class="tool" title="인용수 갱신 (Citation update)" data-i18n-title="citationUpdate"><svg aria-label="인용수 갱신 (Citation update)" data-i18n-aria="citationUpdate"><use href="#icon-citation"/></svg></span><span class="tool primary target" title="모두 저장" data-i18n-title="saveAll"><svg aria-label="모두 저장" data-i18n-aria="saveAll"><use href="#icon-save"/></svg></span><span class="tool primary target" title="저장 후 Git push" data-i18n-title="saveAndPush"><svg aria-label="저장 후 Git push" data-i18n-aria="saveAndPush"><use href="#icon-push"/></svg></span></div><div class="tool-legend"><div data-i18n-html="editorUndoChanges"><span class="legend-icon"><svg aria-hidden="true"><use href="#icon-undo"/></svg></span>변경 되돌리기</div><div data-i18n-html="editorCitationUpdate"><span class="legend-icon"><svg aria-hidden="true"><use href="#icon-citation"/></svg></span>인용수 갱신 (Citation update)</div><div data-i18n-html="editorSaveAll"><span class="legend-icon primary"><svg aria-hidden="true"><use href="#icon-save"/></svg></span>모두 저장</div><div data-i18n-html="editorSaveAndPush"><span class="legend-icon primary"><svg aria-hidden="true"><use href="#icon-push"/></svg></span>저장 후 Git push</div></div></div>
+                  <div class="progress-demo"><div class="progress-title"><span>Git push</span><span>100%</span></div><div class="progress-track" aria-hidden="true"></div><div class="progress-message" data-i18n="editorPushComplete">Git push 완료</div></div>
+                </div></div>
+                <figcaption data-i18n-html="pushCaption"><span class="figure-id">04-A</span>왼쪽에서 세 번째가 <strong>모두 저장</strong>, 네 번째가 <strong>저장 후 Git push</strong>입니다. 완료 팝업은 잠시 뒤 자동으로 닫힙니다.</figcaption>
+              </figure>
+              <details><summary data-i18n="pushFallbackTitle">Git 설치·인증 오류</summary><div class="details-body"><p data-i18n-html="pushFallbackOpen"><strong>Git을 찾을 수 없습니다</strong>가 표시되면 <a href="https://git-scm.com/downloads/win">Git for Windows</a>를 설치하고 편집기를 다시 실행합니다. 설치 화면 <strong>Adjusting your PATH environment</strong>에서 <strong>Git from the command line and also from 3rd-party software</strong>를 선택합니다. </p><p data-i18n="pushFallbackChanges">Git Credential Manager에서 fork를 만든 GitHub 계정으로 인증합니다. 원격 저장소와 현재 브랜치가 내 fork를 가리키는지 확인합니다.</p><p data-i18n-html="pushFallbackCommit"><strong>사용자 이름·이메일 설정 오류</strong>라면 Git Bash에서 다음 두 명령을 내 정보로 한 번 실행합니다. 이메일은 GitHub에 등록된 주소 또는 GitHub 이메일 설정에서 확인한 noreply 주소를 사용합니다.</p><code class="command">git config --global user.name "My Name"
+git config --global user.email "MY_GITHUB_EMAIL"</code><p data-i18n="pushFallbackPush">오류 메시지를 확인하고 원인을 해결한 뒤 다시 실행합니다.</p></div></details>
+              <details><summary data-i18n="pushScopeTitle">Push 반영 범위</summary><div class="details-body"><p data-i18n-html="pushScopeFiles"><strong>Git이 무시하지 않는 저장소의 변경 파일 전체</strong>를 반영합니다. 마지막 커밋을 갱신하여 기존 커밋명을 유지하고, 원격 상태를 확인한 뒤 전송합니다.</p><p data-i18n="pushScopePermissions">현재 브랜치의 원격 연결·쓰기 권한과 강제 push 권한이 필요합니다. 원격에 다른 변경이 있으면 GitHub Desktop에서 변경 사항을 확인합니다.</p></div></details>
+            </div>
+          </div>
+        </section>
+
+        <section class="step" id="publish" aria-labelledby="publish-title">
+          <div class="step-heading"><span class="step-number">05</span><h2 id="publish-title" data-i18n="publishTitle">GitHub Pages 설정</h2></div>
+          <div class="step-grid">
+            <div class="instructions">
+              <p data-i18n="publishIntro">Push 후 내 fork에서 배포 브랜치를 설정합니다.</p>
+              <ol class="actions">
+                <li data-i18n-html="publishStepOpen">내 GitHub 저장소 상단 <span class="ui">Settings</span> → 왼쪽 <span class="ui">Pages</span>를 엽니다.</li>
+                <li data-i18n-html="publishStepSource"><span class="ui">Build and deployment</span>의 <span class="ui">Source</span>를 <span class="ui">Deploy from a branch</span>로 선택합니다.</li>
+                <li data-i18n-html="publishStepBranch"><span class="ui">Branch</span>에서 <span class="ui">main</span>과 <span class="ui">/(root)</span>를 고르고 <span class="ui">Save</span>를 누릅니다.</li>
+                <li data-i18n-html="publishStepSave">배포가 끝나면 같은 화면의 <span class="ui">Visit site</span>로 홈페이지를 엽니다. 첫 배포와 변경 반영에는 최대 10분 정도 걸릴 수 있습니다.</li>
+              </ol>
+              
+            </div>
+            <div class="visuals">
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="GitHub Settings Pages의 Source, main, root, Save 설정 다이어그램" data-i18n-aria="publishDiagram"><div class="mock">
+                  <div class="browser-bar"><span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="address">github.com/<span data-example="user">your-name</span>/<span data-example="repo">your-name.github.io</span>/settings/pages</span></div>
+                  <div class="repo-tabs"><span>Code</span><span>Issues</span><span>Pull requests</span><span>Actions</span><span class="selected">Settings</span></div>
+                  <div class="pages-body"><div class="settings-sidebar"><span>General</span><span>Collaborators</span><span>Branches</span><span>Actions</span><span class="selected"><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 1" data-i18n-aria="step1"><use href="#digit-1"/></svg>Pages</span></div><div class="pages-content"><h3>GitHub Pages</h3><h4>Build and deployment</h4><span class="mock-label"><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 2" data-i18n-aria="step2"><use href="#digit-2"/></svg>Source</span><span class="mock-field select-field target">Deploy from a branch <span aria-hidden="true">▾</span></span><span class="mock-label"><svg class="pin" viewBox="0 0 20 20" role="img" aria-label="단계 3" data-i18n-aria="step3"><use href="#digit-3"/></svg>Branch</span><div class="branch-row"><span class="mock-field select-field">⑂ main ▾</span><span class="mock-field select-field">▱ /(root) ▾</span><span class="mock-btn target">Save</span></div><div class="published-banner"><span>Your site is live at<br><strong>https://<span data-example="repo">your-name.github.io</span>/</strong></span><span class="mock-btn">Visit site</span></div></div></div>
+                </div></div>
+                <figcaption data-i18n-html="publishCaption"><span class="figure-id">05-A</span>배포가 완료되면 <strong>Your site is live at</strong>에 주소가 표시됩니다.</figcaption>
+              </figure>
+              <div class="finish"><p class="small-title" data-i18n="publishCompleteTitle">사이트 주소</p><p class="site-url">https://<span data-example="repo">your-name.github.io</span>/</p><p data-i18n-html="publishCompleteNote">CV 주소: <code>https://<span data-example="repo">your-name.github.io</span>/cv.html</code></p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="step" id="update" aria-labelledby="update-title">
+          <div class="step-heading"><span class="step-number">06</span><h2 id="update-title" data-i18n="updateTitle">홈페이지·편집기 업데이트</h2></div>
+          <div class="step-grid">
+            <div class="instructions">
+              <ol class="actions">
+                <li data-i18n-html="updateStepOpen"><code>Profile-Editor.exe</code>를 실행하고 <span class="ui">설정</span> 맨 아래의 <span class="ui">업데이트</span>에서 <span class="ui">업데이트 확인</span>을 누릅니다.</li>
+                <li data-i18n-html="updateStepCheck"><span class="ui">현재 버전</span>과 <span class="ui">원본 버전</span>을 비교하고, <span class="ui">변경 이력</span>에서 버전별 수정 내용을 확인합니다. 새 버전이 있으면 <span class="ui">업데이트 실행</span>이 활성화됩니다.</li>
+                <li data-i18n-html="updateStepRun"><span class="ui">업데이트 실행</span>을 누릅니다. 편집 중인 내용은 먼저 저장됩니다. 다운로드와 프로그램 파일 적용이 끝나면 편집기가 종료되고, 실행 파일 교체 후 자동으로 다시 열립니다.</li>
+                <li data-i18n-html="updateStepFinish">다시 열린 편집기의 <span class="ui">설정 → 업데이트</span>에서 현재 버전과 적용 결과를 확인합니다. 상단의 <span class="ui">저장 후 Git push</span>를 눌러 <span class="ui">Git push 완료</span>를 확인하고, Pages 배포 후 홈페이지를 새로고침합니다.</li>
+              </ol>
+              <div class="note" data-i18n-html="updateNote">프로필·논문·사진 등 <code>data/</code>의 개인 데이터와 <code>exports/</code>의 파일은 유지됩니다. 직접 수정한 프로그램 파일도 원본 파일로 교체되며, 이전 파일은 <code>editor/runtime/updates/</code>에 백업됩니다.</div>
+            </div>
+            <div class="visuals">
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="Profile-Editor 설정의 업데이트 카드, 버전 정보, 업데이트 확인·업데이트 실행 버튼과 변경 이력" data-i18n-aria="updateDiagram"><div class="mock editor">
+                  <div class="editor-header"><span class="editor-title">Profile-Editor</span><div class="editor-tools"><span class="editor-status" data-i18n="editorSaved">저장됨</span><span class="tool" title="변경 되돌리기" data-i18n-title="undoChanges"><svg aria-label="변경 되돌리기" data-i18n-aria="undoChanges"><use href="#icon-undo"/></svg></span><span class="tool" title="인용수 갱신 (Citation update)" data-i18n-title="citationUpdate"><svg aria-label="인용수 갱신 (Citation update)" data-i18n-aria="citationUpdate"><use href="#icon-citation"/></svg></span><span class="tool primary" title="모두 저장" data-i18n-title="saveAll"><svg aria-label="모두 저장" data-i18n-aria="saveAll"><use href="#icon-save"/></svg></span><span class="tool primary" title="저장 후 Git push" data-i18n-title="saveAndPush"><svg aria-label="저장 후 Git push" data-i18n-aria="saveAndPush"><use href="#icon-push"/></svg></span></div></div>
+                  <div class="editor-body">
+                    <div class="editor-sidebar"><span data-i18n="editorTabProfile">프로필</span><span data-i18n="editorTabPublications">논문</span><span data-i18n="editorTabProjects">프로젝트</span><span data-i18n="editorTabSoftware">소프트웨어</span><span data-i18n="editorTabAwards">수상</span><span data-i18n="editorTabAcademicActivities">학술활동</span><span data-i18n="editorTabBoard">게시판</span><div class="group"><span data-i18n="editorTabPeople">사람</span><span data-i18n="editorTabTopics">주제</span><span data-i18n="editorTabConferences">학회</span><span data-i18n="editorTabJournals">저널</span></div><div class="group"><span data-i18n="editorTabCVLayout">Web/CV 구성</span><span class="selected" data-i18n="editorTabSettings">설정</span></div></div>
+                    <div class="editor-workspace">
+                      <div class="sample-settings-previous" data-i18n="editorShortcuts">단축키</div>
+                      <div class="editor-card sample-update-card">
+                        <div class="sample-update-heading"><h3 data-i18n="editorUpdate">업데이트</h3><span data-i18n="editorUpdateAvailable">업데이트 가능</span></div>
+                        <dl class="sample-update-versions"><dt data-i18n="editorCurrentVersion">현재 버전</dt><dd>1.0.0</dd><dt data-i18n="editorUpstreamVersion">원본 버전</dt><dd>1.1.0</dd><dt data-i18n="editorUpstreamRepository">원본 저장소</dt><dd>Gonie-Gonie/Gonie-Gonie.github.io · main</dd></dl>
+                        <div class="sample-update-actions"><span class="mock-btn target" data-i18n="editorCheckUpdates">업데이트 확인</span><span class="mock-btn primary target" data-i18n="editorRunUpdate">업데이트 실행</span></div>
+                        <div class="sample-update-history"><h4 data-i18n="editorChangeHistory">변경 이력</h4><div class="sample-update-release"><strong>1.1.0</strong><span>2026-10-28</span></div><ul><li data-i18n="editorExampleReleaseWebsite">홈페이지 표시 개선</li><li data-i18n="editorExampleReleaseEditor">편집기 오류 수정</li></ul></div>
+                      </div>
+                    </div>
+                  </div>
+                </div></div>
+                <figcaption data-i18n-html="updateCaption"><span class="figure-id">06-A</span><strong>설정 → 업데이트</strong>: <strong>업데이트 확인</strong> 후 버전과 변경 이력을 확인하고 <strong>업데이트 실행</strong>을 누릅니다.</figcaption>
+              </figure>
+              <figure>
+                <div class="figure-scroll" tabindex="0" aria-label="업데이트 진행 창의 편집기를 종료합니다 표시" data-i18n-aria="updateProgressDiagram"><div class="mock editor">
+                  <div class="app-titlebar"><span>Profile-Editor</span><span class="window-controls" aria-hidden="true">− □ ×</span></div>
+                  <div class="sample-update-progress"><div class="sample-update-dialog"><strong data-i18n="editorUpdate">업데이트</strong><div class="sample-update-track" aria-hidden="true"></div><span data-i18n="editorClosing">편집기를 종료합니다</span></div></div>
+                </div></div>
+                <figcaption data-i18n-html="updateProgressCaption"><span class="figure-id">06-B</span>편집기가 자동으로 종료·재실행됩니다. 적용 결과를 확인한 뒤 <strong>저장 후 Git push</strong>로 내 GitHub 저장소에 반영합니다.</figcaption>
+              </figure>
+              <details><summary data-i18n="updateRecoveryTitle">업데이트 중단·실패</summary><div class="details-body"><p data-i18n-html="updateRecoveryPending">입력 오류나 저장 오류가 표시되면 내용을 수정해 저장하고 다시 실행합니다. 편집기가 자동으로 다시 열리지 않으면 작업 폴더의 <code>Profile-Editor.exe</code>를 실행합니다. 실행 시 미완료 작업을 검사하고, 실행 파일 교체 또는 이전 프로그램 파일 복원을 시도합니다.</p><p data-i18n-html="updateRecoveryDone"><strong>설정 → 업데이트</strong>에 표시되는 적용·복구 결과를 확인한 뒤 <strong>업데이트 확인</strong>을 다시 누릅니다.</p></div></details>
+            </div>
+          </div>
+        </section>
+
+        <section class="aftercare" aria-labelledby="next-title">
+          <h2 id="next-title" data-i18n="nextTitle">콘텐츠 갱신</h2>
+          <div class="repeat-flow" data-i18n-html="nextFlow"><span>Profile-Editor에서 수정</span><span class="arrow" aria-hidden="true">→</span><span>모두 저장</span><span class="arrow" aria-hidden="true">→</span><strong>저장 후 Git push</strong><span class="arrow" aria-hidden="true">→</span><span>배포 후 확인</span></div>
+          <p data-i18n-html="nextIntro">다른 PC나 GitHub 웹에서 수정한 적이 있다면 작업 전에 GitHub Desktop의 <span class="ui">Fetch origin</span>으로 확인하고, <span class="ui">Pull origin</span>이 나타나면 받아온 뒤 편집기를 실행합니다.</p>
+          <div class="faq">
+            <details><summary data-i18n="faq404Title">404 오류</summary><div class="details-body"><p data-i18n-html="faq404">저장소 이름이 정확히 <code data-example="repo">your-name.github.io</code>인지, Pages의 Source가 <strong>Deploy from a branch</strong>인지, Branch가 <strong>main / (root)</strong>인지 확인합니다. 저장소의 <strong>Actions</strong>에서 Pages 배포 작업이 끝났는지 확인하고 배포 후 다시 접속합니다. 기본 브랜치 이름을 바꿨다면 Pages에서도 그 브랜치를 선택해야 합니다.</p></div></details>
+            <details><summary data-i18n="faqChangesTitle">변경 내용 확인</summary><div class="details-body"><p data-i18n-html="faqChanges"><strong>모두 저장</strong> 이후 <strong>저장 후 Git push</strong> 완료 여부를 확인합니다. GitHub에서 <code>data/profile.json</code> 등의 파일을 열어 변경이 올라왔는지 확인하고, Pages 배포가 끝난 뒤 브라우저를 새로고침합니다.</p></div></details>
+            <details><summary data-i18n="faqPreviewTitle">로컬 미리보기</summary><div class="details-body"><p data-i18n-html="faqPreview">편집기에서 <strong>모두 저장</strong>을 누릅니다. <code>editor/setup.bat</code>으로 Go를 준비한 뒤 <code>app/tools/serve.bat</code>을 실행합니다. 브라우저에서 로컬 서버 주소로 접속합니다.</p></div></details>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="container guide-footer">
+    <p class="small-title" data-i18n="sourcesTitle">관련 문서</p>
+    <div class="source-links"><a href="https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo?tool=webui">GitHub Fork</a><a href="https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop">GitHub Desktop Clone</a><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" data-i18n="sourcePages">GitHub Pages 배포 설정</a><a href="https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git" data-i18n="sourceGitAuthentication">Git 인증</a></div>
+  </footer>
+</body>
+</html>

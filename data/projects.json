@@ -1,0 +1,89 @@
+[
+  {
+    "end_date": "2026-11-30",
+    "funder_en": "Korea Real Estate Board",
+    "funder_ko": "한국부동산원",
+    "media": [],
+    "notes_en": [
+      "Development of EnergyPlus models for 900 completed green-remodeling buildings (based on EPlusSimple)",
+      "Simulation-based causal analysis of retrofit effects (climate, occupant, and performance factors) and comparison with energy consumption"
+    ],
+    "notes_kr": [
+      "900개 그린리모델링 기 완료 건축물의 EnergyPlus 모델 구축 (EPlusSimple 기반)",
+      "그린리모델링 효과에 대한 시뮬레이션 기반 인과 분석 (기후 요인, 재실자 요인, 성능 요인) 및 사용량 비교"
+    ],
+    "start_date": "2026-09-01",
+    "theme": "retrofit",
+    "title_en": "Building retrofit assessment via simulation",
+    "title_ko": "그린리모델링 성과평가를 위한 시뮬레이션",
+    "visible_in_CV": true
+  },
+  {
+    "end_date": "2027-07-26",
+    "funder_en": "Gyeonggido Office of Education",
+    "funder_ko": "경기도교육청",
+    "media": [],
+    "notes_en": [
+      "Analysis of energy-retrofit impacts and priorities for school buildings in Gyeonggi Province",
+      "Classification of thousands of school buildings and selection and modeling of representative buildings by type",
+      "Development of energy-efficiency strategies using dynamic simulation and machine learning"
+    ],
+    "notes_kr": [
+      "도내 학교 건축물의 에너지 개보수 효과 및 우선순위 분석",
+      "수천 개 학교 건축물 분류 및 유형별 대표 건축물 선정·모델링",
+      "동적 시뮬레이션과 기계학습 기반 에너지 효율화 전략 도출"
+    ],
+    "start_date": "2026-07-27",
+    "theme": "retrofit",
+    "title_en": "Research on Energy-Efficiency Measures for Carbon-Neutral School Facilities",
+    "title_ko": "탄소중립 학교시설 에너지 효율화 방안 연구용역",
+    "visible_in_CV": true
+  },
+  {
+    "end_date": "2026-12-15",
+    "funder_en": "Korea Authority of Land \u0026 Infrastructure Safety",
+    "funder_ko": "국토안전관리원",
+    "media": [
+      {
+        "src": "project-privateGR-approach.png",
+        "caption_en": "Issues with the current simplified assessment table and directions for improvement",
+        "caption_ko": "현행 간이평가표의 문제점과 개선 방향"
+      },
+      {
+        "src": "project-privateGR-process.png",
+        "caption_en": "Enhancement process based on dynamic simulation and sensitivity analysis",
+        "caption_ko": "동적 시뮬레이션과 민감도 분석 기반 고도화 과정"
+      }
+    ],
+    "notes_en": [
+      "Development of a simplified evaluation tool for rapidly assessing retrofit effects in private buildings without individual building simulations"
+    ],
+    "notes_kr": [
+      "민간건축물에서 개별 건물 시뮬레이션 없이 그린리모델링 효과를 빠르게 평가할 수 있는 간이평가표 개발"
+    ],
+    "start_date": "2026-06-29",
+    "theme": "retrofit",
+    "title_en": "Analysis of Green Remodeling Project Effectiveness and Development of Measures to Advance the Support Program",
+    "title_ko": "그린리모델링 사업효과 분석 및 지원사업 고도화 방안 마련",
+    "visible_in_CV": true
+  },
+  {
+    "end_date": "2027-03-31",
+    "funder_en": "Korea Authority of Land \u0026 Infrastructure Safety",
+    "funder_ko": "국토안전관리원",
+    "media": [],
+    "notes_en": [
+      "Enhancement of the dynamic simulation engine for green remodeling (EPlusSimple)",
+      "EnergyStudio training and establishment of a structured usage framework"
+    ],
+    "notes_kr": [
+      "그린리모델링용 동적 시뮬레이션 엔진 (EPlusSimple) 고도화",
+      "EnergyStudio 활용 교육 및 체계 정립"
+    ],
+    "start_date": "2026-05-19",
+    "theme": "building-energy-simulation",
+    "title_en": "Enhancement, Operational Management, and Wider Dissemination of an Energy and Greenhouse Gas Simulator for Existing Buildings",
+    "title_ko": "기존 건축물의 에너지·온실가스 시뮬레이터 고도화·운영관리 및 저변확산",
+    "visible_in_CV": true
+  }
+]

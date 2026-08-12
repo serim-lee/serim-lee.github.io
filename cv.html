@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Curriculum vitae.">
+  <meta name="theme-color" content="#f7f8f5">
+  <title>CV</title>
+  <link rel="stylesheet" href="app/assets/css/styles.css">
+  <script defer src="app/assets/js/color-themes.js"></script>
+  <script defer src="app/assets/js/data-version.js"></script>
+  <script defer src="app/assets/js/publication-bibliography.js"></script>
+  <script defer src="app/assets/js/data.js"></script>
+  <script defer src="app/assets/js/cv.js"></script>
+</head>
+<body class="cv-page">
+  <header class="cv-header">
+    <div class="container cv-header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-copy">
+          <strong data-i18n="back">Back</strong>
+        </span>
+      </a>
+      <div class="cv-header-actions">
+        <button type="button" class="button button-primary" id="download-pdf" data-i18n="downloadPdf">Download PDF</button>
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-lang-switch="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-lang-switch="ko" aria-pressed="false">KR</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article id="cv-paper" class="cv-paper" aria-live="polite"></article>
+  </main>
+</body>
+</html>

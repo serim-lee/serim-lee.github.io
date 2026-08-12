@@ -1,0 +1,14 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "Profile-Editor",
+  "outputfilename": "Profile-Editor",
+  "frontend:dir": "frontend",
+  "frontend:install": "",
+  "frontend:build": "",
+  "info": {
+    "productVersion": "1.0.0"
+  },
+  "author": {
+    "name": "Gonie-Gonie"
+  }
+}

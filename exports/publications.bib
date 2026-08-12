@@ -1,0 +1,673 @@
+@article{publication-nd-y18yfk,
+  title = {Beyond observed COP : incorporating operational context into control potential in heat pump system},
+  author = {Mun, J. Y. and Jo, H. G. and Kim, H. Y. and Jeong, Y. J. and Kim, S. H. and Park, C. S.},
+  year = {under review},
+  journal = {},
+  abstract = {The coefficient of performance (COP) alone cannot reliably evaluate heating, ventilation, and air-conditioning (HVAC) control performance because the observed outcomes reflect the combined effects of the implemented control system and operating context. To account for context dependence, this study proposes an interval-level diagnostic framework for estimating the control-related improvement potential. The framework jointly quantifies the control and corresponding outcome gaps relative to a data-supported reference representing favorable operation under comparable conditions. A probabilistic reference control is learned from unlabeled historical data by weighting the controls associated with superior context-relative outcomes. A conditional outcome model then predicts the performance under both observed and reference controls within the same context, enabling a model-based counterfactual comparison. Finally, the total outcome gap is decomposed into the predicted improvement from reference-control substitution and any remaining discrepancy. The framework was demonstrated using 5-min field data from a hospital variable refrigerant flow (VRF) system, evaluating target high- and low-pressure settings as the controls and COP as the outcome. Models trained on 2023 cooling-season data were evaluated on held-out 2024 data. The conditional outcome model achieved a mean absolute error of 0.15 COP. Advantage weighting shifted the learned reference toward controls, yielding favorable contextual outcomes and producing higher predicted COP values than uniform weighting in 92.16\% of held-out contexts. Contextual diagnosis revealed that nearly identical COP values often corresponded to markedly different control gaps, confirming that observed outcomes alone do not always characterize control performance. Similar COP shortfalls varied substantially in their predicted improvement under reference-control substitution and in their remaining unassessed discrepancies. By linking control gaps to predicted outcomes under comparable conditions, this framework identifies precisely when control adjustments yield meaningful efficiency gains.},
+  keywords = {control diagnosis; contextual reference; counterfactual comparison; uncertainty quantification; variable refrigerant flow system; field data}
+}
+
+@article{publication-nd-kioy6r,
+  title = {Effects of training data coverage on the replicative and predictive validity of OAC preheating coil models},
+  author = {Jeong, Y. J. and Jo, H. G. and Kim, J. H. and Kim, S. H. and Mun, J. H. and Park, C. S.},
+  year = {under review},
+  journal = {},
+  abstract = {The advantages of different HVAC modeling approaches should not be evaluated independently of the measured data available for model development. In particular, the extent to which training data cover the operating domain may determine whether the inherent characteristics of grey-box, hybrid, and black-box models can be effectively leveraged. This study investigates the influence of training data coverage on the replicative and predictive validity of these three modeling approaches. The models were developed to predict the outlet air temperature of a preheating coil in an outdoor air-conditioning system located in a real-world semiconductor manufacturing facility. The operating space was defined by the coil’s inlet air temperature, inlet water temperature, and valve opening ratio and subsequently discretized into a three-dimensional grid. Training datasets with progressively increasing coverage were developed, and model performance was evaluated using fixed test datasets representing observed and unobserved operating regions. An additional experiment was conducted with the total number of training samples held constant to isolate the influence of operating-space coverage from that of data quantity. The three approaches exhibited distinctly different responses to training data coverage. The grey-box model showed a progressive increase in error with broader coverage, with predictive MAE increasing from 2.78 to 3.13 °C, indicating limitations inherent in its fixed parameterization. The hybrid model was comparatively insensitive to coverage and maintained predictive MAEs of 1.45–1.91 °C, demonstrating the benefit of embedded physical relationships when the training data represented only a limited portion of the operating region. In contrast, the black-box model was highly dependent on data representation: its predictive MAE decreased from 3.22 to 0.84 °C and cvRMSE from 40.92\% to 11.62\% as coverage increased. A  similar trend was observed despite the total quantity of training data being held constant, demonstrating that broader operating-space representation was itself a critical factor in improving generalization.These findings demonstrate that model selection should not be based solely on the perceived or nominal advantages of a particular modeling approach. Rather, the characteristics of the available training data, particularly the extent to which they cover the intended operating domain, should be assessed prior to model development to determine which modeling approach is best suited to exploiting the available information.},
+  keywords = {training data coverage; pre-heating coil; outdoor air conditioning system; grey-box model; hybrid model; black-box model; model validity; replicative validity; predictive validity; operating domain}
+}
+
+@article{publication-nd-1stq42v,
+  title = {Enhancing the Usability of Dynamic Building Energy Simulation: Application to 149 Real-World Buildings},
+  author = {Lee, S. J. and Jo, H. G. and Park, C. H. and Park, C. S.},
+  year = {under review},
+  journal = {},
+  abstract = {Dynamic building energy simulation tools, such as EnergyPlus, can represent time-dependent thermal interactions in detail; however, their input requirements involve specialized knowledge and considerable time and effort for model development. These requirements have contributed to the perception that dynamic simulation is difficult to apply in practice. This study proposes and implements an approach to improve usability by simplifying user inputs while retaining EnergyPlus as the simulation engine. The input variables are designed based on building information available from drawings and documents, such as surface areas and azimuths, reducing the need to learn separate 3D modeling tools and acquire in-depth knowledge of EnergyPlus. Predefined rules, templates, and libraries translate these inputs into simulation-ready EnergyPlus models. To facilitate input entry and review, a spreadsheet-based interface presents the inputs in a familiar tabular format commonly used in design documents. The modeling procedure was first demonstrated using the U.S. DOE Medium Office reference building and subsequently applied to 149 public buildings in South Korea. Seven practitioners with no prior experience using EnergyPlus completed the models within two weeks following a two-hour hands-on workshop, requiring approximately half a day per building from document interpretation through simulation and result review. These findings suggest that the proposed approach can support the efficient application of dynamic simulation in building energy performance assessment.},
+  keywords = {dynamic building energy simulation; modeling efficiency; usability; simplified approach}
+}
+
+@article{publication-nd-1pob6w,
+  title = {From deterministic to stochastic performance gap: empirical quantification of stochasticity in 132 real-world buildings},
+  author = {Jo, H. G. and Lee, S. J. and Park, C. S.},
+  year = {under review},
+  journal = {},
+  abstract = {The measured–simulated energy discrepancy, commonly termed the building energy performance gap, is widely employed to assess model accuracy. However, measured energy use can vary even when building performance remains unchanged, making validation a moving-target problem. This study quantifies the corresponding moving range using four years (2018–2021) of electricity and gas records from 132 public buildings in South Korea, together with EnergyPlus simulations. This study separates the overall measured-simulated energy discrepancy into conditional mean discrepancy and realization deviation, assuming unchanged building specifications and operating regimes, along with zero-mean, normally distributed realization deviations of common variance. The moving range is defined as the interval expected to contain 99\% of annual energy-use realizations, and its half-width is estimated by assuming an affine relationship between the conditional mean and simulated energy use. The estimated moving range half-width averaged 32.6 kWh/(m²·yr), with a normalized value of 16.5\%. Under the adopted assumptions, annual energy use can therefore fluctuate around its conditional mean within nominal 99\% bands averaging ±16.5\% of mean measured energy use intensity (EUI). Analysis of selected buildings showed that apparent annual performance gaps can reflect realization variability even when conditional mean discrepancies are relatively small. The study proposes a stochastic performance gap (sPG) perspective in which validation accounts for both conditional mean agreement and realization variability, recognizing that individual energy discrepancies do not necessarily indicate correctable model deficiencies.},
+  keywords = {building energy performance gap; moving target; aleatory uncertainty; model validatoin}
+}
+
+@article{publication-2026-scjjt,
+  title = {Measured vs. Simulated post-retrofit energy-use in 149 public buildings using dynamic simulation},
+  author = {Lee, S. J. and Jo, H. G. and Yoo, Y. S. and Park, C. S.},
+  year = {2026},
+  journal = {Energy and Buildings, Vol. 372, 118260.},
+  doi = {doi.org/10.1016/j.enbuild.2026.118260},
+  abstract = {Dynamic building energy simulation is widely used to examine “what-if” questions about how changes in building envelopes and systems affect energy use, particularly in retrofit evaluation. Yet measured energy-use changes in real buildings are shaped by both physical changes and uncertainties that are not fully represented in simulation models, making it unclear how simulation-based “what-if” results should be understood when measured–simulated discrepancies exist. Despite this limitation, the usefulness of simulation has predominantly been discussed in terms of its agreement with measured energy use at the individual-building level, while its explanatory value for what-if changes under real-world conditions has received less attention. In this study, this issue was evaluated by comparing measured data and EnergyPlus results for 149 retrofitted public non-residential buildings in South Korea, including daycare and healthcare buildings. Before- and after-retrofit EnergyPlus models were developed by integrating drawings, specifications, surveys, site-visit records, the Korean building energy code, and actual weather data. The simulation results were then compared with measured data in terms of energy use and before–after changes at the individual-building level, by energy conservation measure (ECM)-combination groups, and at the building-stock level. Results show that discrepancies between measured and simulated energy use were substantial at the individual-building level, whereas measured and simulated post-retrofit energy-use changes were similar at the building-stock level, both annually and monthly. This contrast was particularly evident for healthcare buildings, where the measured–simulated discrepancies in absolute annual energy use were 1,559.3 MWh/yr before retrofit and 1,346.0 MWh/yr after retrofit, whereas the discrepancy in annual energy savings was substantially smaller, at 213.3 MWh/yr. These findings suggest that before–after differencing and stock-level aggregation can help reduce the influence of building-specific deviations, allowing dynamic simulation to serve as a useful interpretive framework for understanding retrofit-induced energy-use changes in real buildings. Such an interpretation can extend the role of dynamic simulation in stock-level retrofit evaluation and decision-making under real-world uncertainty, particularly for policymakers and retrofit decision-makers, even when discrepancies remain for individual buildings. },
+  keywords = {bbuilding energy simulation; dynamic simulation; energy retrofit; energy use; performance gap}
+}
+
+@inproceedings{publication-2026-wlzclc,
+  title = {Improving the usability of dynamic building energy simulation},
+  author = {Lee, S. J. and Jo, H. G. and Park, C. H. and Park, C. S.},
+  year = {2026},
+  booktitle = {대한건축학회 학술발표대회 논문집, Vol. 46, No. 2, pp. 391-392. Autumn Annual Conference of AIK, 2026, October 21-23, 2026, 대전컨벤션센터, 대전.},
+  abstract = {Dynamic building energy simulation tools such as EnergyPlus can represent time-dependent thermal interactions in detail, but their complexinput requirements demand in-depth expertise and considerable time and effort. To address these it, this study proposes a simplifiedapproach to improve the usability of dynamic building energy simulation. The proposed approach uses a simplified set of input variableswhose values can be obtained from drawings and documents. A spreadsheet-based input interface allows users to review multiple inputstogether, while automated rules translate these inputs into simulation-ready EnergyPlus files. The method was applied to 149 public buildingsby practitioners without prior EnergyPlus experience, and the entire process from drawing interpretation to simulation and result reviewrequired approximately a half day per building. These results indicate the potential of the proposed approach for the efficient use ofdynamic simulation in building energy performance assessment},
+  keywords = {dynamic building energy simualtion; energyplus; usability; simplified approach}
+}
+
+@inproceedings{publication-2026-1v5sm27,
+  title = {Replicative and predictive validity of OAC heating coil models across training datacoverage levels},
+  author = {Jeong, Y. J. and Jo, H. G. and Kim, J. H. and Kim, S. H. and Mun, J. H. and Park, C. S.},
+  year = {2026},
+  booktitle = {대한건축학회 학술발표대회 논문집, Vol. 46, No. 2, pp. 464-465. Autumn Annual Conference of AIK, 2026, October 21-23, 2026, 대전컨벤션센터, 대전.},
+  abstract = {Selecting a modeling approach for HVAC systems should account for the characteristics of the available training data, particularly the extentto which they cover the intended operating domain. This study evaluated the replicative and predictive validity of grey-box, hybrid, andblack-box models for predicting the outlet-air temperature of an outdoor air-conditioning system(OAC) preheating coil in a semiconductorfacility. Training datasets with increasing operating-space coverage were constructed in a three-dimensional grid. Grey-box validity decreasedas coverage increased, whereas the hybrid model maintained relatively stable performance and achieved the highest predictive validity underlow coverage. The predictive MAE of the black-box model decreased markedly from 3.22 to 0.84°C as coverage increased. These findingsshow that the model selection should account for training data coverage and the intended prediction domain.},
+  keywords = {outdoor air conditioning system; heating coil; training data coverage; replicative validity; predictive validity}
+}
+
+@inproceedings{publication-2026-sldn6d,
+  title = {Stochastic analysis of building energy prediction gap for 331 real-world buildings},
+  author = {Jo, H. G. and Lee, S. J. and Park, C. S.},
+  year = {2026},
+  booktitle = {대한건축학회 학술발표대회 논문집, Vol. 46, No. 2, pp. 498-499. Autumn Annual Conference of AIK, 2026, October 21-23, 2026, 대전컨벤션센터, 대전.},
+  abstract = {This study distinguishes the underlying building energy prediction gap from the observable energy discrepancy by quantifying residualstochasticity. Four years (2018–2021) of electricity and gas data from 331 daycare centers and public health centers were compared withEnergyPlus simulations using annual weather data. The estimated stochastic variation averaged ±21.9\% at the 99\% confidence level. Thisimplies that the discrepancy from observed energy use may not necessarily represent a gap that should be eliminated, but may partly reflectstochastic realizations arising from building operation.},
+  keywords = {performance gap; prediction gap; stochasticity; building energy simulation; uncertainty quantification}
+}
+
+@inproceedings{publication-2026-1nvhcke,
+  title = {Incorporating operational context into control performance in heat pump  system},
+  author = {Mun, J. Y. and Jo, H. G. and Kim, H. Y. and Jeong, Y. J. and Kim, S. H. and Park, C. S.},
+  year = {2026},
+  booktitle = {Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2026, October 2, 2026, Songdo Convensia, Incheon, Republic of Korea.},
+  abstract = {Observed COP alone cannot always diagnose heat pump control performance because it reflects both implemented controls and operating context. This study aims to estimate control-related improvement potential by comparing observed control and outcome with their counterfactual counterparts under comparable operating contexts. A data-supported reference control is learned from historical data and evaluated using a conditional outcome model. The proposed framework enables interval-level diagnosis by distinguishing actionable control-related outcome gaps from residual gaps.},
+  keywords = {control diagnose; uncertainty quantification; variable refriegerant flow (vrf); field data}
+}
+
+@article{publication-2026-1ez00yl,
+  title = {Implications of geometry simplification in dynamic building energy modeling: Comparative analysis of detailed and simplified geometries},
+  author = {Park, C. H. and Lee, S. J. and Jo, H. G. and Park, C. S.},
+  year = {2026},
+  journal = {Energy and Buildings, Vol. 368, 117839.},
+  doi = {10.1016/j.enbuild.2026.117839},
+  url = {https://www.sciencedirect.com/science/article/pii/S0378778826008996},
+  keywords = {simplified geometry; detailed geometry; dynamic building energy modeling; geographic information system (gis)}
+}
+
+@article{publication-2026-10nu9oz,
+  title = {From Single Archetype to Multi-Sample Approach for Stock-Level Retrofit Predictions},
+  author = {Jo, H. G. and Lee, S. J. and Park, C. S.},
+  year = {2026},
+  journal = {Journal of Building Performance Simulation},
+  doi = {10.1080/19401493.2026.2736767},
+  url = {https://www.tandfonline.com/doi/full/10.1080/19401493.2026.2736767},
+  abstract = {It remains questionable whether a single archetype possesses sufficient representativeness of actual building stock and fully captures the diversity of the building population. This is particularly relevant when quantifying the impact of energy conservation measures (ECMs) for large-scale energy retrofits by policymakers. This study examined this limitation using detailed EnergyPlus models of 362 real-world healthcare buildings and proposed a multi-sample approach for seven ECM scenarios. It was found that any archetype building is not likely to reproduce the effects of stock-level retrofit across all ECMs. The potential of the multi-sample approach was also evaluated using sampled building subsets of different sizes, and substantial improvement was observed with as few as three buildings. These findings suggest that rather than the precise definition of a single archetype, the key issue for retrofit-oriented building energy modeling is the use of a small set of sampled buildings that preserve within-stock variation.},
+  keywords = {archetype; multi-sample; retrofit; energy conservation measure; wisdom of crowds}
+}
+
+@inproceedings{publication-2026-wh9fqt,
+  title = {Impact of energy retrofit on monthly energy use with dynamic energy simulation},
+  author = {Lee, S. J. and Jo, H. G. and Mun, H. J. and Kim, S. H. and Park, J. I. and Park, C. S.},
+  year = {2026},
+  booktitle = {Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 46, No. 1, pp. 507-508. Autumn Annual Conference of AIK, 2026, April 28-30, 2026, aT Center, Seoul, Republic of Korea.},
+  url = {https://www.auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=454204&returnVal=RD_R},
+  keywords = {dynamic simulation; energyplus; energy retrofit; building stock}
+}
+
+@inproceedings{publication-2026-1338qnh,
+  title = {Causal analysis of energy retrofit for real-life cases using Average Treatment Effect},
+  author = {Lee, S. J. and Park, C. H. and Jo, H. G. and Park, C. S.},
+  year = {2026},
+  booktitle = {E3S Web of Conferences, Volume 689 (2026): 14th International Symposium on Heating, Ventilation and Air Conditioning (ISHVAC 2025). 14th International Symposium on Heating, Ventilation, and Air Conditioning, November 29-December 2, 2025, Institute of Industrial Science, The University of Tokyo (4-6-1 Komaba, Meguro-ku), Tokyo, Japan.},
+  doi = {10.1051/e3sconf/202668904011},
+  url = {https://www.e3s-conferences.org/10.1051/e3sconf/202668904011}
+}
+
+@article{publication-2026-38972k,
+  title = {Causality-driven, interpretable surrogate modeling for DOAS preheating control},
+  author = {Mun, J. Y. and Jo, H. G. and Kim, J. H. and Park, C. S. and Urabe, E. and Mun, J. H. and Park, Y. S.},
+  year = {2026},
+  journal = {Energy and Buildings, Vol. 350, 116625.},
+  doi = {10.1016/j.enbuild.2025.116625},
+  url = {https://www.sciencedirect.com/science/article/pii/S0378778825013556},
+  keywords = {causal inference; dedicated outdoor air system (doas); double machine learning (dml); heating control; interpretable model; preheating coil; real-world building data; surrogate modeling}
+}
+
+@inproceedings{publication-2026-1o14d7a,
+  title = {Generalizable Chiller Model via Domain-Invariant Representation Learning: A Real-Life Case Study},
+  author = {Kim, J. H. and Jo, H. G. and Mun, J. Y. and Park, C. S.},
+  year = {2026},
+  booktitle = {ASHRAE Transactions, Vol. 132, Part 1, pp. 15-17. 2026 ASHRAE Winter Conference, January 31-February 4, 2026, Caesars Palace, Las Vegas, Nevada, United States.},
+  doi = {10.63044/w26kimA07},
+  url = {https://store.accuristech.com/standards/a007-generalizable-chiller-model-via-domain-invariant-representation-learning-a-real-life-case-study?product_id=3066255}
+}
+
+@article{publication-2025-1zu5cy,
+  title = {Domain-invariant representation learning for generalizable chiller model: a real-world case study},
+  author = {Kim, J. H. and Kim, Y. S. and Jo, H. G. and Mun, J. Y. and Park, C. S.},
+  year = {2025},
+  journal = {Energy and Buildings, Vol. 346, 116168.},
+  doi = {10.1016/j.enbuild.2025.116168},
+  url = {https://www.sciencedirect.com/science/article/pii/S0378778825008989},
+  keywords = {chiller; domain-invariant representation learning; transfer learning; data-driven; accuracy; extrapolation ability; bidirectional learning; unidirectional learning}
+}
+
+@inproceedings{publication-2025-1kxbkqk,
+  title = {Analysis of Building Energy Use under Different Weather Data Types and Operational Uncertainties},
+  author = {Mun, H. J. and Lee, S. J. and Jo, H. G. and Park, C. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 229-230. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2025, November 13-15, 2025, Chungbuk National University, Cheongju, Republic of Korea.},
+  url = {https://www.auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=449409&returnVal=RD_R},
+  keywords = {retrofit; dynamic simulation; weather data; uncertainty analysis(ua); stochastic approach}
+}
+
+@inproceedings{publication-2025-dtdjy7,
+  title = {Causal Analysis of Energy Retrofit Effects: Four Energy Conservation Measures (ECMs) in 210 Public Daycare centers},
+  author = {Lee, S. J. and Park, C. H. and Jo, H. G. and Park, C. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 188-189. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2025, November 13-15, 2025, Chungbuk National University, Cheongju, Republic of Korea.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=449389&returnVal=RD_R},
+  keywords = {energy retrofit; ecms(energy conservation measure); causal analysis; ate(average treatment effect)}
+}
+
+@inproceedings{publication-2025-1ocmv45,
+  title = {Stochastic MPC of an Outdoor Air Conditioner},
+  author = {Jeong, Y. J. and Jo, H. G. and Mun, J. Y. and Park, C. S. and Mun, J. H. and Park, Y. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 218-219. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2025, November 13-15, 2025, Chungbuk National University, Cheongju, Republic of Korea.},
+  url = {https://www.auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=449404&returnVal=RD_R},
+  keywords = {outdoor air conditioner; stochastic mpc; uncertainty; antifreeze}
+}
+
+@inproceedings{publication-2025-8q0po8,
+  title = {Uncertainty propagation based on heating coil model’s causal structure},
+  author = {Jeong, Y. J. and Jo, H. G. and Mun, J. Y. and Park, C. S. and Mun, J. H. and Park, Y. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 220-221. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2025, November 13-15, 2025, Chungbuk National University, Cheongju, Republic of Korea.},
+  url = {https://www.auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=449405&returnVal=RD_R},
+  keywords = {heating coil; causal structure; uncertainty propagation; probability integral transformation}
+}
+
+@article{publication-2025-1x3dm6z,
+  title = {Real-time model predictive control of energy recovery ventilators for a school building},
+  author = {Ra, S. J. and Jo, H. G. and Park, C. S.},
+  year = {2025},
+  journal = {Science and Technology for the Built Environment, Vol. 31, No. 9, pp. 1155-1166.},
+  doi = {10.1080/23744731.2025.2539048},
+  url = {https://www.tandfonline.com/doi/full/10.1080/23744731.2025.2539048},
+  abstract = {This article presents a model predictive control (MPC) of energy recovery ventilators (ERVs) for maintaining required concentration levels of PM2.5, PM10, and CO2 in a real-life preschool classroom, while minimizing energy use of ERVs. For this purpose, the authors developed an artificial neural network (ANN) model that can predict time-varying concentrations of PM2.5, PM10, and CO2 (within normalized mean bias error: 0.8\%, coefficient of variance root mean square error: 13.2\%). In addition, the authors developed a stochastic occupancy model to predict occupant presence in the classroom. As a result, the real-time MPC could maintain required indoor concentration levels of PM2.5, PM 10, and CO2 in the classroom during the weekdays (baseline: 83.1\% (four days), MPC: 96.1\% (four days)) and achieved an energy-saving rate of 6.5\%. This study suggests that the ANN MPC can accurately predict the time-varying indoor environment in the classroom as well as be beneficially used for energy savings.}
+}
+
+@inproceedings{publication-2025-nk0a53,
+  title = {EnergyPlus simulation using spreadsheet for HVAC systems},
+  author = {Jo, H. G. and Lee, S. J. and Park, C. H. and Mun, H. J. and Park, C. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 45, No. 2, pp. 576-577. Fall Annual Conference of the Architectural Institute of Korea, 2025, October 29-31, 2025, Science and Technology Convention Center, Seoul, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12489217},
+  keywords = {dynamic simulation; spreadsheet; hvac system modeling}
+}
+
+@inproceedings{publication-2025-na0og4,
+  title = {EnergyPlus simulation using spreadsheet for thermal zones and geometries},
+  author = {Jo, H. G. and Park, C. H. and Lee, S. J. and Mun, H. J. and Park, C. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 45, No. 2, pp. 574-575. Fall Annual Conference of the Architectural Institute of Korea, 2025, October 29-31, 2025, Science and Technology Convention Center, Seoul, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12489216},
+  keywords = {dynamic simulation; spreadsheet; geometry modeling}
+}
+
+@inproceedings{publication-2025-1ccshu1,
+  title = {Uncertainty Analysis of Building Energy Use Based on Energy Retrofit Levels},
+  author = {Mun, H. J. and Lee, S. J. and Jo, H. G. and Park, C. H. and Park, C. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 45, No. 2, pp. 524-525. Fall Annual Conference of the Architectural Institute of Korea, 2025, October 29-31, 2025, Science and Technology Convention Center, Seoul, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12489192},
+  keywords = {uncertainty analysis(ua); dynamic simulation; retrofit; stochastic approach}
+}
+
+@inproceedings{publication-2025-o3zhj1,
+  title = {Use of spreadsheet for dynamic simulation tools},
+  author = {Lee, S. J. and Jo, H. G. and Park, C. H. and Mun, H. J. and Park, C. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 45, No. 2, pp. 572-573. Fall Annual Conference of the Architectural Institute of Korea, 2025, October 29-31, 2025, Science and Technology Convention Center, Seoul, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12489215},
+  keywords = {graphic user interface; dynamic simulation; spreadsheet}
+}
+
+@inproceedings{publication-2025-1qzl6fo,
+  title = {Optimal Control Strategies for Multiple Chillers in a Building},
+  author = {Kim, Y. S. and Kim, J. H. and Jo, H. G. and Park, C. S. and Urabe, E. and Mun, J. H. and Shin, Y. K. and Park, Y. S.},
+  year = {2025},
+  booktitle = {Proceedings of the International Conference on Smart and Sustainable Built Environment (SASBE2024), Lecture Notes in Civil Engineering, Vol. 591, pp. 1217-1224. International Conference on Smart and Sustainable Built Environment, November 7-9, 2024, Auckland University of Technology (AUT), City Campus, Auckland, New Zealand.},
+  doi = {10.1007/978-981-96-4051-5_116},
+  url = {https://doi.org/10.1007/978-981-96-4051-5_116},
+  keywords = {physics-informed data-driven model, gaussian process; cooling system; time-varying cop; optimal control strategies}
+}
+
+@inproceedings{publication-2025-1r9ks4n,
+  title = {Optimal Control Strategies of a Heat Recovery System for a Building},
+  author = {Jo, H. G. and Kim, Y. S. and Kim, J. H. and Park, C. S. and Urabe, E. and Mun, J. H. and Shin, Y. K. and Park, Y. S.},
+  year = {2025},
+  booktitle = {Proceedings of the International Conference on Smart and Sustainable Built Environment (SASBE2024), Lecture Notes in Civil Engineering, Vol. 591, pp. 1225-1231. International Conference on Smart and Sustainable Built Environment, November 7-9, 2024, Auckland University of Technology (AUT), City Campus, Auckland, New Zealand.},
+  doi = {10.1007/978-981-96-4051-5_117},
+  url = {https://doi.org/10.1007/978-981-96-4051-5_117},
+  keywords = {heat recovery system; optimal control; building simulation; rule reduction; building energy}
+}
+
+@article{publication-2025-1qpc41h,
+  title = {Accuracy, generalizability, and extrapolation ability of physics-based, data-driven, and hybrid models for real-life cooling towers},
+  author = {Kim, J. H. and Kim, Y. S. and Jo, H. G. and Urabe, E. and Mun, J. H. and Shin, Y. K. and Park, Y. S. and Park, C. S.},
+  year = {2025},
+  journal = {Building and Environment, Vol. 274, 112756.},
+  doi = {10.1016/j.buildenv.2025.112756},
+  url = {https://www.sciencedirect.com/science/article/pii/S0360132325002380},
+  abstract = {This study compares the five simulation models of real-life cooling towers in terms of model accuracy, generalizability, and extrapolation ability; a physics-based model (\#1), a data-driven model (\#2), a physics-informed hybrid model (\#3), a physics-guided hybrid model (\#4), and a transfer-learning (TL) hybrid model (\#5). For this purpose, we gathered relevant data from target cooling towers for approximately three years (May 2020 to March 2023) at a sampling time of 1-h. Regarding the model accuracy, the four models (\#2–4) exhibited good-enough predictive performance by achieving a cvRMSE of 15.9–18.0 \% for predicting the cooling tower heat removal and MAE of 0.6–0.7 °C and R2 of 0.96–0.98 for predicting cooling water outlet temperature, while the physics-based model exhibits the lowest accuracy (cvRMSE: 64.2 \%, MAE: 2.9 °C, R2: 0.66). As a generalizability test, we applied the five models developed for the target system to a nearby identical system. The four models (\#2–4) exhibited the reduced accuracy, close to the required level by ASHRAE Guideline 14 (lower than 30.0 \% for hourly prediction). The generalizability study implicates that models \#2–5 need to be re-adjusted against the unseen system data. Regarding the extrapolation ability, only the physics-based and TL-hybrid models exhibited physical consistency between the cooling water outlet temperature and on the number of fans. It is noteworthy that the TL-hybrid model (\#5) performs best in terms of the model accuracy, generalizability, and extrapolation ability beyond the training data.},
+  keywords = {cooling tower prediction; extrapolation; generalizability; hybrid model; physics-based model; transfer learning}
+}
+
+@inproceedings{publication-2025-nfrh4u,
+  title = {Dedicated Outdoor Air System (DOAS) Models through Causal Knowledge Transfer},
+  author = {Mun, J. Y. and Jo, H. G. and Kim, Y. S. and Kim, J. H. and Mun, J. H. and Park, C. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 45, No. 1, pp. 337-338. General Assembly \& Spring Annual Conference of AIK, 2025, April 23-25, 2025, Global Engineering Education Center Convention, Seoul National University, Seoul, Republic of Korea.},
+  url = {https://www.auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=437037&returnVal=RD_R},
+  keywords = {dedicated outdoor air system; coil; mpc; causality}
+}
+
+@inproceedings{publication-2025-yory3e,
+  title = {Development of a Federated Chiller Model Using Domain Invariant Representation Learning},
+  author = {Kim, J. H. and Kim, Y. S. and Jo, H. G. and Mun, J. Y. and Mun, J. H. and Park, C. S.},
+  year = {2025},
+  booktitle = {Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 45, No. 1, pp. 413-414. General Assembly \& Spring Annual Conference of AIK, 2025, April 23-25, 2025, Global Engineering Education Center Convention, Seoul National University, Seoul, Republic of Korea.},
+  url = {https://www.auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=437077&returnVal=RD_R},
+  keywords = {chiller; domain invariant representation learning; transfer learning; data-driven; extrapolation ability}
+}
+
+@article{publication-2025-9e0xf,
+  title = {Toward scalable prediction of indoor thermal dynamics: Neural-network-implanted state-space (NNiSS) model},
+  author = {Mun, J. Y. and Jo, H. G. and Park, C. S.},
+  year = {2025},
+  journal = {Energy and Buildings, Vol. 331, 115359.},
+  doi = {10.1016/j.enbuild.2025.115359},
+  url = {https://www.sciencedirect.com/science/article/pii/S0378778825000891},
+  abstract = {Scalability of data-driven dynamic models is a major challenge for the widespread adoption of model predictive control (MPC) in practical building applications. Many studies have shown that although data-driven models perform well with known inputs, they often struggle to extrapolate beyond the training dataset. This issue arises because they simulate behaviors based solely on explicit correlations within the given data, without accounting for the physical causality of the system. To enhance their scalability and extrapolation capabilities, models must learn the fundamental physical principles underlying a dataset.
+Therefore, this study aimed to develop a physics-informed data-driven modeling approach for a space conditioned by a heat pump (HP) system. The approach leverages a neural network (NN) architecture called the NN-implanted state-space (NNiSS) model, which was used to predict the 30-minute ahead indoor, HP return, and HP supply air temperatures. The performance of the NNiSS model was compared with that of three other classical NN-based models with varying degrees of dynamic interconnectedness: multi-input single-output (MISO)–NN, federated MISO-NN, and multi-input multi-output (MIMO)–NN.
+The results demonstrated that the NNiSS model consistently outperformed other NN models that exhibit unstable performance in capturing complex dynamics from the given data and predicting the dynamic behavior of the system beyond the trained inputs. The potential scalability of the NNiSS model emphasizes the importance of bidirectionally propagating dynamic information based on physical interrelationships, which can be achieved by integrating an NN into a state-space representation. This scalability can facilitate the development of reliable MPC strategies for intelligent buildings.},
+  keywords = {correlation; extrapolation; heat pump; mpc; physics-informed neural network; scalability}
+}
+
+@inproceedings{publication-2024-1ulbk8i,
+  title = {Effects of Geometry Simplification for Office Buildings Located in Seoul Using GIS},
+  author = {Park, C. H. and Lee, S. J. and Jo, H. G. and Park, C. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 108-109. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2024, November 14-16, 2024, Engineering Building 1, Jeju National University, Jeju, Republic of Korea.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=434704&returnVal=RD_R},
+  keywords = {building energy model; geometry simplification; geographic information system (gis); simplified geometry model}
+}
+
+@inproceedings{publication-2024-z9rvlz,
+  title = {Optimal control of outdoor air conditioning system with freeze protection},
+  author = {Mun, J. Y. and Jo, H. G. and Kim, Y. S. and Kim, J. H. and Park, C. S. and Mun, J. H. and Park, Y. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 176-177. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2024, November 14-16, 2024, Engineering Building 1, Jeju National University, Jeju, Republic of Korea.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=434730&returnVal=RD_R},
+  keywords = {outdoor air conditioner; model predictive control (mpc); coil; freeze and burst; physics-based model}
+}
+
+@inproceedings{publication-2024-1pqy93,
+  title = {Techno-economic Analysis of Energy Conservation Measures for Building Retrofit},
+  author = {Kwon, S. O. and Jo, H. G. and Lee, S. J. and Park, S. H. and Park, C. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 140-141. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2024, November 14-16, 2024, Engineering Building 1, Jeju National University, Jeju, Republic of Korea.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=434716&returnVal=RD_R},
+  keywords = {building retrofit; techno-economic analysis; multi-criteria decision making; pareto optimality}
+}
+
+@inproceedings{publication-2024-6p2csq,
+  title = {하이브리드 모델 기반의 냉동기 이상 검출 방법},
+  author = {Kim, Y. S. and Kim, J. H. and Jo, H. G. and Mun, J. Y. and Park, C. S. and Mun, J. H. and Park, Y. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 152-153. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2024, November 14-16, 2024, Engineering Building 1, Jeju National University, Jeju, Republic of Korea.}
+}
+
+@inproceedings{publication-2024-1yaov1e,
+  title = {Building a CO2 reduction database for rational decision making on national building retrofit policies},
+  author = {Jo, H. G. and Kwon, S. O. and Kim, U. H. and Yoo, Y. S. and Park, C. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 44, No. 2, pp. 501-502. Fall Annual Conference of the Architectural Institute of Korea, 2024, October 23-25, 2024, The-K Hotel Gyeongju, Gyeongju, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12002835},
+  keywords = {retrofit; dynamic simulation; uncertainty; green house gas; nationally determined contributions}
+}
+
+@inproceedings{publication-2024-yj42r9,
+  title = {Comparison of simplified and detailed geometry building energy models - Focused on shading effect -},
+  author = {Lee, S. J. and Park, C. H. and Jo, H. G. and Yoo, Y. S. and Kim, S. H. and Park, C. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 44, No. 2, pp. 636-637. Fall Annual Conference of the Architectural Institute of Korea, 2024, October 23-25, 2024, The-K Hotel Gyeongju, Gyeongju, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12002896},
+  keywords = {building energy model; simplified geometry; detailed geometry; simplified building performace rating method (s-bpm)}
+}
+
+@inproceedings{publication-2024-1o5rqbk,
+  title = {Comparison of simplified geometries in dynamic building energy modeling},
+  author = {Park, C. H. and Lee, S. J. and Jo, H. G. and Yoo, Y. S. and Kim, S. H. and Park, C. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 44, No. 2, pp. 634-635. Fall Annual Conference of the Architectural Institute of Korea, 2024, October 23-25, 2024, The-K Hotel Gyeongju, Gyeongju, Republic of Korea.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=433149&returnVal=RD_R},
+  keywords = {building energy model; geometry simplification; simplified geometry model; dynamic building energy simulation}
+}
+
+@inproceedings{publication-2024-j4f5f,
+  title = {Enhancing Scalability of Neural Networks for MPC by Interconnecting Building Dynamics},
+  author = {Mun, J. Y. and Jo, H. G. and Park, C. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 44, No. 2, pp. 513-514. Fall Annual Conference of the Architectural Institute of Korea, 2024, October 23-25, 2024, The-K Hotel Gyeongju, Gyeongju, Republic of Korea.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=433094&returnVal=RD_R},
+  keywords = {scalability; data-driven model; pinn; dynamic interaction}
+}
+
+@inproceedings{publication-2024-1x6narj,
+  title = {Optimal Control for Heating Coil in Outdoor Air Conditioning System},
+  author = {Mun, J. Y. and Jo, H. G. and Kim, Y. S. and Kim, J. H. and Park, C. S. and Mun, J. H. and Park, Y. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 44, No. 2, pp. 482-483. Fall Annual Conference of the Architectural Institute of Korea, 2024, October 23-25, 2024, The-K Hotel Gyeongju, Gyeongju, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12002825},
+  keywords = {outdoor air conditioner; mpc; coil; heating energy; freezing}
+}
+
+@inproceedings{publication-2024-13zjpvx,
+  title = {Uncertainty Analysis for Building Energy Reduction by Energy Conservation Measures},
+  author = {Kwon, S. O. and Jo, H. G. and Yoo, Y. S. and Kim, U. H. and Park, C. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 44, No. 2, pp. 493-494. Fall Annual Conference of the Architectural Institute of Korea, 2024, October 23-25, 2024, The-K Hotel Gyeongju, Gyeongju, Republic of Korea.},
+  url = {https://www.auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=433085&returnVal=RD_R},
+  keywords = {building retrofit; uncertainty analysis; building energy reduction; energy conservation measures}
+}
+
+@inproceedings{publication-2024-a44eru,
+  title = {Hybrid Modeling of Cooling Tower System Using Transfer Learning},
+  author = {Kim, J. H. and Kim, Y. S. and Jo, H. G. and Park, C. S. and Urabe, E. and Mun, J. H. and Gwak, J. H. and Shin, Y. K. and Park, Y. S.},
+  year = {2024},
+  booktitle = {Proceedings of the Spring Joint Conference of the Korean Operations Research and Management Science Society, Korean Institute of Industrial Engineers, and Korea Society for Simulation, pp. 1390-1394. 2024 Spring Joint Conference of KORMS and KIIE, May 2-4, 2024, Yeosu Expo Convention Center, Yeosu, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11800603}
+}
+
+@article{publication-2024-112hlrs,
+  title = {Issues and Recommendations for Quasi Steady-State Building Energy Analysis: Focusing on a Domestic Building Energy Efficiency Rating Program (ECO2)},
+  author = {Lee, S. J. and Jo, H. G. and Yoo, Y. S. and Park, C. H. and Park, C. S.},
+  year = {2024},
+  journal = {Journal of the Architectural Institute of Korea, Vol. 40, No. 1, pp. 169-176.},
+  doi = {10.5659/JAIK.2024.40.1.169},
+  url = {https://www.aik.or.kr/pages_archive/aik_journal_list.vm?ncode=p002d},
+  abstract = {Building energy analysis can be categorized into steady state, quasi-steady state and dynamic methods. The current Korean building energy standards relies on ECO2 that is based on the quasi-steady state approach. For the purpose of clarity and simplicity, ECO2 is designed to receive deterministic inputs only, and allow for predefined usage profiles such as occupant/lighting/equipment schedule. In this regard, the authors examine technical disadvantages caused by ECO2: (1) unrealistic geometric and HVAC modeling, (2) non-adjustable default input fields, (3) lack of validation for building energy models and users, (4) no account for building’s stochastic characteristics, (5) lack of usability in energy-conscious decision making. This paper proposes further recommendations for the Korean building energy standards.},
+  keywords = {building energy standards; quasi steady-state; performance; eco2; iso 13790; din v 18599}
+}
+
+@inproceedings{publication-2024-1188e33,
+  title = {Enhancing Scalability of Neural Networks for MPC by Interconnecting Building Dynamics},
+  author = {Mun, J. Y. and Jo, H. G. and Cho, S. K. and Park, C. S.},
+  year = {2024},
+  booktitle = {Proceedings of ASim Conference 2024: 5th Asia Conference of IBPSA, ASim Conference Proceedings, pp. 491-498. 5th Asia Conference of the International Building Performance Simulation Association, December 8-10, 2024, Osaka University Nakanoshima Center (4-3-53 Nakanoshima, Kita-ku), Osaka, Japan.},
+  doi = {10.69357/asim2024.1146},
+  url = {https://publications.ibpsa.org/conference/paper/?id=asim2024_1146},
+  keywords = {scalability; dynamic interaction; robust learning; data extrapolation; physics-informed neural network}
+}
+
+@inproceedings{publication-2024-8gnz14,
+  title = {Model predictive control for large-scale cooling tower system using transfer learning model},
+  author = {Kim, J. H. and Kim, Y. S. and Jo, H. G. and Park, C. S. and Urabe, E. and Mun, J. H. and Gwak, J. H. and Shin, Y. K. and Park, Y. S.},
+  year = {2024},
+  booktitle = {Proceedings of the 2024 ACEEE Summer Study on Energy Efficiency in Buildings, ACEEE Summer Study on Energy Efficiency in Buildings Proceedings. 2024 ACEEE Summer Study on Energy Efficiency in Buildings, August 4-9, 2024, Asilomar Conference Grounds, Pacific Grove, California, United States.},
+  url = {https://www.aceee.org/sites/default/files/proceedings/ssb24/assets/attachments/20240722163104047_eeb7bee9-9286-41f2-b7cf-c9b68931501a.pdf}
+}
+
+@inproceedings{publication-2023-17ywkfo,
+  title = {Implementation of real-time model predictive control (MPC) of energy recovery ventilators for school buildings},
+  author = {Ra, S. J. and Jo, H. G. and Jeong, H. and Heo, T. W. and Park, C. S.},
+  year = {2023},
+  booktitle = {Proceedings of Building Simulation 2023: 18th Conference of IBPSA, Building Simulation Conference Proceedings, pp. 3773-3780. Building Simulation 2023: 18th International IBPSA Conference and Exhibition, September 4-6, 2023, Shanghai, China.},
+  doi = {10.26868/25222708.2023.1692},
+  url = {https://publications.ibpsa.org/conference/paper/?id=bs2023_1692},
+  keywords = {model predictive control; indoor environment; school building; occupant behavior}
+}
+
+@inproceedings{publication-2023-w2mafc,
+  title = {Integrated optimal control for cooling AHU with two different chillers},
+  author = {Kim, J. H. and Kim, Y. S. and Jo, H. G. and Park, C. S. and Urabe, E. and Park, Y. S. and Gwak, J. H.},
+  year = {2023},
+  booktitle = {Proceedings of Building Simulation 2023: 18th Conference of IBPSA, Building Simulation Conference Proceedings, pp. 3427-3434. Building Simulation 2023: 18th International IBPSA Conference and Exhibition, September 4-6, 2023, Shanghai, China.},
+  doi = {10.26868/25222708.2023.1436},
+  url = {https://publications.ibpsa.org/conference/paper/?id=bs2023_1436},
+  keywords = {air handling unit; chiller; cop; coil; cooling}
+}
+
+@inproceedings{publication-2023-m7562p,
+  title = {Optimizing technology of chilled water system simulator for an industrial plant FAB (Fabrication)},
+  author = {Urabe, E. and Park, Y. S. and Gwak, J. H. and Kim, Y. S. and Jo, H. G. and Kim, J. H. and Park, C. S.},
+  year = {2023},
+  booktitle = {Proceedings of Building Simulation 2023: 18th Conference of IBPSA, Building Simulation Conference Proceedings, pp. 3122-3128. Building Simulation 2023: 18th International IBPSA Conference and Exhibition, September 4-6, 2023, Shanghai, China.},
+  doi = {10.26868/25222708.2023.1206},
+  url = {https://publications.ibpsa.org/conference/paper/?id=bs2023_1206},
+  keywords = {chiller; cooling tower; energy; optimization}
+}
+
+@article{publication-2023-wuoa88,
+  title = {Linear regression based indoor daylight illuminance estimation with simple measurements for daylight-linked lighting control},
+  author = {Jo, H. G. and Choi, S. H. and Park, C. S.},
+  year = {2023},
+  journal = {Journal of Building Performance Simulation, Vol. 16, No. 5, pp. 574-587.},
+  doi = {10.1080/19401493.2023.2185684},
+  url = {https://www.tandfonline.com/doi/full/10.1080/19401493.2023.2185684},
+  abstract = {Abstract
+Accurate prediction of indoor daylight illuminance is crucial for daylight-based lighting controls. However, determining the illuminance using physics-based simulation tools requires significant amounts of information, e.g. grid of sensors, sky model, 3D geometry of a target building and surroundings, etc. In this study, the authors suggest a daylight illuminance estimation method with minimal data of two reference sensors and two prior measurements. It is shown that the daylight coefficient and sky luminance distribution can be substituted by the illuminance of the reference points and illuminance of two or more target points at past times. The method was validated on a large open space with north-facing skylight windows and showed an 11.9\% mean absolute percentage error. Additionally, a reference point selection method is presented. The proposed method is practical for daylight-based lighting control applications.},
+  keywords = {daylight; illuminance estimation; daylight coefficient; lighting control}
+}
+
+@inproceedings{publication-2023-1aa0ire,
+  title = {Local vs. Integrated Control of a Cooling System in a Factory Building},
+  author = {Kim, Y. S. and Kim, J. H. and Jo, H. G. and Park, C. S. and Urabe, E. and Gwak, J. H. and Park, Y. S.},
+  year = {2023},
+  booktitle = {ASHRAE Transactions, Vol. 129, Part 2, pp. 752-759. 2023 ASHRAE Annual Conference, June 24-28, 2023, JW Marriott Tampa Water Street (technical program); Tampa Marriott Water Street (conference headquarters), Tampa, Florida, United States.},
+  doi = {10.63044/s23kim85},
+  url = {https://doi.org/10.63044/s23kim85}
+}
+
+@inproceedings{publication-2022-1irodb0,
+  title = {Model Predictive Control of Energy Recovery Ventilation System in School Buildings},
+  author = {Ra, S. J. and Jo, H. G. and Jeong, H. and Heo, T. W. and Park, C. S.},
+  year = {2022},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 149-150. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2022, November 25, 2022, Sangnam Institute of Management, Yonsei University, Seoul, Republic of Korea.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=419343&returnVal=RD_R},
+  keywords = {model predictive control; artificial neural network; indoor air quality; energy recovery ventilation system; school building}
+}
+
+@inproceedings{publication-2022-1cg693x,
+  title = {현장 실측 데이터를 이용한 자연채광 시뮬레이션 모델 보정 방법},
+  author = {Jo, H. G. and Choi, S. H. and Heo, S. Y. and Park, C. S.},
+  year = {2022},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 119-121. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2022, November 25, 2022, Sangnam Institute of Management, Yonsei University, Seoul, Republic of Korea.}
+}
+
+@inproceedings{publication-2022-hpj8m4,
+  title = {Estimation of Chiller’s net-COP Real Operation Conditions of a existing building},
+  author = {Kim, Y. S. and Kim, J. H. and Jo, H. G. and Park, C. S.},
+  year = {2022},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 42, No. 2, pp. 387-388. Fall Annual Conference of the Architectural Institute of Korea, 2022, October 26-28, 2022, Phoenix Jeju Seopjikoji, Seogwipo, Republic of Korea.},
+  url = {https://www.auric.or.kr/user/Rdoc/DocRdoc.aspx?dn=417099&returnVal=RD_R},
+  keywords = {chiller; performance evaluation; net-cop; building operating condition}
+}
+
+@inproceedings{publication-2022-8aqn3m,
+  title = {Optimal Control of OAC Cooling Systems based on Dynamic Characteristics of Two Chillers},
+  author = {Kim, J. H. and Kim, Y. S. and Jo, H. G. and Urabe, E. and Gwak, J. H. and Park, Y. S. and Park, C. S.},
+  year = {2022},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 42, No. 2, pp. 352-353. Fall Annual Conference of the Architectural Institute of Korea, 2022, October 26-28, 2022, Phoenix Jeju Seopjikoji, Seogwipo, Republic of Korea.},
+  url = {https://www.auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=417084&returnVal=RD_R},
+  keywords = {outdoor air conditioner; chiller; cop; coil; cooling; building energy}
+}
+
+@inproceedings{publication-2022-1wl4p3u,
+  title = {Linear model for indoor daylit illuminance estimation using daylight coefficient},
+  author = {Jo, H. G. and Choi, S. H. and Park, C. S.},
+  year = {2022},
+  booktitle = {Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 42, No. 1, pp. 399-400. Spring Annual Conference of AIK, 2022, April 28-29, 2022, The-K Hotel Seoul, Seoul, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11071997},
+  keywords = {indoor daylight estimation; linear model; daylight coefficient}
+}
+
+@inproceedings{publication-2022-1wt7y8u,
+  title = {Uncertainty Analysis of Daylight Simulation using TMY vs. Real Weather Data},
+  author = {Choi, S. H. and Jo, H. G. and Yoo, Y. S. and Park, C. S.},
+  year = {2022},
+  booktitle = {Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 42, No. 1, pp. 394-395. Spring Annual Conference of AIK, 2022, April 28-29, 2022, The-K Hotel Seoul, Seoul, Republic of Korea.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=414131&returnVal=RD_R},
+  keywords = {indoor daylight; standard weather data; weather uncertainty; daylight simulation; daylighting uncertainty}
+}
+
+@inproceedings{publication-2022-ua3tin,
+  title = {Optimal control of makeup air unit coils in an existing building},
+  author = {Kim, J. H. and Kim, Y. S. and Jo, H. G. and Urabe, E. and Gwak, J. H. and Park, Y. S. and Park, C. S.},
+  year = {2022},
+  booktitle = {Proceedings of the 2022 Winter Simulation Conference. 2022 Winter Simulation Conference, December 11-14, 2022, Marina Bay Sands Hotel, Singapore, Singapore.},
+  url = {https://informs-sim.org/wsc22papers/072.pdf}
+}
+
+@inproceedings{publication-2022-19gz4lj,
+  title = {Real-time implementation of model predictive control for cooling system of a factory building},
+  author = {Ra, S. J. and Kim, J. H. and Jo, H. G. and Kim, Y. S. and Park, C. S.},
+  year = {2022},
+  booktitle = {ASHRAE Transactions, Vol. 128, Part 2, pp. 175-182. 2022 ASHRAE Annual Conference, June 25-29, 2022, Sheraton Centre Toronto Hotel and Hilton Toronto, Toronto, Ontario, Canada.},
+  url = {https://snu.elsevierpure.com/en/publications/real-time-implementation-of-model-predictive-control-for-cooling-}
+}
+
+@inproceedings{publication-2022-r94ogd,
+  title = {Real-time indoor daylight illuminance simulation of an existing building using minimal data},
+  author = {Jo, H. G. and Choi, S. H. and Park, C. S.},
+  year = {2022},
+  booktitle = {Proceedings of the 2022 Winter Simulation Conference. 2022 Winter Simulation Conference, December 11-14, 2022, Marina Bay Sands Hotel, Singapore, Singapore.},
+  url = {https://informs-sim.org/wsc22papers/pos146.pdf}
+}
+
+@article{publication-2021-1nbtoo1,
+  title = {Stochastic Daylighting Model for Predictive Control in Large Open-space Building},
+  author = {Jo, H. G. and Kim, Y. S. and Park, C. S.},
+  year = {2021},
+  journal = {Journal of the Architectural Institute of Korea, Vol. 37, No. 12, pp. 255-264.},
+  doi = {10.5659/JAIK.2021.37.12.255},
+  url = {https://www.aik.or.kr/pages_archive/aik_journal_list.vm?ncode=p002d},
+  abstract = {Development  of  stochastic  daylighting  prediction  model  for  a  large  open-space  building  was  presented  in  this  paper.  The  daylit  prediction model  uses  solar  altitude  and  azimuth,  an  illuminance  value  at  a  reference  point  and  a  cloud  cover  and  predict  daylit  illuminances  at  sixteen workplane.  The  model  can  be  regarded  as  ‘virtual  sensor’  without  installing  actual  photosensor.  For  capturing  stochastic  characteristics  of daylit  luminous  indoor  environment,  Gaussian  process  was  used.  The  daylit  prediction  model  was  then  integrated  to  electric  lighting  control  of the  building.  The  optimal  lighting  control  variables  that  can  minimize  electric  lighting  power  consumption  while  satisfying  required illuminance  level  expressed  as  a  safety  margin  were  found.  Based  on  the  eight  days’  validation,  it  is  found  that  the  proposed  approach  could save  energy  by  12.3\%.  It  is  expected  that  this  stochastic  control  approach  could  be  applied  to  other  lighting  control  or  indoor  environmental control  system.},
+  keywords = {model uncertainty; daylight prediction model; electric lighting control; gaussian process}
+}
+
+@inproceedings{publication-2021-dlwkuq,
+  title = {Electric Lighting Control Considering Uncertainty of Daylighting Model prediction},
+  author = {Jo, H. G. and Ra, S. J. and Kim, J. H. and Park, C. S.},
+  year = {2021},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 41, No. 2, pp. 332-333. Fall Annual Conference of the Architectural Institute of Korea, 2021, October 27-30, 2021, Yeosu Expo Convention Center and Venezia Hotel, Yeosu, Republic of Korea; hybrid.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11024946},
+  abstract = {It  has  been  widely  acknowledged  that  daylit  illuminance  at  work  plane  is  of  strong  stochastic  nature  and  thus  hard  to  accurately  predict.  In this  study,  the  authors  present  a  daylighting  prediction  model  that  can  account  for  the  aforementioned  stochastic  nature  using  Gaussian process  model.  The  model  can  quantify  uncertainty  in  daylit  illuminance  at  16  work  planes  of  a  given  target  building.  The  daylighting prediction  model  is  then  integrated  to  automatic  electric  lighting  control  that  can  switch  on/off  six  lighting  groups  in  the  building.  It  was found  that  the  integrated  control  could  save  lighting  energy  consumption  by  15.3\%  over  four  days  (Aug  9  Aug  12).},
+  keywords = {electric lighting control; model uncertainty; indoor daylit prediction}
+}
+
+@inproceedings{publication-2021-chy62u,
+  title = {Real-time Predictive Control Using Lumped Simulation Models for Cooling of a Building},
+  author = {Ra, S. J. and Kim, J. H. and Kim, Y. S. and Jo, H. G. and Shin, H. S. and Park, C. S.},
+  year = {2021},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 41, No. 2, pp. 323-324. Fall Annual Conference of the Architectural Institute of Korea, 2021, October 27-30, 2021, Yeosu Expo Convention Center and Venezia Hotel, Yeosu, Republic of Korea; hybrid.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11024942},
+  abstract = {This  paper  presents  a  Model-Predictive  Control  (MPC)  study  applied  to  a  cooling  system  in  a  large  open-space  building.  The  authors developed  the  MPC  that  uses  minimal  inputs  based  on  a  set  of  machine  learning  models  for  direct-expansion  air  handling  unit  (DX-AHU). For  this  study,  the  authors  developed  an  DX-AHU  supply  air  temperature  prediction  model  and  indoor  temperature  prediction  models  for  9 air  conditioning  zones.  The  prediction  time  horizon  was  set  to  20-minute.  The  control  objective  is  to  minimize  the  energy  consumption  by DX-AHUs  while  keeping  an  average  indoor  temperature  less  than  27 .  It  was  found  that  the  developed  simulation  models  are  accurate °Cenough  and  the  could  save  significant  energy  by  21.4\%  compared  to  the  existing  control.},
+  keywords = {machine learning; artificial neural network; lumped model; model predictive control; air handling unit}
+}
+
+@inproceedings{publication-2021-d8m8lg,
+  title = {Prediction model of global horizontal irradiance using artificial neural network},
+  author = {Kim, J. H. and Jo, H. G. and Kim, Y. S. and Shin, H. S. and Park, C. S.},
+  year = {2021},
+  booktitle = {Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 41, No. 1, pp. 288-289. General Assembly \& Spring Annual Conference of AIK, 2021, April 21-23, 2021, International Convention Center Jeju and Jeju Booyoung Hotel \& Resort, Seogwipo, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10563701},
+  abstract = {To  proper  control  of  electric  lighting  (e.g.  on/off,  multi-level,  dimming),  it  is  essential  to  predict  daylit  indoor  illuminance  at  the  workplane. For  the  use  of  the  Radiance-based  daylighting  simulation  tool,  solar  altitude,  solar  azimuth  and  Global  Horizontal  Irradiance  (GHI)  are required.  Rather  than  relying  on  the  measured  GHI  provided  in  off-line  from  a  nearby  weather  station,  this  study  presents  a  simplified method  to  directly  estimate  GHI  from  an  on-site  horizontal  illuminance.  For  this  purpose,  an  Artificial  Neural  Network  (ANN)  model  was developed  to  predict  GHI  with  data  of  solar  altitude,  solar  azimuth,  a  measured  illuminance,  and  cloud  cover.  It  is  found  that  the  ANN model  is  accurate  enough  (MBE:  2.4\%,  CVRMSE:  15.7\%).  This  proposed  model  will  be  integrated  to  daylit  prediction  model  and  on-line optimal  control  of  electric  lighting.},
+  keywords = {global horizontal irradiance; illuminance; artificial neural network; daylighting prediction}
+}
+
+@inproceedings{publication-2021-c4kobl,
+  title = {Real-time Model Predictive Control for Heating of a Factory Building},
+  author = {Ra, S. J. and Shin, H. S. and Kim, Y. S. and Jo, H. G. and Kim, J. H. and Park, C. S.},
+  year = {2021},
+  booktitle = {Proceedings of the Spring Conference of the Architectural Institute of Korea, Vol. 41, No. 1, pp. 309-310. General Assembly \& Spring Annual Conference of AIK, 2021, April 21-23, 2021, International Convention Center Jeju and Jeju Booyoung Hotel \& Resort, Seogwipo, Republic of Korea.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10563711},
+  abstract = {This  paper  presents  a  Model-Predictive  Control  (MPC)  study  applied  to  a  heating  system  in  a  large  open  factory  building  in  Incheon,  South Korea.  Rather  than  resorting  to  a  full-blown  dynamic  simulation  model,  this  study  takes  a  lumped  minimalistic  approach  for  the  prediction indoor  air  temperatures  in  the  building.  It  was  found  that  the  lumped  simulation  model  is  accurate  enough  and  applicable  to  the  MPC  for the  building,  leading  to  energy  savings  by  52\%.},
+  keywords = {machine learning; artificial neural network; factory energy management system; model predictive control; simulation model}
+}
+
+@inproceedings{publication-2021-1qqrq1,
+  title = {Application of daylighting Gaussian process emulator to lighting control of an existing building},
+  author = {Jo, H. G. and Kim, Y. S. and Park, C. S.},
+  year = {2021},
+  booktitle = {Proceedings of the 2021 Winter Simulation Conference. 2021 Winter Simulation Conference, December 13-17, 2021, JW Marriott Phoenix Desert Ridge Resort \& Spa; online sessions, Phoenix, Arizona, United States.},
+  url = {https://www.informs-sim.org/wsc21papers/052.pdf}
+}
+
+@inproceedings{publication-2020-1u9xglb,
+  title = {Development of EnergyPlus parser based on geographic information system},
+  author = {Lee, D. H. and Ko, Y. D. and Yoo, Y. S. and Jo, H. G. and Kim, D. W. and Park, C. S.},
+  year = {2020},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 81-82. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2020, November 19-21, 2020, Architecture Building, Korea National University of Transportation, Chungju, Republic of Korea; hybrid.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=400683&returnVal=RD_R},
+  abstract = {Urban-scale building energy simulation is important because it can be used for energy policy, building retrofit decision making, smart-grid optimization, peak load prediciton, etc. This study resports the development of EnergyPlus parser based on the geographic information system (GIS). The purpose of this paper is to address issues in the process of converting GIS data into dynamic building energy simulation (EnergyPlus), and to share the lessons learned from this work.},
+  keywords = {urban-scale building energy simulation; geographic information system; parser; python}
+}
+
+@inproceedings{publication-2020-tcwwkf,
+  title = {Prediction of Illuminance Ratios between Points using Gaussian Process},
+  author = {Jo, H. G. and Shin, H. S. and Kim, Y. S. and Park, C. S.},
+  year = {2020},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 153-154. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2020, November 19-21, 2020, Architecture Building, Korea National University of Transportation, Chungju, Republic of Korea; hybrid.},
+  url = {https://www.auric.or.kr/User/Rdoc/DocRdoc.aspx?dn=400711&returnVal=RD_R},
+  abstract = {This paper suggests a methodology for predicting illuminance using Gaussian Process model. Based on one-point measured illuminance data, the authors developed Gaussian Process model which can predict an illuminance ratio between a reference point and points in interest. The Gaussian Process model uses solar altitude and azimuth as inputs. This approach was tested at a mechanical factory building for ten days. It is found that illuminance ratio changes with solar altitude and azimuth, and combination of Gaussian Process and one-point sensor data could describe indoor illuminances with a distribution of errors.},
+  keywords = {daylit illuminance prediction; solar altitude; azimuth; gaussian process}
+}
+
+@inproceedings{publication-2020-1kl7pzp,
+  title = {Repeatability of Monthly Energy Use for 10,750 buildings},
+  author = {Ko, Y. D. and Lee, D. H. and Yoo, Y. S. and Jo, H. G. and Kim, D. W. and Park, C. S.},
+  year = {2020},
+  booktitle = {Proceedings of the Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 145-146. Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 2020, November 19-21, 2020, Architecture Building, Korea National University of Transportation, Chungju, Republic of Korea; hybrid.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=400708&returnVal=RD_R},
+  abstract = {Although numerous studies have been conducted on performance gap between predicted and measured energy uses, there is a significant lack of evidence regarding whether monthly energy use of each building repeats over time. This study aims to evaluate the repeatability of monthly energy use of 10,750 buildings for three years (2017-2019). It is assumed that the higher CVRMSE of building’s monthly energy use between a pair of years is, the less repeatable a building is, leading to being less predictable. K-means algorithm was used to extract representative energy use patterns of the buildings, and four energy use patterns were identified. It is noteworthy that 9,760 (90.8\%) buildings do not satisfy the monthly criteria of ASHRAE Guideline (CVRMSE≤0.15), which means their three years’ monthly energy use pattern do not repeat. This signifies that it might be difficult to predict the energy use of those buildings. In addition, it was found that there is a distinct difference of CVRMSE (i.e., the degree of unpredictability) among four energy
+use patterns (0.27, 0.28 vs. 0.38, 0.40 on average), whereas there is little difference among seven building use types (0.27-0.31 on average).},
+  keywords = {building energy use; repeatability; energy use pattern; clustering}
+}
+
+@inproceedings{publication-2020-1sa6qgg,
+  title = {Classification of Building Energy Pattern based on Robust Regression and Time series clustering},
+  author = {Lee, D. H. and Yoo, Y. S. and Ko, Y. D. and Jo, H. G. and Park, C. S.},
+  year = {2020},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 40, No. 2, pp. 392-393. Fall Annual Conference of the Architectural Institute of Korea, 2020, October 26-30, 2020, Yeosu Expo Convention Center, Yeosu, Republic of Korea; online presentation.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=400990&returnVal=RD_R},
+  abstract = {For efficient energy management of building stocks, it is important to classify building energy pattern where dominant design variablescould be identified. In this regard, the authors present a classification method of building energy pattern using RANSAC (robust regression)and K-shape algorithm (time series clustering). A reference office building was chosen and populated using the Sobol sequence method,resulting in 1,000 samples. Energy use data of 1,000 sample buildings were obtained from EnergyPlus simulations. The relationship betweenoutdoor temperature and building energy use was selected as building energy pattern. It is shown that 1,000 buildings can be classified intotwo clusters (heating dominant vs. cooling dominant) and corresponding four architectural design variables.},
+  keywords = {building energy; energy pattern classification; robust regression; time series clustering}
+}
+
+@inproceedings{publication-2020-n4r9hp,
+  title = {Data-Driven Methodology to Indentify Building Properties for Building Energy Performance Benchmarking},
+  author = {Ko, Y. D. and Lee, D. H. and Yoo, Y. S. and Jo, H. G. and Park, C. S.},
+  year = {2020},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 40, No. 2, pp. 384-385. Fall Annual Conference of the Architectural Institute of Korea, 2020, October 26-30, 2020, Yeosu Expo Convention Center, Yeosu, Republic of Korea; online presentation.},
+  url = {https://www.auric.or.kr/user/rdoc/DocRdoc.aspx?dn=400986&returnVal=RD_R},
+  abstract = {Due to the lack of detailed building energy data (e.g. thermal properties of building envelopes, efficiencies of HVAC systems, hourlysub-metered energy data etc.), most of existing building energy benchmarking systems have used EUI (Energy Use Intensity, kWh/m2·yr) peruse type (office, school, etc). However, the EUI-based approach is closer to ‘energy use becnhmarking’ than ‘energy performancebenchmarking’. In this regard, this study aims to present a data-driven methodology to identify building’s thermal characteristics frommonthly energy use data, which will lead to objective performance comparison among buildings. In this study, ANN(Artifical NeuralNetwork) was utlized for the inverse identification and virtual traning data were generated from 10,000 samples of an EnergyPlus model byLHS. The ANN was validated with 14 existing buildings (CVRMSE 17.6\%). This proposed approach will provide identification of theaforementioned unmeasured/uncertain thermal characteristics and will be used for objective performance comparison},
+  keywords = {building energy benchmakring; builidng performance; artificial neural network; identification}
+}
+
+@inproceedings{publication-2020-1bouwhl,
+  title = {Optimal control of artificial lighting with Deep Deterministic Policy Gradient(DDPG)},
+  author = {Kim, Y. S. and Jo, H. G. and Shin, H. S. and Park, C. S.},
+  year = {2020},
+  booktitle = {Proceedings of the Fall Conference of the Architectural Institute of Korea, Vol. 40, No. 2, pp. 382-383. Fall Annual Conference of the Architectural Institute of Korea, 2020, October 26-30, 2020, Yeosu Expo Convention Center, Yeosu, Republic of Korea; online presentation.},
+  url = {https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10518762},
+  abstract = {It  is  difficult  to  find  optimal  control  variables  for  lighting  system  in  an  existing  building  because  the  luminous  environment  is  influenced  by daylighting  that  continuously  vary  over  the  course  of  a  day.  In  addition,  the  luminous  environment  is  also  interplayed  with  (dimmable) electric  lighting.  Many  existing  optimization  algorithms  require  significant  effort  to  develop  an  accurate  simulation  model  as  well  as demanding  computation  time.  Recently,  reinforcement  learning  has  been  applied  to  complex  control  problems.  In  this  study,  DDPG  (Deep Deterministic  Policy  Gradient)  is  applied  to  dimmable  electric  lighting  system  in  an  existing  building.  It  is  shown  that  DDPG  can  be  used for  real-time  optimal  control  of  the  lighting  system  and  can  save  about  30\%  of  lighting  energy  without  sacrifcing  luminous  uniformity  of  a given  space},
+  keywords = {ddpg; reinforcement learning; diva; illuminance prediction model; electric lighting control; optimal control}
+}
+
+@inproceedings{publication-2020-1xp6ceu,
+  title = {Illuminance prediction using a hybrid simulation model based on a single reference measurement},
+  author = {Jo, H. G. and Park, C. S.},
+  year = {2020},
+  booktitle = {Proceedings of the 2020 Winter Simulation Conference. 2020 Winter Simulation Conference, December 14-18, 2020, Virtual conference.},
+  url = {https://www.informs-sim.org/wsc20papers/368.pdf}
+}

@@ -1,0 +1,120 @@
+{
+  "certifications": [
+    {
+      "date": "2026-11-06",
+      "issuer_en": "",
+      "issuer_ko": "한국보건의료인국가시험원",
+      "name_en": "Dietitian",
+      "name_ko": "영양사",
+      "visible_in_CV": true
+    }
+  ],
+  "contact": {
+    "email": "leeserim0322@snu.ac.kr",
+    "github": "",
+    "linkedin": "",
+    "orcid": "https://orcid.org/0009-0007-5956-0263",
+    "scholar": "https://scholar.google.com/citations?hl=ko\u0026user=LbkqveQAAAAJ"
+  },
+  "education": [
+    {
+      "advisor_en": "Advisor: Prof. Do-Kyun Kim",
+      "advisor_ko": "지도교수: 김도균 교수님",
+      "degree_en": "Master of Science in Food and Nutrition",
+      "degree_ko": "식품영양학 석사",
+      "gpa": {
+        "max": 4.3,
+        "value": 3.86
+      },
+      "institution_en": "Seoul National University",
+      "institution_ko": "서울대학교",
+      "period": "2023.03.–2025.02.",
+      "thesis_en": "",
+      "thesis_ko": "생각나면 추가",
+      "thesis_url": "",
+      "visible_in_CV": true
+    },
+    {
+      "advisor_en": "",
+      "advisor_ko": "",
+      "degree_en": "Bachelor of Science in Food and Nutrition",
+      "degree_ko": "생활과학사(식품영양학)",
+      "gpa": {
+        "max": 4.3,
+        "value": 3.94
+      },
+      "institution_en": "Seoul National University",
+      "institution_ko": "서울대학교",
+      "period": "2019.03.–2023.02.",
+      "thesis_en": "",
+      "thesis_ko": "",
+      "visible_in_CV": true
+    }
+  ],
+  "experience": [],
+  "identity": {
+    "affiliation_en": "Food Microbiology \u0026 Precision System Lab, Seoul National University",
+    "affiliation_ko": "서울대학교 식품미생물 정밀시스템 연구실",
+    "location_en": "Building 222, Room 524, Seoul National University, 1 Gwanak-ro, Gwanak-gu, Seoul",
+    "location_ko": "서울대학교 222동 524호, 서울특별시 관악구 관악로 1",
+    "name_en": "Se-Rim Lee",
+    "name_ko": "이세림"
+  },
+  "intro": {
+    "short_en": "I'm serim lee",
+    "short_ko": "이세림입니다."
+  },
+  "patents": [],
+  "profile_card": {
+    "credentials": [],
+    "media": {
+      "src": "profile-d1d08a7b6787.png",
+      "type": "image"
+    },
+    "title_en": "Ph.D. candidate",
+    "title_ko": "박사과정"
+  },
+  "scholarships": [
+    {
+      "amount": {
+        "currency": "KRW",
+        "value": 56480000
+      },
+      "name_en": "BrainKorea21 Four",
+      "name_ko": "4단계BK21장학금",
+      "period_en": "2022–2025 (8 semesters)",
+      "period_ko": "2022–2025 (8학기)",
+      "summary_en": "",
+      "summary_ko": "",
+      "visible_in_CV": true
+    },
+    {
+      "amount": {
+        "currency": "KRW",
+        "value": 13911000
+      },
+      "name_en": "Hanssem deView Scholarship (now Taejae Student Research Scholarship)",
+      "name_ko": "한샘드뷰장학금 (現 태재학생연구장학금)",
+      "period_en": "2020–2021 (4 semesters)",
+      "period_ko": "2020–2021 (4학기)",
+      "summary_en": "Selected research topics related to future cities and housing, followed by six months of research and a presentation. Research topic (2020): Automated building design using C-GAN artificial intelligence to achieve target energy consumption. Research topic (2021): AI-based design-automation process for maintaining a comfortable indoor lighting environment.",
+      "summary_ko": "미래도시 및 미래주거 관련 연구주제 선정, 6개월간 연구 후 발표. 연구주제 (2020): C-GAN 인공지능을 이용한 목표 에너지 소비량 달성 건축물 자동설계. 연구주제 (2021): 쾌적한 실내 빛환경 유지를 위한 인공지능 기반 설계 자동화 프로세스 개발.",
+      "visible_in_CV": true
+    },
+    {
+      "amount": {
+        "currency": "KRW",
+        "value": 1500000
+      },
+      "name_en": "SNU Architecture Alumni Scholarship",
+      "name_ko": "건축학과 동창회 장학금",
+      "period_en": "2019-05-21",
+      "period_ko": "2019-05-21",
+      "summary_en": "",
+      "summary_ko": "",
+      "visible_in_CV": true
+    }
+  ],
+  "skills": [],
+  "teaching": []
+}

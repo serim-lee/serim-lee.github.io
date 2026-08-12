@@ -1,0 +1,307 @@
+[
+  {
+    "id": "pdf-reflow",
+    "links": [
+      {
+        "label": "WebAPP",
+        "label_en": "",
+        "label_ko": "",
+        "url": "https://gonie-gonie.github.io/pdf-reformatter/"
+      }
+    ],
+    "media": [
+      {
+        "caption_en": "Conversion result",
+        "caption_ko": "WebAPP 구성 및 변환 결과",
+        "src": "software-pdf-reflow-01.png"
+      }
+    ],
+    "name": "PDF-Reflow",
+    "notes_en": [
+      "Reflowing and converting text-based PDF to different PDF sizes and EPUB"
+    ],
+    "notes_kr": [
+      "글 기반의 pdf 파일을 다른 사이즈의 pdf 및 epub으로 재가공"
+    ],
+    "stage": "release",
+    "technologies": [
+      "TypeScript"
+    ],
+    "visible_in_CV": true
+  },
+  {
+    "id": "eplussimple",
+    "links": [
+      "https://github.com/snu-bslab/EPlusSimple"
+    ],
+    "media": [
+      {
+        "src": "software-eplussimple-launcher.png",
+        "caption_en": "Launcher for running EPlusSimple and comparing simulation results",
+        "caption_ko": "Excel파일 또는 Json 파일을 복수에 시뮬레이션하여 리모델링 전 후를 비교하는 전용 런처"
+      }
+    ],
+    "name": "EPlusSimple",
+    "notes_en": [
+      "Validation of spreadsheet inputs and integration of EnergyPlus model generation, simulation, and result summaries",
+      "Simplification of repeatable EnergyPlus case development while keeping generated models transparent"
+    ],
+    "notes_kr": [
+      "스프레드시트 입력 검증 및 EnergyPlus 모델 생성·실행·결과 요약 연계",
+      "생성 모델의 투명성을 유지하며 반복 가능한 EnergyPlus 사례 구축 간소화"
+    ],
+    "stage": "release",
+    "technologies": [
+      "Python",
+      "EnergyPlus",
+      "Excel",
+      "Go"
+    ],
+    "visible_in_CV": true
+  },
+  {
+    "id": "semantic-idf",
+    "links": [
+      "https://github.com/Gonie-Gonie/semantic-idf"
+    ],
+    "media": [
+      {
+        "caption_en": "Summarizing various metrics calculated from IDF",
+        "caption_ko": "IDF에서 여러 지표들을 계산하여 정리",
+        "src": "software-semantic-idf-01.jpg"
+      },
+      {
+        "caption_en": "Categorizing internal loads by profile to group and compare zones with identical profiles",
+        "caption_ko": "내부부하들을 프로필로 정리하고, 같은 프로필이 적용된 zone끼리 묶어 비교",
+        "src": "software-semantic-idf-02.jpg"
+      },
+      {
+        "caption_en": "Structuring spatial connections as a network with emphasis on UA and area, expressing the thermal characteristics of each connection",
+        "caption_ko": "공간 연결관계를 network로 정리, UA, 면적 등에 따라 강조하고, 각 연결관계의 열적 속성을 표현",
+        "src": "software-semantic-idf-03.jpg"
+      },
+      {
+        "caption_en": "Visualizing how heat sources deliver heating and cooling to each zone through various media",
+        "caption_ko": "어떤 열원이 어떤 매개체를 통해 각 zone에 냉방 및 난방을 공급하는지 관계도로 표현",
+        "src": "software-semantic-idf-04.jpg"
+      },
+      {
+        "caption_en": "Showing loop objects linked to the selected equipment",
+        "caption_ko": "특정 설비와 연결된 loop의 객체들을 표현",
+        "src": "software-semantic-idf-05.jpg"
+      },
+      {
+        "caption_en": "Auto-inserting simulation outputs and graphically visualizing interpreted results",
+        "caption_ko": "시뮬레이션 시 output을 자동으로 삽입하고 결과를 해석하여 도식화",
+        "src": "software-semantic-idf-06.jpg"
+      }
+    ],
+    "name": "semantic-idf",
+    "notes_en": [
+      "Semantic analysis and visualization of EnergyPlus input files",
+      "Interpretation of EnergyPlus results through purpose-driven simulations"
+    ],
+    "notes_kr": [
+      "EnergyPlus 입력파일을 의미론적으로 이해할 수 있도록 분석, 시각화",
+      "목적 기반 시뮬레이션으로 EnergyPlus 결과를 이해할 수 있도록 해석"
+    ],
+    "stage": "preview",
+    "technologies": [
+      "Go",
+      "Wails",
+      "JavaScript",
+      "EnergyPlus"
+    ],
+    "visible_in_CV": true
+  },
+  {
+    "id": "oodocs",
+    "links": [
+      "https://github.com/Gonie-Gonie/oo-docs",
+      "https://pypi.org/project/oodocs"
+    ],
+    "media": [
+      {
+        "caption_en": "Example code",
+        "caption_ko": "코드 예시",
+        "src": "software-oodocs-01-2.png"
+      },
+      {
+        "caption_en": "Generating PDF, Word, and HTML from a single Python source code",
+        "caption_ko": "하나의 python 소스에서 pdf, word, html을 생성",
+        "src": "software-oodocs-02.jpg"
+      }
+    ],
+    "name": "oo-docs",
+    "notes_en": [
+      "Rendering of a single structured Python document tree to DOCX, PDF, and HTML",
+      "Reduction of copy-and-paste inconsistencies across reports, papers, web pages, and generated figures through shared data, figures, citations, and layouts"
+    ],
+    "notes_kr": [
+      "하나의 구조화된 Python 문서 트리를 DOCX·PDF·HTML로 렌더링",
+      "데이터·그림·인용·레이아웃 공유를 통한 보고서·논문·웹페이지·생성 그림 간 복사·붙여넣기 불일치 저감"
+    ],
+    "stage": "release",
+    "technologies": [
+      "Python",
+      "HTML",
+      "Word",
+      "Pdf"
+    ],
+    "visible_in_CV": true
+  },
+  {
+    "id": "eng-lang",
+    "links": [
+      "https://github.com/Gonie-Gonie/eng-lang"
+    ],
+    "media": [
+      {
+        "caption_en": "Variable structure with unit specifications, syntax enabling system operations",
+        "caption_ko": "단위를 명시하는 변수 구조, 시스템 연산이 가능한 문법",
+        "src": "software-eng-lang-01.jpg"
+      },
+      {
+        "caption_en": "Dedicated IDE",
+        "caption_ko": "전용 IDE",
+        "src": "software-eng-lang-02.jpg"
+      }
+    ],
+    "name": "eng-lang",
+    "notes_en": [
+      "A programming language featuring engineering clarity, including definitions of physical quantities and units for variables",
+      "A semantic syntax system easily understandable by both humans and LLMs"
+    ],
+    "notes_kr": [
+      "공학적 명확성 (변수의 물리량, 단위 정의) 을 가지는 프로그래밍 언어",
+      "사람/LLM이 모두 쉽게 이해 가능한 의미론적 문법 체계"
+    ],
+    "stage": "development",
+    "technologies": [
+      "Rust"
+    ],
+    "visible_in_CV": false
+  },
+  {
+    "id": "rusted-energyplus",
+    "links": [
+      "https://github.com/Gonie-Gonie/rusted-energyplus"
+    ],
+    "media": [
+      {
+        "src": "software-rustedEnergyplus-launcher.png",
+        "caption_en": "Dedicated launcher for comparing EnergyPlus oracle and results for the same idf",
+        "caption_ko": "동일 idf에 대한 EnergyPluys oracle과 결과를 비교하는 전용 런처"
+      }
+    ],
+    "name": "rusted-energyplus",
+    "notes_en": [
+      "Evidence-driven Rust reimplementation of selected EnergyPlus algorithms and compatibility behavior",
+      "Study of simulation-engine behavior through inspectable, testable, high-performance implementations"
+    ],
+    "notes_kr": [
+      "EnergyPlus 알고리즘과 호환 동작의 근거 중심 Rust 재구현",
+      "검사·시험 가능한 고성능 구현을 통한 시뮬레이션 엔진 동작 연구"
+    ],
+    "stage": "development",
+    "technologies": [
+      "Rust",
+      "EnergyPlus"
+    ],
+    "visible_in_CV": false
+  },
+  {
+    "id": "hvac-studio",
+    "links": [
+      "https://github.com/Gonie-Gonie/hvac-studio"
+    ],
+    "media": [
+      {
+        "caption_en": "Example of connecting inputs and outputs of multiple Python-based components",
+        "caption_ko": "Python 기반의 여러 component들의 입/출력을 연결하는 예시",
+        "src": "software-hvac-studio-01.jpg"
+      }
+    ],
+    "name": "hvac-studio",
+    "notes_en": [
+      "Component-and-node-based authoring environment and runtime for connecting heterogeneous building-equipment models",
+      "Inspectable topology, inputs, and execution processes"
+    ],
+    "notes_kr": [
+      "이종 건물설비 모델 연결을 위한 컴포넌트·노드 기반 저작환경 및 런타임",
+      "토폴로지·입력·실행과정의 검사 가능성 유지"
+    ],
+    "stage": "development",
+    "technologies": [
+      "Go",
+      "Wails",
+      "JavaScript",
+      "Python"
+    ],
+    "visible_in_CV": false
+  },
+  {
+    "id": "co2-reduction-finder",
+    "links": [
+      "https://github.com/Gonie-Gonie/co2-reduction-finder"
+    ],
+    "media": [
+      {
+        "src": "software-co2reductionFinder-screenshot1.png",
+        "caption_en": "Probabilistic calculation of reductions based on the selected combination of building type and element technologies",
+        "caption_ko": "건물 유형과 요소기술 조합을 선택하면 감축량을 확률적으로 도출"
+      },
+      {
+        "src": "software-co2reductionFinder-screenshot2.png",
+        "caption_en": "Presentation of reductions from major element technologies and comparison of the user-defined combination with Pareto-optimal solutions",
+        "caption_ko": "주요 요소기술 적용시 감축량을 제시하고, pareto 최적해를 탐색하여 사용자 입력 조합과 비교"
+      }
+    ],
+    "name": "co2-reduction-finder",
+    "notes_en": [
+      "Lightweight desktop app for quick retrofit GHG emission factor lookup",
+      "Integrating a Python (Keras) ANN model with Rust"
+    ],
+    "notes_kr": [
+      "그린리모델링 온실가스 감축계수를 빠르게 조회하는 경량 데스크톱 어플리케이션",
+      "Python (keras) ANN 모델의 Rust 연동"
+    ],
+    "stage": "release",
+    "technologies": [
+      "Rust",
+      "egui"
+    ],
+    "visible_in_CV": true
+  },
+  {
+    "id": "simpledragon-invisibledragon",
+    "links": [
+      "https://github.com/Gonie-Gonie/EPlusSimple-Grasshopper",
+      "https://www.food4rhino.com/en/app/invisibledragon",
+      "https://www.food4rhino.com/en/app/simpledragon"
+    ],
+    "media": [
+      {
+        "caption_en": "Workflow example",
+        "caption_ko": "Rhino 형상 기반으로 EPlusSimple 모델을 제작하는 예시",
+        "src": "software-simpledragon-invisibledragon-01.png"
+      }
+    ],
+    "name": "SimpleDragon / InvisibleDragon",
+    "notes_en": [
+      "EnergyPlus modelling based on Rhino \u0026 Grasshopper",
+      "Equivalent to EPlusSimple"
+    ],
+    "notes_kr": [
+      "Rhino 및 Grasshopper 기반 EnergyPlus 모델링",
+      "EPlusSimple과 동등한 모델링"
+    ],
+    "stage": "preview",
+    "technologies": [
+      "Rhino",
+      "Grasshopper",
+      "C#"
+    ],
+    "visible_in_CV": true
+  }
+]

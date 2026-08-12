@@ -1,0 +1,14 @@
+# Local preview / editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary exports
+*.tmp
+*.bak
+
+# Local Wails editor toolchain and build intermediates
+editor/runtime/
+editor/cmd/editor/build/bin/
+editor/cmd/editor/frontend/wailsjs/go/

@@ -1,0 +1,120 @@
+{
+  "records": {
+    "10.1007/978-981-96-4051-5_116": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W4409600994"
+    },
+    "10.1007/978-981-96-4051-5_117": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W4409600970"
+    },
+    "10.1016/j.buildenv.2025.112756": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 17,
+      "provider": "openalex",
+      "work_id": "W4407768312"
+    },
+    "10.1016/j.enbuild.2025.115359": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 5,
+      "provider": "openalex",
+      "work_id": "W4406821843"
+    },
+    "10.1016/j.enbuild.2025.116168": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 3,
+      "provider": "openalex",
+      "work_id": "W4412529685"
+    },
+    "10.1016/j.enbuild.2025.116625": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 3,
+      "provider": "openalex",
+      "work_id": "W4415546324"
+    },
+    "10.1016/j.enbuild.2026.117839": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 1,
+      "provider": "openalex",
+      "work_id": "W7165573027"
+    },
+    "10.1016/j.enbuild.2026.118260": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W7213306809"
+    },
+    "10.1051/e3sconf/202668904011": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W7125127399"
+    },
+    "10.1080/19401493.2023.2185684": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 8,
+      "provider": "openalex",
+      "work_id": "W4323669548"
+    },
+    "10.1080/19401493.2026.2736767": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W7214094866"
+    },
+    "10.1080/23744731.2025.2539048": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 4,
+      "provider": "openalex",
+      "work_id": "W4413149249"
+    },
+    "10.26868/25222708.2023.1206": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W4392628610"
+    },
+    "10.26868/25222708.2023.1436": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W4392628430"
+    },
+    "10.26868/25222708.2023.1692": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W4392628636"
+    },
+    "10.5659/jaik.2021.37.12.255": {
+      "article_id": "ART002787113",
+      "checked_at": "2026-10-07",
+      "count": 1,
+      "list_pending": true,
+      "provider": "kci"
+    },
+    "10.5659/jaik.2024.40.1.169": {
+      "article_id": "ART003047115",
+      "checked_at": "2026-10-07",
+      "count": 1,
+      "list_pending": true,
+      "provider": "kci"
+    },
+    "10.63044/s23kim85": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W4402348687"
+    },
+    "10.63044/w26kima07": {
+      "checked_at": "2026-11-06T08:01:36+00:00",
+      "count": 0,
+      "provider": "openalex",
+      "work_id": "W7154744452"
+    }
+  }
+}

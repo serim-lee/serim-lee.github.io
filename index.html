@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal research and software website.">
+  <meta name="theme-color" content="#f7f8f5">
+  <title>Research Portfolio</title>
+  <link rel="stylesheet" href="app/assets/css/styles.css">
+  <script defer src="app/assets/js/color-themes.js"></script>
+  <script defer src="app/assets/js/data-version.js"></script>
+  <script defer src="app/assets/js/publication-bibliography.js"></script>
+  <script defer src="app/assets/js/data.js"></script>
+  <script defer src="app/assets/js/publication-timeline.js"></script>
+  <script defer src="app/assets/js/publication-citations.js"></script>
+  <script defer src="app/assets/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Home" title="Home" data-i18n-aria="home" data-i18n-title="home">
+        <svg class="brand-home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="m3 10 9-7 9 7M5 9v11h5v-6h4v6h5V9"/>
+        </svg>
+        <span class="brand-copy">
+          <strong data-profile="name"></strong>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#publications" data-page-link="publications" data-i18n="navPublications">Publications</a>
+        <a href="#projects" data-page-link="projects" data-i18n="navProjects">Projects</a>
+        <a href="#software" data-page-link="software" data-i18n="navSoftware">Software</a>
+        <a href="#board" data-page-link="board" data-i18n="navBoard">Board</a>
+      </nav>
+
+      <div class="header-controls">
+        <a class="header-cv-link" href="cv.html">CV</a>
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-lang-switch="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-lang-switch="ko" aria-pressed="false">KR</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section-shell section-tinted" data-page-section="home">
+      <div class="container">
+        <div class="about-grid">
+          <aside class="profile-card">
+            <img id="profile-photo" alt="" width="709" height="992" loading="lazy">
+            <video id="profile-video" controls playsinline preload="metadata" hidden></video>
+            <div class="profile-card-heading">
+              <h3 data-profile="name"></h3>
+              <span id="profile-card-title" class="profile-card-title"></span>
+            </div>
+            <ul id="profile-card-credentials" class="profile-card-credentials"></ul>
+            <p data-profile="affiliation"></p>
+            <div id="contact-links" class="contact-links"></div>
+          </aside>
+
+          <div class="about-content">
+            <section class="about-block profile-intro">
+              <p class="profile-intro-text"><span data-profile="intro-short"></span></p>
+            </section>
+            <section class="about-block" data-main-section="experience">
+              <h3 data-i18n="experienceTitle">Experience</h3>
+              <div id="experience-list" class="timeline"></div>
+            </section>
+            <section class="about-block" data-main-section="education">
+              <h3 data-i18n="educationTitle">Education</h3>
+              <div id="education-list" class="timeline"></div>
+            </section>
+            <section class="about-block" data-main-section="scholarships">
+              <h3 data-i18n="scholarshipsTitle">Scholarships</h3>
+              <p id="scholarships-conversion-note" class="scholarship-conversion-note" hidden aria-live="polite"></p>
+              <div id="scholarships-list" class="timeline"></div>
+            </section>
+            <section class="about-block" data-main-section="certifications">
+              <h3 data-i18n="certificationsTitle">Certifications</h3>
+              <div id="certifications-list" class="timeline compact-timeline"></div>
+            </section>
+            <section class="about-block" data-main-section="awards">
+              <h3 data-i18n="awardsTitle">Awards</h3>
+              <div id="awards-list" class="timeline compact-timeline"></div>
+            </section>
+            <section class="about-block" data-main-section="academic_activities">
+              <h3 data-i18n="academicActivitiesTitle">Academic Activities</h3>
+              <div id="academic_activities-list" class="academic-activity-groups"></div>
+            </section>
+            <section class="about-block" data-main-section="patents">
+              <h3 data-i18n="patentsTitle">Patents</h3>
+              <div id="patents-list" class="patent-groups"></div>
+            </section>
+            <section class="about-block" data-main-section="teaching">
+              <h3 data-i18n="teachingTitle">Teaching</h3>
+              <div id="teaching-list" class="timeline compact-timeline"></div>
+            </section>
+            <section class="about-block" data-main-section="skills">
+              <h3 data-i18n="skillsTitle">Technical Skills</h3>
+              <div id="skills-list" class="skills-list"></div>
+            </section>
+          </div>
+        </div>
+        <p class="site-reuse-note"><span data-i18n="siteReuseNote">이 GitHub page는 누구나 복사/수정하여 사용 가능하게 제작되었습니다.</span> <a href="fork-guide.html"><span data-i18n="siteReuseGuide">사용법 보기</span> <span aria-hidden="true">↗</span></a></p>
+      </div>
+    </section>
+
+    <section id="projects" class="section-shell section-page" data-page-section="projects" hidden>
+      <div class="container">
+        <div id="projects-timeline" class="project-roadmap" aria-live="polite"></div>
+        <div id="projects-grid" class="card-grid project-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="publications" class="section-shell section-page" data-page-section="publications" hidden>
+      <div class="container">
+        <div id="publications-timeline" class="publication-timeline" role="group" aria-label="논문 출판 시점" hidden></div>
+        <div class="publication-toolbar" aria-label="Publication controls">
+          <input id="pub-search" type="search" autocomplete="off" placeholder="Search: title, author, journal, conference…" aria-label="Search" data-i18n-placeholder="searchPlaceholder" data-i18n-aria="searchLabel">
+          <select id="pub-type" aria-label="Publication type" data-i18n-aria="typeLabel"></select>
+          <select id="pub-topic" aria-label="Publication topic" data-i18n-aria="topicLabel"></select>
+          <select id="pub-index" aria-label="Index" data-i18n-aria="indexLabel"></select>
+          <button id="pub-reset" class="publication-reset" type="button" aria-label="Reset filters" title="Reset filters" data-i18n-aria="resetFilters" data-i18n-title="resetFilters">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 11a8 8 0 1 0-2.34 5.66M20 4v7h-7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="publication-collaborators" class="publication-collaborators" aria-label="Collaborators" data-i18n-aria="collaborators"></div>
+
+        <div class="publication-actions">
+          <div class="result-summary">
+            <strong id="pub-result-count">0</strong>
+            <span data-i18n="results">results</span>
+          </div>
+          <div class="publication-options">
+            <label class="publication-checkbox">
+              <input id="pub-first-author" type="checkbox">
+              <span data-i18n="firstAuthorOnly">First author</span>
+            </label>
+            <div class="publication-sort">
+              <div class="sort-toggle" role="group" aria-label="Publication sort">
+                <button type="button" data-pub-sort="newest" class="is-active" aria-pressed="true" data-i18n="sortNewest">Newest first</button>
+                <button type="button" data-pub-sort="cited" aria-pressed="false" data-i18n="sortCited">Most cited</button>
+                <button type="button" data-pub-sort="type" aria-pressed="false" data-i18n="sortType">By type</button>
+                <button type="button" data-pub-sort="topic" aria-pressed="false" data-i18n="sortTopic">By topic</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="publication-list" class="publication-list" aria-live="polite"></div>
+        <p id="publications-empty" class="empty-state" hidden data-i18n="noPublications">No publications match the current filters.</p>
+      </div>
+    </section>
+
+    <section id="software" class="section-shell section-page section-tinted" data-page-section="software" hidden>
+      <div class="container">
+        <div id="software-grid" class="software-stage-list" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="board" class="section-shell section-page" data-page-section="board" hidden>
+      <div class="container">
+        <div class="board-layout">
+          <nav id="board-rail" class="board-rail" aria-label="Board quick navigation" data-i18n-aria="boardNavigation"></nav>
+          <div class="board-main">
+            <div id="board-list" class="board-list" aria-live="polite"></div>
+            <div id="board-grid" class="board-feed" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="media-lightbox" class="media-lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-shell">
+      <button type="button" class="lightbox-close" data-lightbox-close data-i18n-aria="closeMedia" aria-label="Close media viewer">×</button>
+      <button type="button" class="lightbox-nav lightbox-prev" data-lightbox-prev data-i18n-aria="previousMedia" aria-label="Previous media">
+        <span aria-hidden="true">←</span>
+      </button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-image" src="" alt="">
+        <video id="lightbox-video" controls playsinline preload="metadata" hidden></video>
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button type="button" class="lightbox-nav lightbox-next" data-lightbox-next data-i18n-aria="nextMedia" aria-label="Next media">
+        <span aria-hidden="true">→</span>
+      </button>
+      <div id="lightbox-count" class="lightbox-count" aria-live="polite"></div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <div id="project-timeline-tooltip" class="timeline-tooltip" role="tooltip" hidden></div>
+  <div id="publication-timeline-tooltip" class="timeline-tooltip publication-timeline-tooltip" role="tooltip" hidden></div>
+  <div id="publication-citation-tooltip" class="timeline-tooltip" role="tooltip" hidden></div>
+  <div id="publication-action-tooltip" class="publication-action-tooltip" role="tooltip" hidden>
+    <p class="publication-action-tooltip-label"></p>
+    <pre class="publication-action-tooltip-content"></pre>
+  </div>
+
+  <noscript>
+    <div class="noscript">JavaScript is required to view this page.</div>
+  </noscript>
+</body>
+</html>

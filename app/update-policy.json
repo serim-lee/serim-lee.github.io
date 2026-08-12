@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "default": "preserve",
+  "replace": [
+    "app/",
+    "editor/",
+    ".github/workflows/validate.yml",
+    "index.html",
+    "cv.html",
+    "fork-guide.html",
+    "Profile-Editor.exe",
+    "README.md"
+  ],
+  "preserve": [
+    "data/",
+    "exports/",
+    "app/generated/",
+    "CNAME",
+    ".git/",
+    ".vscode/",
+    ".idea/",
+    "editor/runtime/",
+    "editor/cmd/editor/build/bin/",
+    "editor/cmd/editor/frontend/wailsjs/go/"
+  ],
+  "regenerate": [
+    "exports/publications.bib",
+    "exports/publications.ris",
+    "exports/publications.csl.json",
+    "exports/build-report.json"
+  ]
+}

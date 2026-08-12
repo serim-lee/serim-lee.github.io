@@ -1,0 +1,19 @@
+* text=auto
+*.bat text eol=crlf
+*.csv text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.py text eol=lf
+*.svg text eol=lf
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.ico binary
+*.mp4 binary
+*.webm binary
+*.ogv binary
+*.ogg binary
+*.mov binary
+*.m4v binary

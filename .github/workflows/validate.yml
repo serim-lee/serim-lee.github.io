@@ -1,0 +1,78 @@
+name: Validate website data
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: editor/go.mod
+          cache-dependency-path: editor/go.sum
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate and regenerate exports
+        shell: pwsh
+        working-directory: editor
+        run: go run ./cmd/site build
+      - name: Check static references
+        shell: pwsh
+        working-directory: editor
+        run: go run ./cmd/site check
+      - name: Check release and update boundaries
+        shell: pwsh
+        working-directory: editor
+        run: go run ./cmd/releases check --preserve-data
+      - name: Test native tools and editor
+        working-directory: editor
+        run: go test ./...
+      - name: Check JavaScript syntax
+        shell: pwsh
+        run: |
+          node --check app/assets/js/color-themes.js
+          node --check app/assets/js/data-version.js
+          node --check app/assets/js/data.js
+          node --check app/assets/js/publication-bibliography.js
+          node --check app/assets/js/publication-timeline.js
+          node --check app/assets/js/publication-citations.js
+          node --check app/assets/js/app.js
+          node --check app/assets/js/cv.js
+          node --check app/assets/js/fork-guide.js
+      - name: Check publication timeline placement
+        shell: pwsh
+        run: node app/tools/check_publication_timeline.cjs
+      - name: Check publication citation behavior
+        shell: pwsh
+        run: node app/tools/check_publication_citations.cjs
+      - name: Check shared topics
+        shell: pwsh
+        run: node app/tools/check_shared_topics.cjs
+      - name: Check independent project and software notes
+        shell: pwsh
+        run: node app/tools/check_content_notes.cjs
+      - name: Check independent web tab visibility
+        shell: pwsh
+        run: node app/tools/check_web_pages.cjs
+      - name: Check shared data version
+        shell: pwsh
+        run: node app/tools/check_data_versions.cjs
+      - name: Check patent data and settings migration
+        shell: pwsh
+        run: node app/tools/check_patents.cjs
+      - name: Check shared website and editor themes
+        shell: pwsh
+        run: node app/tools/check_color_themes.cjs
+      - name: Check browser and native bibliography parity
+        shell: pwsh
+        run: node app/tools/check_publication_bibliography.cjs
+      - name: Ensure generated files are current
+        shell: pwsh
+        run: git diff --exit-code -- exports/
